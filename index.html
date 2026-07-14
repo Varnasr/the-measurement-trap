@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Apply the saved theme before first paint to avoid a flash -->
+<script>(function(){try{var t=localStorage.getItem('mt-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
 <title>The Measurement Trap · Varna Sri Raman</title>
 <meta name="description" content="Companion page for The Measurement Trap: India's Quest for Social Progress Through Eight Decades, by Varna Sri Raman. Routledge, forthcoming.">
 <meta name="author" content="Varna Sri Raman">
@@ -45,8 +47,9 @@
   --hair-faint:#dddddd;
   --shadow:0 1px 3px rgba(0,0,0,.18), 0 8px 28px rgba(0,0,0,.10);
 }
+/* Dark palette, shared by the auto (system) path and the manual override */
 @media (prefers-color-scheme: dark){
-  :root{
+  :root:not([data-theme="light"]){
     --ink:#e7e6e2;
     --grey:#adaca7;
     --faint:#8b8a85;
@@ -58,6 +61,18 @@
     --hair-faint:#3a3834;
     --shadow:0 1px 3px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.45);
   }
+}
+:root[data-theme="dark"]{
+  --ink:#e7e6e2;
+  --grey:#adaca7;
+  --faint:#8b8a85;
+  --rule:#c8c7c1;
+  --link:#8fb3e6;
+  --desk:#16161a;
+  --sheet:#211f1d;
+  --hair:#6a6862;
+  --hair-faint:#3a3834;
+  --shadow:0 1px 3px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.45);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -79,6 +94,34 @@ body{
   padding:10px 16px;border:1px solid var(--link);
 }
 .skip:focus{left:8px;top:8px}
+
+/* theme toggle — small segmented control, fixed top-right */
+.themebar{
+  position:fixed;top:14px;right:14px;z-index:90;
+  display:inline-flex;align-items:stretch;
+  background:var(--sheet);
+  border:1px solid var(--hair);
+  border-radius:7px;
+  box-shadow:0 1px 4px rgba(0,0,0,.12);
+  font-size:.72rem;letter-spacing:.02em;
+  overflow:hidden;
+}
+.themebar button{
+  appearance:none;background:transparent;border:0;cursor:pointer;
+  color:var(--grey);
+  font-family:inherit;font-size:inherit;
+  padding:5px 9px;line-height:1.2;
+}
+.themebar button + button{border-left:1px solid var(--hair-faint)}
+.themebar button:hover{color:var(--ink)}
+.themebar button[aria-pressed="true"]{
+  background:var(--link);color:#fff;font-weight:600;
+}
+.themebar button:focus-visible{outline:2px solid var(--link);outline-offset:-2px}
+@media (max-width:520px){
+  .themebar{top:8px;right:8px;font-size:.68rem}
+  .themebar button{padding:4px 7px}
+}
 
 .page{
   background:var(--sheet);
@@ -207,7 +250,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   }
   body{background:#fff;font-size:11pt}
   .page{max-width:none;margin:0;padding:0;box-shadow:none}
-  .skip,.jumpline{display:none}
+  .skip,.jumpline,.themebar{display:none}
   a{color:#000;text-decoration:none}
   h2.sec{page-break-after:avoid}
   figure,table,tr,.srow{page-break-inside:avoid}
@@ -217,6 +260,13 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 </head>
 <body>
 <a class="skip" href="#opens">Skip to content</a>
+
+<div class="themebar" role="group" aria-label="Colour theme">
+  <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+  <button type="button" data-theme-set="auto" aria-pressed="false">Auto</button>
+  <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+</div>
+
 <div class="page">
 
 <!-- ================= TITLE BLOCK ================= -->
@@ -383,5 +433,47 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <p class="colophon">The Measurement Trap · Varna Sri Raman · Routledge, forthcoming<br>Companion page, July 2026.</p>
 
 </div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var bar=document.querySelector('.themebar');
+  if(!bar)return;
+  var buttons=bar.querySelectorAll('[data-theme-set]');
+  function current(){
+    var v=root.getAttribute('data-theme');
+    return (v==='light'||v==='dark')?v:'auto';
+  }
+  function metaColour(){
+    // keep the browser UI colour in step with the active theme
+    var dark;
+    if(current()==='auto'){dark=window.matchMedia('(prefers-color-scheme: dark)').matches;}
+    else{dark=current()==='dark';}
+    var m=document.querySelector('meta[name="theme-color"]:not([media])')||document.createElement('meta');
+    if(!m.parentNode){m.setAttribute('name','theme-color');document.head.appendChild(m);}
+    m.setAttribute('content',dark?'#16161a':'#e4e4e1');
+  }
+  function apply(mode){
+    if(mode==='auto'){root.removeAttribute('data-theme');}
+    else{root.setAttribute('data-theme',mode);}
+    try{
+      if(mode==='auto'){localStorage.removeItem('mt-theme');}
+      else{localStorage.setItem('mt-theme',mode);}
+    }catch(e){}
+    buttons.forEach(function(b){
+      b.setAttribute('aria-pressed', b.getAttribute('data-theme-set')===mode ? 'true':'false');
+    });
+    metaColour();
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click',function(){apply(b.getAttribute('data-theme-set'));});
+  });
+  // reflect the system change while in auto mode
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){
+    if(current()==='auto')metaColour();
+  });
+  apply(current());
+})();
+</script>
 </body>
 </html>
