@@ -149,6 +149,10 @@ p{hanging-punctuation:first}
 .titleblock .author{font-size:1.08rem;margin-bottom:4px}
 .titleblock .author sup{font-size:.7em}
 .titleblock .affil{font-size:.94rem;color:var(--grey)}
+.titleblock .pub-logo{display:inline-block;margin:14px auto 0;padding:8px 13px;background:#fff;border-radius:6px;line-height:0}
+.titleblock .pub-logo img{width:150px;height:auto;display:block}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .titleblock .pub-logo{box-shadow:0 1px 3px rgba(0,0,0,.4)}}
+:root[data-theme="dark"] .titleblock .pub-logo{box-shadow:0 1px 3px rgba(0,0,0,.4)}
 .titleblock .date{font-size:.94rem;color:var(--grey);margin-top:14px}
 
 /* ---------- abstract ---------- */
@@ -316,6 +320,9 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   <p class="subtitle">India's Quest for Social Progress Through Eight Decades</p>
   <p class="author">Varna Sri Raman<sup>*</sup></p>
   <p class="affil">Routledge, forthcoming</p>
+  <a class="pub-logo" href="https://www.routledge.com/" target="_blank" rel="noopener" aria-label="Routledge, Taylor &amp; Francis Group">
+    <img src="routledge-logo.png" alt="Routledge — Taylor &amp; Francis Group" width="150" height="42">
+  </a>
   <p class="date">Companion page · July 2026</p>
   <nav class="jumpline" aria-label="Contents">
     <a href="#opens">1. Where the book opens</a> ·
