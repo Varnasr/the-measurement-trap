@@ -203,6 +203,34 @@ figcaption{
 }
 figcaption b{font-weight:700}
 
+/* ---------- timeline (Figure 2) ---------- */
+.tlfig{margin:26px 0 26px}
+.tlfig svg{width:100%;height:auto;display:block;font-family:inherit;overflow:visible}
+.tl-grid{stroke:var(--hair-faint);stroke-width:1}
+.tl-axis{stroke:var(--rule);stroke-width:1}
+.tl-tick{stroke:var(--hair);stroke-width:1}
+.tl-yr{fill:var(--faint);font-size:9.5px}
+.tl-stem{stroke:var(--grey);stroke-width:1}
+.tl-dot{fill:var(--link)}
+.tl-eyr{fill:var(--ink);font-size:10px;font-weight:600}
+.tl-elab{fill:var(--grey);font-size:10px}
+.tl-band{fill:var(--link);fill-opacity:.15;stroke:var(--link);stroke-opacity:.5;stroke-width:1}
+.tl-num{fill:var(--ink);font-size:9px;font-weight:700}
+.tl-bname{fill:var(--grey);font-size:9px}
+
+/* ---------- chronology download row ---------- */
+.dlrow{margin:12px 0 2px;font-size:.86rem;color:var(--grey)}
+.dlrow a{font-weight:500}
+.dlrow .sep{margin:0 .55em;color:var(--hair)}
+
+/* ---------- complementary resources ---------- */
+.reslist{list-style:none;margin:16px 0 4px;padding:0}
+.reslist li{margin:0 0 13px}
+.reslist .rt{font-weight:600}
+.reslist .rd{display:block;font-size:.92rem;color:var(--grey);margin-top:1px}
+.contact{margin-top:16px;font-size:.9rem;color:var(--grey);line-height:1.6}
+.contact a{font-weight:500}
+
 /* ---------- tables (booktabs) ---------- */
 .tabwrap{margin:28px 0 8px;overflow-x:auto}
 table{border-collapse:collapse;width:100%;font-size:.93rem;line-height:1.45}
@@ -250,7 +278,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   }
   body{background:#fff;font-size:11pt}
   .page{max-width:none;margin:0;padding:0;box-shadow:none}
-  .skip,.jumpline,.themebar{display:none}
+  .skip,.jumpline,.themebar,.dlrow{display:none}
   a{color:#000;text-decoration:none}
   h2.sec{page-break-after:avoid}
   figure,table,tr,.srow{page-break-inside:avoid}
@@ -282,7 +310,8 @@ dl.pub dt{font-style:italic;color:var(--grey)}
     <a href="#plan">3. Plan of the book</a> ·
     <a href="#method">4. Method</a> ·
     <a href="#chronology">Appendix</a> ·
-    <a href="#publication">Publication</a>
+    <a href="#publication">Publication</a> &middot;
+    <a href="#resources">Resources</a>
   </nav>
 </header>
 
@@ -372,6 +401,91 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <h2 class="sec" id="chronology"><span class="no">Appendix.</span>Chronology, 1931 to 2027</h2>
 <p class="noindent">A selection of dated events from the record the book assembles, arranged by its five parts. Every date below carries a source in the book's notes.</p>
 
+<figure class="tlfig">
+<svg viewBox="0 0 820 237" role="img" aria-label="Timeline of Indian official measurement, 1931 to 2027, with the book's five parts as overlapping bands and eight pivotal events marked.">
+<line class="tl-grid" x1="89.9" y1="96" x2="89.9" y2="225"/>
+<line class="tl-grid" x1="172.0" y1="96" x2="172.0" y2="225"/>
+<line class="tl-grid" x1="254.0" y1="96" x2="254.0" y2="225"/>
+<line class="tl-grid" x1="336.1" y1="96" x2="336.1" y2="225"/>
+<line class="tl-grid" x1="418.2" y1="96" x2="418.2" y2="225"/>
+<line class="tl-grid" x1="500.3" y1="96" x2="500.3" y2="225"/>
+<line class="tl-grid" x1="582.4" y1="96" x2="582.4" y2="225"/>
+<line class="tl-grid" x1="664.5" y1="96" x2="664.5" y2="225"/>
+<line class="tl-grid" x1="746.5" y1="96" x2="746.5" y2="225"/>
+<line class="tl-axis" x1="16.0" y1="96" x2="804.0" y2="96"/>
+<line class="tl-tick" x1="16.0" y1="96" x2="16.0" y2="101"/>
+<text class="tl-yr" text-anchor="start" x="16.0" y="112">1931</text>
+<line class="tl-tick" x1="89.9" y1="96" x2="89.9" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="89.9" y="112">1940</text>
+<line class="tl-tick" x1="172.0" y1="96" x2="172.0" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="172.0" y="112">1950</text>
+<line class="tl-tick" x1="254.0" y1="96" x2="254.0" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="254.0" y="112">1960</text>
+<line class="tl-tick" x1="336.1" y1="96" x2="336.1" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="336.1" y="112">1970</text>
+<line class="tl-tick" x1="418.2" y1="96" x2="418.2" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="418.2" y="112">1980</text>
+<line class="tl-tick" x1="500.3" y1="96" x2="500.3" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="500.3" y="112">1990</text>
+<line class="tl-tick" x1="582.4" y1="96" x2="582.4" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="582.4" y="112">2000</text>
+<line class="tl-tick" x1="664.5" y1="96" x2="664.5" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="664.5" y="112">2010</text>
+<line class="tl-tick" x1="746.5" y1="96" x2="746.5" y2="101"/>
+<text class="tl-yr" text-anchor="middle" x="746.5" y="112">2020</text>
+<line class="tl-tick" x1="804.0" y1="96" x2="804.0" y2="101"/>
+<text class="tl-yr" text-anchor="end" x="804.0" y="112">2027</text>
+<text class="tl-eyr" text-anchor="start" x="16.0" y="14">1931</text>
+<text class="tl-elab" text-anchor="start" x="16.0" y="26">ISI founded</text>
+<line class="tl-stem" x1="16.0" y1="32" x2="16.0" y2="96"/>
+<circle class="tl-dot" cx="16.0" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="172.0" y="50">1950</text>
+<text class="tl-elab" text-anchor="middle" x="172.0" y="62">First NSS round</text>
+<line class="tl-stem" x1="172.0" y1="68" x2="172.0" y2="96"/>
+<circle class="tl-dot" cx="172.0" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="369.0" y="14">1974</text>
+<text class="tl-elab" text-anchor="middle" x="369.0" y="26">Towards Equality</text>
+<line class="tl-stem" x1="369.0" y1="32" x2="369.0" y2="96"/>
+<circle class="tl-dot" cx="369.0" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="508.5" y="50">1991</text>
+<text class="tl-elab" text-anchor="middle" x="508.5" y="62">Reforms of 1991</text>
+<line class="tl-stem" x1="508.5" y1="68" x2="508.5" y2="96"/>
+<circle class="tl-dot" cx="508.5" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="623.4" y="14">2005</text>
+<text class="tl-elab" text-anchor="middle" x="623.4" y="26">RTI & NREGA</text>
+<line class="tl-stem" x1="623.4" y1="32" x2="623.4" y2="96"/>
+<circle class="tl-dot" cx="623.4" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="664.5" y="50">2010</text>
+<text class="tl-elab" text-anchor="middle" x="664.5" y="62">First Aadhaar</text>
+<line class="tl-stem" x1="664.5" y1="68" x2="664.5" y2="96"/>
+<circle class="tl-dot" cx="664.5" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="middle" x="738.3" y="14">2019</text>
+<text class="tl-elab" text-anchor="middle" x="738.3" y="26">NSC resignations</text>
+<line class="tl-stem" x1="738.3" y1="32" x2="738.3" y2="96"/>
+<circle class="tl-dot" cx="738.3" cy="96" r="3"/>
+<text class="tl-eyr" text-anchor="end" x="804.0" y="50">2027</text>
+<text class="tl-elab" text-anchor="end" x="804.0" y="62">Census</text>
+<line class="tl-stem" x1="804.0" y1="68" x2="804.0" y2="96"/>
+<circle class="tl-dot" cx="804.0" cy="96" r="3"/>
+<rect class="tl-band" x="147.3" y="126" width="361.2" height="15" rx="2"/>
+<text class="tl-num" x="152.3" y="136.5">I</text>
+<text class="tl-bname" x="165.3" y="136.5">Foundations</text>
+<rect class="tl-band" x="508.5" y="147" width="106.7" height="15" rx="2"/>
+<text class="tl-num" x="513.5" y="157.5">II</text>
+<text class="tl-bname" x="526.5" y="157.5">The Market Turn</text>
+<rect class="tl-band" x="615.2" y="168" width="82.1" height="15" rx="2"/>
+<text class="tl-num" x="620.2" y="178.5">III</text>
+<text class="tl-bname" x="633.2" y="178.5">Rights & Audit</text>
+<rect class="tl-band" x="656.2" y="189" width="90.3" height="15" rx="2"/>
+<text class="tl-num" x="661.2" y="199.5">IV</text>
+<text class="tl-bname" x="674.2" y="199.5">The Digital State</text>
+<rect class="tl-band" x="746.5" y="210" width="57.5" height="15" rx="2"/>
+<text class="tl-num" x="751.5" y="220.5">V</text>
+<text class="tl-bname" text-anchor="end" x="742.5" y="220.5">The Contested Present</text>
+</svg>
+<figcaption><b>Figure 2.</b> Eight decades at a glance. The band for each of the book&rsquo;s five parts spans the years it treats&mdash;<b>I</b>&nbsp;Foundations, <b>II</b>&nbsp;The&nbsp;Market&nbsp;Turn, <b>III</b>&nbsp;Rights&nbsp;and&nbsp;Audit, <b>IV</b>&nbsp;The&nbsp;Digital&nbsp;State, <b>V</b>&nbsp;The&nbsp;Contested&nbsp;Present&mdash;and the last three overlap, as the introduction says they do. The marked events are a spine of the fuller chronology in Table&nbsp;2.</figcaption>
+</figure>
+
 <div class="tabwrap">
 <table>
   <caption><b>Table 2.</b> Selected events in the history of Indian official measurement.</caption>
@@ -413,6 +527,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   </tbody>
 </table>
 </div>
+<p class="dlrow">&darr; Download the chronology as <a href="chronology.csv" download>CSV</a><span class="sep">&middot;</span>use your browser&rsquo;s <a href="#" data-print>Print &rarr; Save as PDF</a> for the full page.</p>
 <p class="tabnote"><em>Note:</em> Dates and particulars follow the book's introduction and opening chapters, where each carries its source.</p>
 
 <!-- ================= PUBLICATION ================= -->
@@ -424,8 +539,25 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   <div><dt>Status</dt><dd>Forthcoming</dd></div>
   <div><dt>Extent</dt><dd>Thirteen chapters in five parts, with a conclusion</dd></div>
   <div><dt>ISBN</dt><dd>To be announced</dd></div>
+  <div><dt>Order</dt><dd>Pre-order and bookseller links will be added on publication</dd></div>
 </dl>
 <p class="noindent">This page is a companion to the book, built for readers, students, journalists and policy audiences. It offers orientation and chronology; it does not reproduce the manuscript. Publication date, ISBN and ordering links will appear here when Routledge confirms them, along with contact details for rights, review copies and speaking enquiries.</p>
+
+
+<!-- ================= RESOURCES ================= -->
+<h2 class="sec" id="resources"><span class="no">&middot;</span>Complementary resources</h2>
+<p class="noindent">Interactive tools by the author that sit alongside the book&rsquo;s themes and let readers explore the underlying numbers directly.</p>
+<ul class="reslist">
+  <li><a class="rt" href="https://devindicators.impactmojo.in" target="_blank" rel="noopener">India Development Indicators</a>
+      <span class="rd">GDP, life expectancy, literacy, electricity, internet and CO&#8322; on live World Bank data, with a state-wise HDI ranking and policy timeline.</span></li>
+  <li><a class="rt" href="https://howindialives.impactmojo.in" target="_blank" rel="noopener">How India Lives</a>
+      <span class="rd">205 state-level maps across demography, health, gender, economy, education and environment &mdash; why India&rsquo;s states differ, and why it matters for policy.</span></li>
+  <li><a class="rt" href="https://sdgtracker.impactmojo.in" target="_blank" rel="noopener">SDG Progress Tracker</a>
+      <span class="rd">India&rsquo;s progress on all 17 Sustainable Development Goals, with year-on-year trends and a flow of on-track, stagnating and off-track outcomes.</span></li>
+  <li><a class="rt" href="https://someperspective.info" target="_blank" rel="noopener">Some Perspective</a>
+      <span class="rd">Data-driven analysis of India&rsquo;s political economy &mdash; policy impact, fiscal trends and governance indicators with interactive visualisations.</span></li>
+</ul>
+<p class="contact"><b>Contact &amp; enquiries.</b> The author &mdash; <a href="https://on-web.link/varna" target="_blank" rel="noopener">Varna Sri Raman</a> (<a href="https://twitter.com/varna" target="_blank" rel="noopener">@varna</a>). Rights, review copies and speaking enquiries will be routed here on publication.</p>
 
 </main>
 
@@ -473,6 +605,11 @@ dl.pub dt{font-style:italic;color:var(--grey)}
     if(current()==='auto')metaColour();
   });
   apply(current());
+})();
+// "Print → Save as PDF" link under the chronology
+(function(){
+  var pl=document.querySelector('[data-print]');
+  if(pl){pl.addEventListener('click',function(e){e.preventDefault();window.print();});}
 })();
 </script>
 </body>
