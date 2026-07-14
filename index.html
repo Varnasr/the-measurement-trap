@@ -195,6 +195,25 @@ p{hanging-punctuation:first}
 }
 .keywords b{color:var(--ink);font-weight:600;font-style:italic}
 
+/* ---------- marketing lede ---------- */
+.lede{max-width:60ch;margin:32px auto 6px;text-align:center}
+.lede p{text-indent:0}
+.lede .hook{font-size:1.06rem;line-height:1.5;color:var(--ink);margin:0 0 16px}
+.lede .thesis{font-size:1.3rem;font-weight:600;line-height:1.3;color:var(--ink);margin:0 0 16px}
+.lede .whatitis{font-size:.98rem;font-style:italic;color:var(--grey);line-height:1.5;margin:0 0 20px}
+.lede .cta{margin:0}
+.cta-btn{display:inline-block;background:var(--link);color:#fff;font-size:.92rem;font-weight:500;padding:10px 22px;border-radius:7px;text-decoration:none;letter-spacing:.01em}
+.cta-btn:hover{text-decoration:none;opacity:.92}
+:root[data-theme="dark"] .cta-btn{color:#0f1a2c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-btn{color:#0f1a2c}}
+
+/* ---------- about the author ---------- */
+.authorblock{display:flex;gap:22px;align-items:flex-start;margin:16px 0 4px}
+.authorphoto{width:150px;height:auto;border-radius:6px;flex:none}
+.authorbio{flex:1;min-width:0}
+.authorbio p{text-align:left;margin:0}
+@media (max-width:560px){.authorblock{flex-direction:column;align-items:center}.authorphoto{width:170px}}
+
 /* ---------- author footnote ---------- */
 .authnote{
   margin-top:34px;padding-top:10px;border-top:1px solid var(--ink);
@@ -417,12 +436,21 @@ dl.pub dt{font-style:italic;color:var(--grey)}
     <a href="#chronology">Chronology</a>
     <a href="#series">Figures</a>
     <a href="#literature">Literature</a>
+    <a href="#author">Author</a>
     <a href="#publication">Publication</a>
     <a href="#praise">Praise</a>
     <a href="#resources">Resources</a>
   </nav>
   <p class="share"><a class="wa" href="https://wa.me/?text=The%20Measurement%20Trap%20%E2%80%94%20companion%20page%3A%20https%3A//whatcounts.in/" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg class="waicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>Share on WhatsApp</a></p>
 </header>
+
+<!-- ================= LEDE ================= -->
+<section class="lede" aria-label="Introduction">
+  <p class="hook">In January 2019, a government insisted its own unemployment report did not exist. It did &mdash; the highest joblessness the surveys had recorded in over four decades &mdash; and the fight was never about the number, but about who controls it.</p>
+  <p class="thesis">What a state measures, it governs. What it leaves uncounted, it leaves unattended.</p>
+  <p class="whatitis">A history of independent India told through the machinery it built to count itself &mdash; the census, the sample surveys, the national accounts &mdash; and the battles now being fought over them.</p>
+  <p class="cta"><a class="cta-btn" href="mailto:varna.sr@gmail.com?subject=Notify%20me%3A%20The%20Measurement%20Trap&amp;body=Please%20let%20me%20know%20when%20The%20Measurement%20Trap%20is%20published.">Notify me when it&rsquo;s published</a></p>
+</section>
 
 <!-- ================= ABSTRACT ================= -->
 <section class="abstract" aria-label="Abstract">
@@ -841,6 +869,15 @@ dl.pub dt{font-style:italic;color:var(--grey)}
     <li>Jean Dr&egrave;ze &amp; Amartya Sen, <em>An Uncertain Glory: India and Its Contradictions</em> (2013)</li>
     <li><span class="eng">&#9656;</span>Banerjee, Duflo &amp; Kremer &mdash; the experimental turn (2019 Nobel)</li>
   </ul>
+</div>
+
+<!-- ================= AUTHOR ================= -->
+<h2 class="sec" id="author"><span class="no">&middot;</span>About the author</h2>
+<div class="authorblock">
+  <img class="authorphoto" src="author.jpg" alt="Varna Sri Raman" width="150" height="212">
+  <div class="authorbio">
+    <p class="noindent">Varna Sri Raman is a development economist and licensed social justice worker who has spent her working life making, using and arguing over the numbers this book describes. She holds a PhD from the Tata Institute of Social Sciences and is a Dr Manmohan Singh Fellow; she is Managing Director of Pinpoint Ventures Advisory and a co-founder of ImpactMojo and StoryWell Books. She writes about measurement, policy and power &mdash; from the inside.</p>
+  </div>
 </div>
 
 <!-- ================= PUBLICATION ================= -->
