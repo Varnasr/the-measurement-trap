@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Measurement Trap · Varna Sri Raman</title>
+<meta name="description" content="Companion page for The Measurement Trap: India's Quest for Social Progress Through Eight Decades, by Varna Sri Raman. Routledge, forthcoming.">
+<meta name="author" content="Varna Sri Raman">
+<link rel="canonical" href="https://varnasr.github.io/the-measurement-trap/">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<!-- Theme colour: matches the desk background in each scheme -->
+<meta name="theme-color" content="#e4e4e1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="book">
+<meta property="og:title" content="The Measurement Trap">
+<meta property="og:description" content="India's Quest for Social Progress Through Eight Decades — a history of independent India told through the machinery it built to count itself. By Varna Sri Raman. Routledge, forthcoming.">
+<meta property="og:site_name" content="Varna Sri Raman">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://varnasr.github.io/the-measurement-trap/">
+<meta property="book:author" content="Varna Sri Raman">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Measurement Trap">
+<meta name="twitter:description" content="India's Quest for Social Progress Through Eight Decades. By Varna Sri Raman. Routledge, forthcoming.">
+<meta name="twitter:creator" content="@varna">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111;
+  --grey:#444444;
+  --faint:#767676;
+  --rule:#111111;
+  --link:#1A3E6E;
+  --desk:#E4E4E1;
+  --sheet:#FFFFFF;
+  --hair:#999999;
+  --hair-faint:#dddddd;
+  --shadow:0 1px 3px rgba(0,0,0,.18), 0 8px 28px rgba(0,0,0,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#e7e6e2;
+    --grey:#adaca7;
+    --faint:#8b8a85;
+    --rule:#c8c7c1;
+    --link:#8fb3e6;
+    --desk:#16161a;
+    --sheet:#211f1d;
+    --hair:#6a6862;
+    --hair-faint:#3a3834;
+    --shadow:0 1px 3px rgba(0,0,0,.5), 0 10px 34px rgba(0,0,0,.45);
+  }
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--desk);
+  color:var(--ink);
+  font-family:'STIX Two Text','Times New Roman',Times,serif;
+  font-size:17px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* skip link for keyboard / screen-reader users */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:100;
+  background:var(--sheet);color:var(--link);
+  padding:10px 16px;border:1px solid var(--link);
+}
+.skip:focus{left:8px;top:8px}
+
+.page{
+  background:var(--sheet);
+  max-width:820px;
+  margin:40px auto;
+  padding:88px 96px 96px;
+  box-shadow:var(--shadow);
+}
+@media (max-width:880px){
+  .page{margin:0;padding:56px 28px 64px;box-shadow:none}
+  body{background:var(--sheet)}
+}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+p{hanging-punctuation:first}
+
+/* ---------- title block ---------- */
+.titleblock{text-align:center;margin-bottom:8px}
+.titleblock h1{
+  font-size:1.9rem;font-weight:700;line-height:1.25;letter-spacing:.005em;
+  margin-bottom:6px;
+}
+.titleblock .subtitle{font-size:1.18rem;font-style:italic;font-weight:400;margin-bottom:26px}
+.titleblock .author{font-size:1.08rem;margin-bottom:4px}
+.titleblock .author sup{font-size:.7em}
+.titleblock .affil{font-size:.94rem;color:var(--grey)}
+.titleblock .date{font-size:.94rem;color:var(--grey);margin-top:14px}
+
+/* ---------- abstract ---------- */
+.abstract{
+  margin:34px auto 6px;max-width:58ch;
+  font-size:.95rem;line-height:1.6;text-align:justify;hyphens:auto;
+}
+.abstract .ah{
+  display:block;text-align:center;font-weight:700;font-size:.95rem;
+  margin-bottom:8px;letter-spacing:.02em;
+}
+.keywords{
+  margin:16px auto 0;max-width:58ch;font-size:.9rem;color:var(--grey);
+}
+.keywords b{color:var(--ink);font-weight:600;font-style:italic}
+
+/* ---------- author footnote ---------- */
+.authnote{
+  margin-top:34px;padding-top:10px;border-top:1px solid var(--ink);
+  width:55%;min-width:260px;
+  font-size:.84rem;line-height:1.5;color:var(--grey);
+}
+.authnote sup{font-size:.75em}
+
+/* ---------- sections ---------- */
+main{margin-top:44px}
+h2.sec{
+  font-size:1.14rem;font-weight:700;margin:40px 0 14px;
+  scroll-margin-top:16px;
+}
+h2.sec .no{margin-right:14px}
+h3.subsec{font-size:1rem;font-weight:600;font-style:italic;margin:24px 0 10px}
+main p{margin-bottom:14px;text-align:justify;hyphens:auto}
+main p.noindent{text-indent:0}
+main p + p{text-indent:1.6em;margin-top:-6px}
+blockquote.disp{
+  margin:20px 2.2em;font-size:.97rem;line-height:1.55;
+}
+blockquote.disp .src{display:block;margin-top:6px;font-size:.88rem;color:var(--grey);font-style:italic;text-align:right}
+
+/* ---------- figure ---------- */
+figure{margin:30px 0 26px}
+.schematic{border-top:1.5px solid var(--rule);border-bottom:1.5px solid var(--rule)}
+.srow{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:13px 6px}
+.srow + .srow{border-top:.5px solid var(--hair)}
+.srow .sl{font-variant:small-caps;letter-spacing:.04em;font-weight:600;font-size:.95rem;padding-top:1px}
+.srow .sd{font-size:.95rem;line-height:1.5}
+.srow .sd .arr{padding:0 .35em;color:var(--grey)}
+@media (max-width:640px){.srow{grid-template-columns:1fr;gap:4px}}
+figcaption{
+  margin-top:12px;font-size:.88rem;line-height:1.5;text-align:justify;
+}
+figcaption b{font-weight:700}
+
+/* ---------- tables (booktabs) ---------- */
+.tabwrap{margin:28px 0 8px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.93rem;line-height:1.45}
+table caption{
+  caption-side:top;text-align:justify;font-size:.88rem;margin-bottom:10px;
+}
+table caption b{font-weight:700}
+thead th{
+  border-top:1.5px solid var(--rule);border-bottom:.75px solid var(--rule);
+  font-weight:600;text-align:left;padding:7px 12px 7px 0;font-style:italic;
+}
+tbody td{padding:7px 12px 7px 0;vertical-align:top;text-align:left}
+tbody tr:last-child td{border-bottom:1.5px solid var(--rule)}
+tr.grp td{
+  font-variant:small-caps;letter-spacing:.05em;font-weight:600;
+  padding-top:14px;border-bottom:.5px solid var(--hair);
+}
+td.cnum{width:2.6em;color:var(--grey)}
+td.cdate{width:9.5em;white-space:nowrap}
+td.ctitle{width:15em;font-weight:500}
+.tabnote{font-size:.84rem;color:var(--grey);margin-top:6px;text-align:justify}
+
+/* ---------- publication list ---------- */
+dl.pub{margin:18px 0}
+dl.pub div{display:grid;grid-template-columns:11em 1fr;gap:14px;padding:5px 0}
+dl.pub dt{font-style:italic;color:var(--grey)}
+@media (max-width:560px){dl.pub div{grid-template-columns:1fr;gap:0}}
+
+/* ---------- end matter ---------- */
+.endrule{margin:52px auto 0;width:34%;border:none;border-top:1px solid var(--ink)}
+.colophon{margin-top:16px;font-size:.84rem;color:var(--grey);text-align:center;line-height:1.6}
+
+/* in-page nav, styled as a paper's contents line */
+.jumpline{
+  text-align:center;font-size:.88rem;color:var(--grey);
+  margin-top:26px;
+}
+.jumpline a{margin:0 .55em}
+
+/* ---------- print ---------- */
+@media print{
+  :root{
+    --ink:#000;--grey:#333;--faint:#555;--rule:#000;--link:#000;
+    --desk:#fff;--sheet:#fff;--hair:#888;--hair-faint:#ccc;--shadow:none;
+  }
+  body{background:#fff;font-size:11pt}
+  .page{max-width:none;margin:0;padding:0;box-shadow:none}
+  .skip,.jumpline{display:none}
+  a{color:#000;text-decoration:none}
+  h2.sec{page-break-after:avoid}
+  figure,table,tr,.srow{page-break-inside:avoid}
+  thead{display:table-header-group}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#opens">Skip to content</a>
+<div class="page">
+
+<!-- ================= TITLE BLOCK ================= -->
+<header class="titleblock">
+  <h1>The Measurement Trap</h1>
+  <p class="subtitle">India's Quest for Social Progress Through Eight Decades</p>
+  <p class="author">Varna Sri Raman<sup>*</sup></p>
+  <p class="affil">Routledge, forthcoming</p>
+  <p class="date">Companion page · July 2026</p>
+  <nav class="jumpline" aria-label="Contents">
+    <a href="#opens">1. Where the book opens</a> ·
+    <a href="#argument">2. The argument</a> ·
+    <a href="#plan">3. Plan of the book</a> ·
+    <a href="#method">4. Method</a> ·
+    <a href="#chronology">Appendix</a> ·
+    <a href="#publication">Publication</a>
+  </nav>
+</header>
+
+<!-- ================= ABSTRACT ================= -->
+<section class="abstract" aria-label="Abstract">
+  <span class="ah">Abstract</span>
+  <p class="noindent"><em>The Measurement Trap</em> tells the history of independent India through the machinery it built to count itself: the census, the sample surveys, the national accounts, and the people who designed them, ran them, defended them and, in recent years, fought over them. The book treats the statistical system as a political institution and reads its history, from the first National Sample Survey round of 1950 to the census of 2027, as a run of decisions about what to measure and what to ignore. At every stage, what was measured was governed, and what went unmeasured went unattended. The choice of what to count has been among the most consequential choices the Indian state has made, and it has rarely been debated as one.</p>
+</section>
+<p class="keywords"><b>Keywords:</b> official statistics; measurement; India; census; National Sample Survey; poverty line; Aadhaar; caste enumeration. <b>JEL:</b> C81, H11, N35, O15.</p>
+
+<div class="authnote">
+  <p><sup>*</sup> Development economist and lawyer; PhD, Tata Institute of Social Sciences, Mumbai; Dr Manmohan Singh Fellow; Managing Director, Pinpoint Ventures Advisory LLP; co-founder, ImpactMojo and StoryWell Books. Contact details will be listed here on publication.</p>
+</div>
+
+<main id="content">
+
+<!-- ================= SECTION 1 ================= -->
+<h2 class="sec" id="opens"><span class="no">1.</span>Where the book opens</h2>
+<p class="noindent">On 28 January 2019, P.C. Mohanan and J.V. Meenakshi resigned from the National Statistical Commission. An employment survey the commission had approved in December sat unreleased. Three days later a newspaper printed the survey's central finding, an unemployment rate of 6.1 per cent, the highest a national sample survey had recorded since 1972–73. A union minister said there was no such report. On 31 May 2019, eight days after the results of a general election were declared, the government released the report. The number in it was the number the newspaper had printed in January.</p>
+<p>Nobody, in the end, had quarrelled with the survey's design, its sample or its arithmetic. The whole fight had been over custody: who owned the number, and when, if at all, the public that had answered the surveyors' questions would be permitted to see what its answers added up to. The book opens with that episode, and with the eight decades of decisions that built the machinery of custody, worked it, and have lately been unmaking it.</p>
+
+<!-- ================= SECTION 2 ================= -->
+<h2 class="sec" id="argument"><span class="no">2.</span>The argument</h2>
+<p class="noindent">A statistic presents itself as a fact about the world. It is more accurately the residue of a chain of decisions: that a thing is worth counting; how the thing is to be defined; who will count it, on what budget and with what training; and when, whether and in what form the result will reach the public. Every link in that chain is forged inside an institution, by people who answer to other people, and every link can be made honestly or with an eye to advantage. The history of a country's official numbers is for that reason a branch of its political history, and it is as political history that the book tells it.</p>
+<p>Independent India built, between 1947 and the late 1970s, a statistical system of unusual ambition for a poor country, designed to serve a planning state that wished to know its economy in order to direct it. That system was rebuilt after 1991 to serve the market and its watchers, and rebuilt again after 2004 to serve citizens who had acquired legal rights to information and to employment and needed numbers to enforce them. From 2009 the state assembled a digital apparatus that counted people continuously, one authentication at a time, and from roughly 2015 the numbers themselves became objects of open political contest. The title names the mechanism, which works as Figure 1 sets out.</p>
+
+<figure>
+  <div class="schematic" role="img" aria-label="Schematic of the measurement trap in three rows: the first jaw, the second jaw, and the hinge">
+    <div class="srow">
+      <span class="sl">First jaw</span>
+      <span class="sd">What is measured becomes a target<span class="arr">→</span>is managed as a number<span class="arr">→</span>and the measure degrades.</span>
+    </div>
+    <div class="srow">
+      <span class="sl">Second jaw</span>
+      <span class="sd">What is not measured attracts no budget and no blame<span class="arr">→</span>stays out of policy<span class="arr">→</span>and stays unmeasured.</span>
+    </div>
+    <div class="srow">
+      <span class="sl">Hinge</span>
+      <span class="sd">What is measured well but unwelcome is revised<span class="arr">→</span>or delayed<span class="arr">→</span>or withheld.</span>
+    </div>
+  </div>
+  <figcaption><b>Figure 1.</b> The measurement trap: the two jaws and the hinge. The first jaw is the corruption of measures used as targets, familiar from Goodhart (1975) and Campbell (1979); for two decades enrolment registers reported near-universal schooling while citizen surveys found half the children in Class V of rural schools unable to read a Class II text. The second jaw is the policy invisibility of the unmeasured; women's unpaid work sustained every Indian household and appeared in no national account, and caste went uncounted for nine decades. The hinge is the recent addition: each of its three verbs now has an Indian case attached to it, set out with dates in the chapters.</figcaption>
+</figure>
+
+<p class="noindent">The argument is not a claim of conspiracy, and it does not require one. The decisions the book records were taken by identifiable bodies for reasons that were usually stated and sometimes even good. Nor is it a story of decline from a golden age; the founders' system had blindnesses of its own, the invisibility of women's work above all. The book proceeds from a stated position: that official statistics a government cannot suppress belong to the same class of institutions as courts a government cannot instruct, and that their weakening is a public loss whichever party presides over it.</p>
+
+<!-- ================= SECTION 3 ================= -->
+<h2 class="sec" id="plan"><span class="no">3.</span>Plan of the book</h2>
+<p class="noindent">The book is arranged in thirteen chapters across five parts, with a conclusion, and runs from 1947 to 2027, ending with the census now scheduled for that year. Each chapter makes one argument. The five periods overlap at their edges, and the introduction defends the breaks rather than forcing clean ones. Table 1 gives the plan; the summaries orient the reader and do not stand in for the text.</p>
+
+<div class="tabwrap">
+<table>
+  <caption><b>Table 1.</b> Chapters and parts.</caption>
+  <thead>
+    <tr><th scope="col">No.</th><th scope="col">Chapter</th><th scope="col">Subject</th></tr>
+  </thead>
+  <tbody>
+    <tr class="grp"><td colspan="3">Part I. Foundations (1947 onward)</td></tr>
+    <tr><td class="cnum">1</td><td class="ctitle">A State Learns to Count</td><td>What the new republic inherited from colonial enumeration, what Mahalanobis and a small circle built between 1949 and 1951, and whose work the definitions could not see. Gender enters here, with the 1940 report on Woman's Role in Planned Economy and the 1974 audit <em>Towards Equality</em>.</td></tr>
+    <tr><td class="cnum">2</td><td class="ctitle">First Principles</td><td>What measurement does to a state and to the measured, from Domesday and political arithmetic through Goodhart, Kuznets and Hacking, ending with the Indian Constitution, which makes the count itself an allocation of power.</td></tr>
+    <tr class="grp"><td colspan="3">Part II. The Market Turn (1991 to 2004)</td></tr>
+    <tr><td class="cnum">3</td><td class="ctitle">Opening Markets</td><td>After 1991 the state ceased to be the economy's director and became one of its performers, watched by lenders, investors and rating agencies; the chapter follows its dealings with the World Bank and the IMF, first resisted and then accommodated.</td></tr>
+    <tr><td class="cnum">4</td><td class="ctitle">The Infrastructure Obsession</td><td>How built assets became the favoured proxy for progress, and what the proxy missed.</td></tr>
+    <tr class="grp"><td colspan="3">Part III. Rights and Audit (2004 to 2014)</td></tr>
+    <tr><td class="cnum">5</td><td class="ctitle">Rights, Audits and Transparency</td><td>The Right to Information, social audit under NREGA, and the first use of budget and tax figures in claims about rights. Jean Drèze, Reetika Khera and Nikhil Dey appear as documented actors beside the official record.</td></tr>
+    <tr><td class="cnum">6</td><td class="ctitle">From Rights to Services</td><td>The move from guaranteeing entitlements to delivering services, and what the shift changed in the way the state measured its own performance.</td></tr>
+    <tr class="grp"><td colspan="3">Part IV. The Digital State (2009 to 2020)</td></tr>
+    <tr><td class="cnum">7</td><td class="ctitle">Aadhaar and the Digital State</td><td>Identification made continuous rather than decennial, welfare made conditional on authentication, and the exclusions that followed when authentication failed, set down with care for the evidence on both sides.</td></tr>
+    <tr><td class="cnum">8</td><td class="ctitle">The Experimental Turn</td><td>The rise of randomised trials and the spread of evaluation, up to the 2019 economics Nobel awarded to Banerjee, Duflo and Kremer, treated on the method's own terms.</td></tr>
+    <tr><td class="cnum">9</td><td class="ctitle">The Under-Counted: Gender, Health and Environment</td><td>The fields the dashboards weighed lightly: women's unpaid work and the measurement of their labour, health data through the COVID-19 years, and the environment. The gender thread opened in Chapter 1 is gathered here.</td></tr>
+    <tr class="grp"><td colspan="3">Part V. The Contested Present (2020 to 2027)</td></tr>
+    <tr><td class="cnum">10</td><td class="ctitle">Contested Numbers at Home</td><td>The GDP base-year revision and the back-series, the disputes over the poverty line, and the data withheld or released late, anchored in the resignations of January 2019 and dated and sourced throughout.</td></tr>
+    <tr><td class="cnum">11</td><td class="ctitle">India in the Global Mirror</td><td>The global rankings, how India reads them, and its position set against China and Brazil.</td></tr>
+    <tr><td class="cnum">12</td><td class="ctitle">Governing by Algorithm</td><td>The algorithmic decision systems of the 2020s, and the data power held by private platforms.</td></tr>
+    <tr><td class="cnum">13</td><td class="ctitle">Counting Citizens</td><td>The census of 2027, the first caste count since 1931, and the delimitation that must follow, with its consequences for the federal balance.</td></tr>
+    <tr><td class="cnum">·</td><td class="ctitle">Conclusion</td><td>Which numbers reach the public, and which ought to.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ================= SECTION 4 ================= -->
+<h2 class="sec" id="method"><span class="no">4.</span>Method and sources</h2>
+<p class="noindent">The book is an interpretive institutional history. Its materials are the public record: the reports of committees and commissions from the National Planning Committee onwards; the Gazette of India; questions and replies in Parliament; the survey reports of the NSS and its successors, whose prefaces and appendices often say more than their tables; the minutes of public bodies where these are available; the contemporary press; the memoirs and interviews of participants; institutional archives where accessible; and the secondary scholarship.</p>
+<p>Where the book states that something happened, a dated document or a named person says so in the notes. Where it reports what someone intended, it is because that person, or a document they signed, stated the intention; motives are otherwise left to the reader. Where the record is disputed, the versions are given with their sources, and the dispute itself is treated as part of the history. The book is neither econometrics nor ethnography: it produces no new estimates, claims no fieldwork, and where technical controversies arise it reports the positions of the qualified rather than pretending to referee them.</p>
+
+<!-- ================= APPENDIX ================= -->
+<h2 class="sec" id="chronology"><span class="no">Appendix.</span>Chronology, 1931 to 2027</h2>
+<p class="noindent">A selection of dated events from the record the book assembles, arranged by its five parts. Every date below carries a source in the book's notes.</p>
+
+<div class="tabwrap">
+<table>
+  <caption><b>Table 2.</b> Selected events in the history of Indian official measurement.</caption>
+  <thead>
+    <tr><th scope="col">Date</th><th scope="col">Event</th></tr>
+  </thead>
+  <tbody>
+    <tr class="grp"><td colspan="2">Part I. Foundations</td></tr>
+    <tr><td class="cdate">December 1931</td><td>P.C. Mahalanobis founds the Indian Statistical Institute in Calcutta.</td></tr>
+    <tr><td class="cdate">1940</td><td>The National Planning Committee's sub-committee on Woman's Role in Planned Economy, under Rani Lakshmibai Rajwade with Mridula Sarabhai as member-secretary, demands that household work be counted as work. The report is published only in July 1947, and filed.</td></tr>
+    <tr><td class="cdate">1943 to 1945</td><td>Famine kills between one and a half and three million people in Bengal, the range itself a measure of the failure of colonial registration; the Indian Statistical Institute's sample survey of the famine's after-effects supplies the most rigorous count.</td></tr>
+    <tr><td class="cdate">January 1949</td><td>Mahalanobis is appointed Honorary Statistical Adviser to the Cabinet; the National Income Committee follows in August 1949.</td></tr>
+    <tr><td class="cdate">October 1950</td><td>The first National Sample Survey round enters the villages, a permanent scientifically designed household survey without precedent in a newly independent country.</td></tr>
+    <tr><td class="cdate">February 1951</td><td>The first census of the republic returns 361 million people and a literacy rate of 18.3 per cent; caste is dropped from the schedules, except for the Scheduled Castes and Scheduled Tribes. The Central Statistical Organisation is set up the same year.</td></tr>
+    <tr><td class="cdate">1962</td><td>A Planning Commission Working Group fixes the poverty line at Rs 20 rural and Rs 25 urban per head per month at 1960–61 prices, with health and education deliberately excluded on the stated ground that the state would provide both.</td></tr>
+    <tr><td class="cdate">January 1971</td><td>Dandekar and Rath publish <em>Poverty in India</em>, defining the poor by a calorie anchor of 2,250 a day and finding about 40 per cent of rural India below it, on twenty years of NSS consumption rounds.</td></tr>
+    <tr><td class="cdate">31 December 1974</td><td><em>Towards Equality</em> is presented: the first full audit of Indian measurement conducted by its subjects, documenting a sex ratio falling census by census since 1901 and women's recorded work shrinking partly by definition.</td></tr>
+    <tr><td class="cdate">1976</td><td>The Constitution (Forty-second Amendment) Act freezes the allocation of Lok Sabha seats among the states at the population of 1971; the Eighty-fourth Amendment of 2001 extends the freeze until the first census after 2026.</td></tr>
+    <tr class="grp"><td colspan="2">Part II. The Market Turn</td></tr>
+    <tr><td class="cdate">July 1991</td><td>The crisis and the reforms change the audience for Indian numbers: growth rates, deficits and reserves displace physical targets at the centre of official attention.</td></tr>
+    <tr><td class="cdate">19 January 2000</td><td>The review commission under C. Rangarajan is constituted; it reports in August 2001, recommending among other things a statutory National Statistical Commission. The statute never came.</td></tr>
+    <tr class="grp"><td colspan="2">Part III. Rights and Audit</td></tr>
+    <tr><td class="cdate">15 June 2005</td><td>The Right to Information Act receives assent; the National Rural Employment Guarantee Act follows on 5 September 2005, with social audit written into its seventeenth section.</td></tr>
+    <tr><td class="cdate">12 July 2006</td><td>The National Statistical Commission is constituted, under a government resolution of 1 June 2005, without the statute the Rangarajan committee had asked for.</td></tr>
+    <tr class="grp"><td colspan="2">Part IV. The Digital State</td></tr>
+    <tr><td class="cdate">28 January 2009</td><td>The Unique Identification Authority of India is constituted by government notification.</td></tr>
+    <tr><td class="cdate">29 September 2010</td><td>The first Aadhaar number is issued, to Ranjana Sonawane of Tembhli village, Maharashtra; identification becomes continuous rather than decennial.</td></tr>
+    <tr><td class="cdate">14 October 2019</td><td>The Sveriges Riksbank Prize in Economic Sciences goes to Banerjee, Duflo and Kremer for the experimental approach to alleviating global poverty.</td></tr>
+    <tr class="grp"><td colspan="2">Part V. The Contested Present</td></tr>
+    <tr><td class="cdate">30 January 2015</td><td>A new GDP series with base year 2011–12 is released; the back-series of 28 November 2018 is presented to the press at NITI Aayog rather than released by the statistics ministry.</td></tr>
+    <tr><td class="cdate">28 January 2019</td><td>Mohanan and Meenakshi resign from the National Statistical Commission over the unreleased employment survey the commission had approved in December 2018.</td></tr>
+    <tr><td class="cdate">31 May 2019</td><td>The Periodic Labour Force Survey for 2017–18 is released, eight days after the election results; the unemployment rate in it is 6.1 per cent, the number the Business Standard printed on 31 January.</td></tr>
+    <tr><td class="cdate">15 November 2019</td><td>The Household Consumer Expenditure Survey of 2017–18, completed and examined, is set aside outright by a ministry press note.</td></tr>
+    <tr><td class="cdate">2021</td><td>The census due that year is postponed when the pandemic arrives and stays postponed long after the pandemic has left; the mortality of the COVID-19 years becomes itself a contested estimate.</td></tr>
+    <tr><td class="cdate">28 September 2023</td><td>The Constitution (One Hundred and Sixth Amendment) Act reserves a third of legislative seats for women, taking effect only after a delimitation based on the first census conducted after its commencement.</td></tr>
+    <tr><td class="cdate">30 April 2025</td><td>The government announces that the forthcoming enumeration will record caste, which no Indian census has fully counted and published since 1931.</td></tr>
+    <tr><td class="cdate">16 June 2025</td><td>Ministry of Home Affairs notification S.O. 2681(E) declares under the Census Act, 1948 that a census will be taken in 2027, superseding the notification of March 2019 for the census that never happened.</td></tr>
+    <tr><td class="cdate">1 March 2027</td><td>The reference date for the census of 2027, the sixteenth count since 1872 and the first in sixteen years. Seats, safeguards and money all move when the count moves; the book ends here.</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="tabnote"><em>Note:</em> Dates and particulars follow the book's introduction and opening chapters, where each carries its source.</p>
+
+<!-- ================= PUBLICATION ================= -->
+<h2 class="sec" id="publication"><span class="no">·</span>Publication details</h2>
+<dl class="pub">
+  <div><dt>Title</dt><dd><em>The Measurement Trap: India's Quest for Social Progress Through Eight Decades</em></dd></div>
+  <div><dt>Author</dt><dd>Varna Sri Raman</dd></div>
+  <div><dt>Publisher</dt><dd>Routledge</dd></div>
+  <div><dt>Status</dt><dd>Forthcoming</dd></div>
+  <div><dt>Extent</dt><dd>Thirteen chapters in five parts, with a conclusion</dd></div>
+  <div><dt>ISBN</dt><dd>To be announced</dd></div>
+</dl>
+<p class="noindent">This page is a companion to the book, built for readers, students, journalists and policy audiences. It offers orientation and chronology; it does not reproduce the manuscript. Publication date, ISBN and ordering links will appear here when Routledge confirms them, along with contact details for rights, review copies and speaking enquiries.</p>
+
+</main>
+
+<hr class="endrule">
+<p class="colophon">The Measurement Trap · Varna Sri Raman · Routledge, forthcoming<br>Companion page, July 2026.</p>
+
+</div>
+</body>
+</html>

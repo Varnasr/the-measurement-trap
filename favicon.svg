@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="The Measurement Trap">
+  <rect width="32" height="32" rx="6" fill="#14213d"/>
+  <g stroke="#e8e4da" stroke-width="1.7" stroke-linecap="round" fill="none">
+    <line x1="5.5" y1="22.5" x2="26.5" y2="22.5"/>
+    <line x1="8" y1="22.5" x2="8" y2="11"/>
+    <line x1="13" y1="22.5" x2="13" y2="15"/>
+    <line x1="18" y1="22.5" x2="18" y2="9.5"/>
+    <line x1="23" y1="22.5" x2="23" y2="15"/>
+  </g>
+</svg>
