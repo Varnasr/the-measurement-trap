@@ -354,12 +354,16 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .share .wa{color:#39cc7d;border-color:#39cc7d}}
 :root[data-theme="dark"] .share .wa{color:#39cc7d;border-color:#39cc7d}
 
-/* in-page nav, styled as a paper's contents line */
+/* in-page nav, styled as a paper's contents strip */
 .jumpline{
-  text-align:center;font-size:.88rem;color:var(--grey);
-  margin-top:26px;
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;
+  gap:.4em 1.6em;
+  margin:28px auto 0;max-width:60ch;
+  padding:10px 4px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
+  font-size:.84rem;letter-spacing:.01em;
 }
-.jumpline a{margin:0 .55em}
+.jumpline a{color:var(--grey);white-space:nowrap}
+.jumpline a:hover{color:var(--link)}
 
 /* ---------- print ---------- */
 @media print{
@@ -400,14 +404,14 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   </a>
   <p class="date">Companion page · July 2026</p>
   <nav class="jumpline" aria-label="Contents">
-    <a href="#opens">1. Where the book opens</a> ·
-    <a href="#argument">2. The argument</a> ·
-    <a href="#plan">3. Plan of the book</a> ·
-    <a href="#method">4. Method</a> ·
-    <a href="#chronology">Appendix</a> ·
-    <a href="#series">Figures</a> ·
-    <a href="#literature">Literature</a> ·
-    <a href="#publication">Publication</a> &middot;
+    <a href="#opens">Opening</a>
+    <a href="#argument">The argument</a>
+    <a href="#plan">The plan</a>
+    <a href="#method">Method</a>
+    <a href="#chronology">Chronology</a>
+    <a href="#series">Figures</a>
+    <a href="#literature">Literature</a>
+    <a href="#publication">Publication</a>
     <a href="#resources">Resources</a>
   </nav>
 </header>
@@ -631,6 +635,9 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <h2 class="sec" id="series"><span class="no">&middot;</span>Three series from the book</h2>
 <p class="noindent">Three of the book&rsquo;s claims, drawn as series. Each is built from public data, with the source given in the caption; the figures illustrate the argument and do not replace it.</p>
 
+<h3 class="subsec">Enrolment and reading</h3>
+<p class="noindent">Enrolment of children aged 6&ndash;14 has held near 96&ndash;98 per cent for more than a decade. Whether those children can read has moved on a track of its own.</p>
+
 <figure class="chartfig">
 <svg viewBox="0 0 760 250" role="img" aria-label="Line chart of the share of rural Std V children who can read a Std II text, 2008 to 2022: 56.2 percent in 2008, around 47 to 50 percent through 2018, falling to 42.8 percent in 2022.">
 <line class="ch-grid" x1="48" y1="216.0" x2="742" y2="216.0"/>
@@ -673,6 +680,9 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 </svg>
 <figcaption><b>Figure 3.</b> The share of rural children in Std&nbsp;V who can read a Std&nbsp;II-level text held near half from 2010 to 2018, then fell to 42.8&nbsp;per cent in 2022, while enrolment stayed near-universal throughout. There was no field survey in 2020&ndash;21. <span class="src">Source: ASER (Pratham), all schools, rural.</span></figcaption>
 </figure>
+
+<h3 class="subsec">The census sex ratio</h3>
+<p class="noindent">The measure <em>Towards Equality</em> read as an indictment in 1974: women returned in smaller numbers at each census to 1971, the fall part real and part an artefact of how work and the household were defined.</p>
 
 <figure class="chartfig">
 <svg viewBox="0 0 760 250" role="img" aria-label="Line chart of India's census sex ratio, females per 1000 males, 1901 to 2011: 972 in 1901 falling to 930 in 1971 and 927 in 1991, recovering to 943 in 2011.">
@@ -717,6 +727,9 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 </svg>
 <figcaption><b>Figure 4.</b> India&rsquo;s census sex ratio fell census by census from 972 females per 1,000 males in 1901 to 927 in 1991&mdash;the decline <em>Towards Equality</em> documented to 1971&mdash;before a partial recovery to 943 in 2011. <span class="src">Source: Census of India.</span></figcaption>
 </figure>
+
+<h3 class="subsec">The poverty headcount</h3>
+<p class="noindent">One official series, on the Tendulkar methodology. Where the poverty line is drawn, and by whom, is itself the argument the book follows.</p>
 
 <figure class="chartfig">
 <svg viewBox="0 0 760 250" role="img" aria-label="Line chart of India's poverty headcount ratio on the Tendulkar methodology: 45.3 percent in 1993-94, 37.2 in 2004-05, 29.8 in 2009-10, 21.9 in 2011-12.">
