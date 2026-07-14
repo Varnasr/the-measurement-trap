@@ -256,6 +256,21 @@ figcaption b{font-weight:700}
 .ch-c{text-anchor:middle}.ch-e{text-anchor:end}.ch-s{text-anchor:start}
 .chartfig .src{display:block;margin-top:3px;font-size:.84rem;color:var(--faint);font-style:italic}
 
+/* ---------- literature map ---------- */
+.litmap{margin:24px 0 8px}
+.litmap svg{width:100%;height:auto;display:block;font-family:inherit;overflow:visible}
+.lm-link{stroke:var(--hair);stroke-width:1}
+.lm-node{fill:none;stroke:var(--link);stroke-opacity:.45;stroke-width:1}
+.lm-book{fill:var(--link);fill-opacity:.12;stroke:var(--link);stroke-width:1.3}
+.lm-ts{fill:var(--grey);font-size:9.5px;text-anchor:middle}
+.lm-tb{fill:var(--ink);font-size:11px;font-weight:700;text-anchor:middle}
+.strand{margin:16px 0}
+.strand .stitle{font-size:.98rem;font-weight:700;font-style:normal;margin:0 0 3px}
+.strand .sdesc{font-size:.9rem;color:var(--grey);margin:0 0 6px;text-align:left}
+.strand ul{list-style:none;margin:0;padding:0}
+.strand li{font-size:.92rem;line-height:1.5;margin:0 0 4px;padding-left:1.2em;text-indent:-1.2em}
+.strand .eng{color:var(--link);font-weight:700;margin-right:.3em}
+
 /* ---------- reading progress ---------- */
 .progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--link);z-index:95}
 @media (prefers-reduced-motion: no-preference){.progress{transition:width .08s linear}}
@@ -380,6 +395,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
     <a href="#method">4. Method</a> ·
     <a href="#chronology">Appendix</a> ·
     <a href="#series">Figures</a> ·
+    <a href="#literature">Literature</a> ·
     <a href="#publication">Publication</a> &middot;
     <a href="#resources">Resources</a>
   </nav>
@@ -727,6 +743,73 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <figcaption><b>Figure 5.</b> The official poverty headcount on the Tendulkar methodology, the measure the book follows through its disputes: 45.3&nbsp;per cent in 1993&ndash;94 to 21.9&nbsp;per cent in 2011&ndash;12. Other committees drew the line differently, and those disputes are part of the history. <span class="src">Source: Planning Commission / NITI Aayog, Tendulkar methodology.</span></figcaption>
 </figure>
 
+
+<!-- ================= LITERATURE ================= -->
+<h2 class="sec" id="literature"><span class="no">&middot;</span>Where the book sits</h2>
+<p class="noindent">A map of the scholarly field the book joins, grouped in four strands. The works below were researched for this page and are given with their sources; the book&rsquo;s own notes remain the authoritative bibliography. A <span class="eng">&#9656;</span> marks a work the book engages directly.</p>
+
+<figure class="litmap">
+<svg viewBox="0 0 760 212" role="img" aria-label="Map of the field: The Measurement Trap at the centre, connected to four strands — quantification and authority, measure as target, counting India, and measuring development.">
+  <line class="lm-link" x1="380" y1="106" x2="155" y2="41"/>
+  <line class="lm-link" x1="380" y1="106" x2="605" y2="41"/>
+  <line class="lm-link" x1="380" y1="106" x2="155" y2="171"/>
+  <line class="lm-link" x1="380" y1="106" x2="605" y2="171"/>
+  <rect class="lm-node" x="70"  y="26"  width="170" height="30" rx="6"/><text class="lm-ts" x="155" y="45">Quantification &amp; authority</text>
+  <rect class="lm-node" x="520" y="26"  width="170" height="30" rx="6"/><text class="lm-ts" x="605" y="45">Measure as target</text>
+  <rect class="lm-node" x="70"  y="156" width="170" height="30" rx="6"/><text class="lm-ts" x="155" y="175">Counting India</text>
+  <rect class="lm-node" x="520" y="156" width="170" height="30" rx="6"/><text class="lm-ts" x="605" y="175">Measuring development</text>
+  <rect class="lm-book" x="300" y="88" width="160" height="36" rx="7"/><text class="lm-tb" x="380" y="110">The Measurement Trap</text>
+</svg>
+<figcaption><b>Figure 6.</b> The book at the centre of four strands: the theory of quantification, the corruption of measures used as targets, the history of counting in India, and the measurement of Indian development.</figcaption>
+</figure>
+
+<div class="strand">
+  <h3 class="stitle">1 &middot; Quantification &amp; authority</h3>
+  <p class="sdesc">How number became the language of objective, governable knowledge &mdash; the tradition the book writes within.</p>
+  <ul>
+    <li>Theodore M. Porter, <em>Trust in Numbers: The Pursuit of Objectivity in Science and Public Life</em> (1995)</li>
+    <li>Alain Desrosi&egrave;res, <em>The Politics of Large Numbers: A History of Statistical Reasoning</em> (1998)</li>
+    <li><span class="eng">&#9656;</span>Ian Hacking, <em>The Taming of Chance</em> (1990)</li>
+    <li>James C. Scott, <em>Seeing Like a State</em> (1998)</li>
+    <li>Wendy Espeland &amp; Mitchell Stevens, &ldquo;A Sociology of Quantification&rdquo; (2008)</li>
+    <li>Sally Engle Merry, <em>The Seductions of Quantification</em> (2016)</li>
+  </ul>
+</div>
+
+<div class="strand">
+  <h3 class="stitle">2 &middot; When a measure becomes a target</h3>
+  <p class="sdesc">The corruption of measures used as targets &mdash; the first mechanism in Figure&nbsp;1, and the strand the book cites by name.</p>
+  <ul>
+    <li><span class="eng">&#9656;</span>Charles Goodhart (1975) &mdash; Goodhart&rsquo;s law</li>
+    <li><span class="eng">&#9656;</span>Donald T. Campbell (1979) &mdash; Campbell&rsquo;s law</li>
+    <li><span class="eng">&#9656;</span>Marilyn Strathern, &ldquo;&lsquo;Improving ratings&rsquo;: audit in the British University system&rdquo; (1997)</li>
+    <li>Michael Power, <em>The Audit Society</em> (1997)</li>
+    <li>Jerry Z. Muller, <em>The Tyranny of Metrics</em> (2018)</li>
+  </ul>
+</div>
+
+<div class="strand">
+  <h3 class="stitle">3 &middot; Counting India, colony to republic</h3>
+  <p class="sdesc">How enumeration made and remade Indian society, from the colonial census to the planning state &mdash; the history the book extends.</p>
+  <ul>
+    <li>Bernard S. Cohn, &ldquo;The Census, Social Structure and Objectification in South Asia&rdquo; (1987)</li>
+    <li>Arjun Appadurai, &ldquo;Number in the Colonial Imagination&rdquo; (1993)</li>
+    <li>Nikhil Menon, <em>Planning Democracy: Modern India&rsquo;s Quest for Development</em> (2022)</li>
+  </ul>
+</div>
+
+<div class="strand">
+  <h3 class="stitle">4 &middot; Measuring Indian development</h3>
+  <p class="sdesc">The measurement debates the book narrates &mdash; poverty lines, women&rsquo;s work, and the experimental turn.</p>
+  <ul>
+    <li><span class="eng">&#9656;</span>V.&nbsp;M. Dandekar &amp; Nilakantha Rath, <em>Poverty in India</em> (1971)</li>
+    <li><span class="eng">&#9656;</span>Committee on the Status of Women in India, <em>Towards Equality</em> (1974)</li>
+    <li>Amartya Sen, &ldquo;Missing Women&rdquo; (1992) and the capability approach</li>
+    <li>Angus Deaton &amp; Valerie Kozel, <em>The Great Indian Poverty Debate</em> (2005)</li>
+    <li>Jean Dr&egrave;ze &amp; Amartya Sen, <em>An Uncertain Glory: India and Its Contradictions</em> (2013)</li>
+    <li><span class="eng">&#9656;</span>Banerjee, Duflo &amp; Kremer &mdash; the experimental turn (2019 Nobel)</li>
+  </ul>
+</div>
 
 <!-- ================= PUBLICATION ================= -->
 <h2 class="sec" id="publication"><span class="no">·</span>Publication details</h2>
