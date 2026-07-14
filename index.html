@@ -45,10 +45,17 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/stix-two-text-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* STIX Two Text — self-hosted (SIL OFL 1.1, see fonts/OFL.txt) */
+@font-face{font-family:'STIX Two Text';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/stix-two-text-latin-400-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'STIX Two Text';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/stix-two-text-latin-ext-400-normal.woff2') format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'STIX Two Text';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/stix-two-text-latin-500-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'STIX Two Text';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/stix-two-text-latin-600-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'STIX Two Text';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/stix-two-text-latin-700-normal.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'STIX Two Text';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/stix-two-text-latin-400-italic.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'STIX Two Text';font-style:italic;font-weight:400;font-display:swap;src:url('fonts/stix-two-text-latin-ext-400-italic.woff2') format('woff2');unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'STIX Two Text';font-style:italic;font-weight:600;font-display:swap;src:url('fonts/stix-two-text-latin-600-italic.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 :root{
   --ink:#111111;
   --grey:#444444;
@@ -312,6 +319,14 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 /* ---------- end matter ---------- */
 .endrule{margin:52px auto 0;width:34%;border:none;border-top:1px solid var(--ink)}
 .colophon{margin-top:16px;font-size:.84rem;color:var(--grey);text-align:center;line-height:1.6}
+
+/* ---------- legal footer ---------- */
+.sitefooter{margin-top:22px;font-size:.82rem;line-height:1.6;color:var(--faint);text-align:center}
+.sitefooter p{margin:0 auto 9px;max-width:64ch}
+.sitefooter b{color:var(--grey);font-weight:600}
+.sitefooter a{color:var(--link)}
+.sitefooter .foot-links{color:var(--hair)}
+.sitefooter .foot-links a{margin:0 .35em}
 
 /* in-page nav, styled as a paper's contents line */
 .jumpline{
@@ -763,6 +778,16 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 
 <hr class="endrule">
 <p class="colophon">The Measurement Trap · Varna Sri Raman · Routledge, forthcoming<br>Companion page, July 2026.</p>
+
+<footer class="sitefooter">
+  <p class="legal">&copy; 2026 Varna Sri Raman. The text and companion content of <em>The Measurement Trap</em> are all rights reserved. The website code is released under the <a href="https://github.com/Varnasr/the-measurement-trap/blob/main/LICENSE">MIT&nbsp;License</a>.</p>
+  <p class="privacy" id="privacy"><b>Privacy.</b> This site sets no cookies and uses no analytics, advertising or third-party trackers. It makes no third-party network requests and collects no personal data; the web font is served from this site itself. Your light or dark theme choice is stored only in your own browser and never leaves your device. Should any contact or enquiry handling be added, it will be described here first. This notice is given in good faith and is not legal advice.</p>
+  <p class="foot-links">
+    <a href="https://github.com/Varnasr/the-measurement-trap">Source on GitHub</a> ·
+    <a href="https://github.com/Varnasr/the-measurement-trap/blob/main/LICENSE">MIT License</a> ·
+    <a href="#privacy">Privacy</a>
+  </p>
+</footer>
 
 </div>
 

@@ -19,7 +19,7 @@ The book tells the history of independent India through the machinery it built t
 | `robots.txt` | Allows indexing; points crawlers at the site. |
 | `LICENSE` | MIT — covers the **site code** only (see *Rights* below). |
 
-The page is vanilla HTML and CSS with **no build step and no JavaScript**. The only external resource is the STIX Two Text webfont from Google Fonts.
+The page is vanilla HTML, CSS, and a little vanilla JavaScript (theme toggle, heading anchor links, cite/copy, reading-progress bar) with **no build step and no third-party services**. The STIX Two Text webfont is **self-hosted** (SIL Open Font License 1.1, see `fonts/OFL.txt`); there are no analytics, trackers, or cookies, and the page makes no third-party network requests.
 
 ## Features
 
