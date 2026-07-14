@@ -31,6 +31,20 @@
 <meta name="twitter:description" content="India's Quest for Social Progress Through Eight Decades. By Varna Sri Raman. Routledge, forthcoming.">
 <meta name="twitter:creator" content="@varna">
 
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Book",
+  "name":"The Measurement Trap: India's Quest for Social Progress Through Eight Decades",
+  "author":{"@type":"Person","name":"Varna Sri Raman"},
+  "publisher":{"@type":"Organization","name":"Routledge"},
+  "inLanguage":"en",
+  "url":"https://whatcounts.in/",
+  "about":["Official statistics","India","Census","Measurement","Public policy"],
+  "description":"A history of independent India told through the machinery it built to count itself: the census, the sample surveys, the national accounts, and the people who ran and fought over them."
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
@@ -235,6 +249,25 @@ figcaption b{font-weight:700}
 .ch-c{text-anchor:middle}.ch-e{text-anchor:end}.ch-s{text-anchor:start}
 .chartfig .src{display:block;margin-top:3px;font-size:.84rem;color:var(--faint);font-style:italic}
 
+/* ---------- reading progress ---------- */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--link);z-index:95}
+@media (prefers-reduced-motion: no-preference){.progress{transition:width .08s linear}}
+
+/* ---------- heading anchor links ---------- */
+h2.sec{position:relative}
+h2.sec .anchor{opacity:0;margin-left:.4em;font-weight:400;color:var(--faint);text-decoration:none;font-size:.82em;transition:opacity .12s}
+h2.sec:hover .anchor,h2.sec .anchor:focus-visible{opacity:1}
+
+/* ---------- cite box ---------- */
+.citebox{margin:18px 0 4px;border:1px solid var(--hair-faint);border-radius:8px;padding:14px 16px}
+.citebox h3{font-size:.95rem;font-weight:700;font-style:normal;margin:0 0 8px}
+.citebox .formatted{font-size:.92rem;margin:0 0 10px;text-align:left}
+.citebox pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.78rem;line-height:1.45;background:rgba(127,127,127,.09);border-radius:6px;padding:10px 12px;overflow-x:auto;white-space:pre;color:var(--ink);margin:0 0 8px}
+.citebox .cbtns{display:flex;gap:8px;flex-wrap:wrap}
+.citebox button{appearance:none;cursor:pointer;font-family:inherit;font-size:.8rem;color:var(--link);background:transparent;border:1px solid var(--hair);border-radius:6px;padding:4px 10px}
+.citebox button:hover{border-color:var(--link)}
+.citebox .note{font-size:.82rem;color:var(--faint);margin-top:8px}
+
 /* ---------- chronology download row ---------- */
 .dlrow{margin:12px 0 2px;font-size:.86rem;color:var(--grey)}
 .dlrow a{font-weight:500}
@@ -295,7 +328,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   }
   body{background:#fff;font-size:11pt}
   .page{max-width:none;margin:0;padding:0;box-shadow:none}
-  .skip,.jumpline,.themebar,.dlrow{display:none}
+  .skip,.jumpline,.themebar,.dlrow,.progress,.citebox .cbtns,h2.sec .anchor{display:none}
   a{color:#000;text-decoration:none}
   h2.sec{page-break-after:avoid}
   figure,table,tr,.srow{page-break-inside:avoid}
@@ -305,6 +338,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 </head>
 <body>
 <a class="skip" href="#opens">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
 
 <div class="themebar" role="group" aria-label="Colour theme">
   <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
@@ -690,6 +724,23 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   <div><dt>ISBN</dt><dd>To be announced</dd></div>
   <div><dt>Order</dt><dd>Pre-order and bookseller links will be added on publication</dd></div>
 </dl>
+
+<div class="citebox" aria-label="How to cite this book">
+  <h3>Cite this book</h3>
+  <p class="formatted" id="cite-text">Sri Raman, Varna. <em>The Measurement Trap: India&rsquo;s Quest for Social Progress Through Eight Decades</em>. London: Routledge, forthcoming.</p>
+  <pre id="cite-bibtex">@book{SriRaman_MeasurementTrap,
+  author    = {Sri Raman, Varna},
+  title     = {The Measurement Trap: India's Quest for Social Progress Through Eight Decades},
+  publisher = {Routledge},
+  address   = {London},
+  year      = {forthcoming}
+}</pre>
+  <div class="cbtns">
+    <button type="button" data-copy="cite-text">Copy citation</button>
+    <button type="button" data-copy="cite-bibtex">Copy BibTeX</button>
+  </div>
+  <p class="note">Provisional. The final citation, with ISBN and page numbers, will appear on publication.</p>
+</div>
 <p class="noindent">This page is a companion to the book, built for readers, students, journalists and policy audiences. It offers orientation and chronology; it does not reproduce the manuscript. Publication date, ISBN and ordering links will appear here when Routledge confirms them, along with contact details for rights, review copies and speaking enquiries.</p>
 
 
@@ -759,6 +810,34 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 (function(){
   var pl=document.querySelector('[data-print]');
   if(pl){pl.addEventListener('click',function(e){e.preventDefault();window.print();});}
+})();
+</script>
+<script>
+// heading anchor links
+(function(){
+  document.querySelectorAll('h2.sec[id]').forEach(function(h){
+    var a=document.createElement('a');
+    a.className='anchor'; a.href='#'+h.id; a.textContent='#';
+    a.setAttribute('aria-label','Copy link to this section');
+    a.addEventListener('click',function(){ if(navigator.clipboard){try{navigator.clipboard.writeText(location.origin+location.pathname+'#'+h.id);}catch(e){}} });
+    h.appendChild(a);
+  });
+})();
+// reading progress bar
+(function(){
+  var bar=document.getElementById('progress'); if(!bar)return;
+  function upd(){ var d=document.documentElement; var st=d.scrollTop||document.body.scrollTop; var h=(d.scrollHeight||document.body.scrollHeight)-d.clientHeight; bar.style.width=(h>0?Math.min(100,st/h*100):0)+'%'; }
+  window.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd); upd();
+})();
+// copy buttons
+(function(){
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var el=document.getElementById(btn.getAttribute('data-copy')); if(!el)return;
+      var txt=(el.innerText||el.textContent).trim();
+      if(navigator.clipboard){navigator.clipboard.writeText(txt).then(function(){ var old=btn.textContent; btn.textContent='Copied'; setTimeout(function(){btn.textContent=old;},1400); });}
+    });
+  });
 })();
 </script>
 </body>
