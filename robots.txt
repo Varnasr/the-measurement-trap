@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://varnasr.github.io/the-measurement-trap/sitemap.xml
+Sitemap: https://whatcounts.in/sitemap.xml
