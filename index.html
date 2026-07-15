@@ -207,6 +207,18 @@ p{hanging-punctuation:first}
 :root[data-theme="dark"] .cta-btn{color:#0f1a2c}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-btn{color:#0f1a2c}}
 
+/* ---------- notify form ---------- */
+.notify-form{max-width:32rem;margin:0 auto}
+.nf-hp{position:absolute;left:-9999px}
+.nf-vis{display:block;font-weight:600;font-size:1rem;margin:0 0 9px;text-indent:0}
+.nf-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.nf-row input[type=email]{flex:1 1 220px;min-width:0;font-family:inherit;font-size:.95rem;padding:9px 12px;border:1px solid var(--hair);border-radius:7px;background:var(--sheet);color:var(--ink)}
+.nf-row input[type=email]:focus{outline:2px solid var(--link);outline-offset:1px;border-color:var(--link)}
+.nf-row button.cta-btn{border:0;cursor:pointer;font-family:inherit}
+.nf-consent{font-size:.8rem;color:var(--faint);margin:9px 0 0;text-indent:0}
+.nf-msg{font-size:.95rem;margin:10px 0 0;text-indent:0}
+.nf-msg.ok{color:#128C4A}.nf-msg.err{color:#b23a3a}
+
 /* ---------- about the author ---------- */
 .authorblock{display:flex;gap:22px;align-items:flex-start;margin:16px 0 4px}
 .authorphoto{width:150px;height:auto;border-radius:6px;flex:none}
@@ -283,11 +295,13 @@ figcaption b{font-weight:700}
 /* ---------- literature map ---------- */
 .litmap{margin:24px 0 8px}
 .litmap svg{width:100%;height:auto;display:block;font-family:inherit;overflow:visible}
-.lm-link{stroke:var(--hair);stroke-width:1}
-.lm-node{fill:none;stroke:var(--link);stroke-opacity:.45;stroke-width:1}
-.lm-book{fill:var(--link);fill-opacity:.12;stroke:var(--link);stroke-width:1.3}
-.lm-ts{fill:var(--grey);font-size:9.5px;text-anchor:middle}
-.lm-tb{fill:var(--ink);font-size:11px;font-weight:700;text-anchor:middle}
+.lm-link{stroke:var(--hair);stroke-width:1.2}
+.lm-node{fill:var(--sheet);stroke:var(--link);stroke-opacity:.5;stroke-width:1}
+.lm-book{fill:#e9eff8;stroke:var(--link);stroke-width:1.5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lm-book{fill:#262f3e}}
+:root[data-theme="dark"] .lm-book{fill:#262f3e}
+.lm-ts{fill:var(--grey);font-size:10.5px;text-anchor:middle}
+.lm-tb{fill:var(--ink);font-size:11.5px;font-weight:700;text-anchor:middle}
 .strand{margin:16px 0}
 .strand .stitle{font-size:.98rem;font-weight:700;font-style:normal;margin:0 0 3px}
 .strand .sdesc{font-size:.9rem;color:var(--grey);margin:0 0 6px;text-align:left}
@@ -376,6 +390,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 .endorse p{font-size:1rem;font-style:italic;margin:0 0 5px;text-align:left}
 .endorse cite{font-style:normal;font-size:.88rem;color:var(--grey);display:block}
 .praise-todo{font-size:.92rem;color:var(--faint);font-style:italic}
+.praise-note{font-size:.84rem;color:var(--faint);margin-top:12px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .share .wa{color:#39cc7d;border-color:#39cc7d}}
 :root[data-theme="dark"] .share .wa{color:#39cc7d;border-color:#39cc7d}
 
@@ -449,7 +464,17 @@ dl.pub dt{font-style:italic;color:var(--grey)}
   <p class="hook">In January 2019, a government insisted its own unemployment report did not exist. It did &mdash; the highest joblessness the surveys had recorded in over four decades &mdash; and the fight was never about the number, but about who controls it.</p>
   <p class="thesis">What a state measures, it governs. What it leaves uncounted, it leaves unattended.</p>
   <p class="whatitis">A history of independent India told through the machinery it built to count itself &mdash; the census, the sample surveys, the national accounts &mdash; and the battles now being fought over them.</p>
-  <p class="cta"><a class="cta-btn" href="mailto:varna.sr@gmail.com?subject=Notify%20me%3A%20The%20Measurement%20Trap&amp;body=Please%20let%20me%20know%20when%20The%20Measurement%20Trap%20is%20published.">Notify me when it&rsquo;s published</a></p>
+  <form class="notify-form" name="notify" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+    <input type="hidden" name="form-name" value="notify">
+    <p class="nf-hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <label class="nf-vis" for="nf-email">Get notified when it&rsquo;s published</label>
+    <div class="nf-row">
+      <input id="nf-email" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+      <button type="submit" class="cta-btn">Notify me</button>
+    </div>
+    <p class="nf-consent">Your email is used only to tell you when the book is out &mdash; no spam, no sharing. See <a href="#privacy">privacy</a>.</p>
+    <p class="nf-msg" role="status" aria-live="polite" hidden></p>
+  </form>
 </section>
 
 <!-- ================= ABSTRACT ================= -->
@@ -809,16 +834,16 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <p class="noindent">A map of the scholarly field the book joins, grouped in four strands. The works below were researched for this page and are given with their sources; the book&rsquo;s own notes remain the authoritative bibliography. A <span class="eng">&#9656;</span> marks a work the book engages directly.</p>
 
 <figure class="litmap">
-<svg viewBox="0 0 760 212" role="img" aria-label="Map of the field: The Measurement Trap at the centre, connected to four strands — quantification and authority, measure as target, counting India, and measuring development.">
-  <line class="lm-link" x1="380" y1="106" x2="155" y2="41"/>
-  <line class="lm-link" x1="380" y1="106" x2="605" y2="41"/>
-  <line class="lm-link" x1="380" y1="106" x2="155" y2="171"/>
-  <line class="lm-link" x1="380" y1="106" x2="605" y2="171"/>
-  <rect class="lm-node" x="70"  y="26"  width="170" height="30" rx="6"/><text class="lm-ts" x="155" y="45">Quantification &amp; authority</text>
-  <rect class="lm-node" x="520" y="26"  width="170" height="30" rx="6"/><text class="lm-ts" x="605" y="45">Measure as target</text>
-  <rect class="lm-node" x="70"  y="156" width="170" height="30" rx="6"/><text class="lm-ts" x="155" y="175">Counting India</text>
-  <rect class="lm-node" x="520" y="156" width="170" height="30" rx="6"/><text class="lm-ts" x="605" y="175">Measuring development</text>
-  <rect class="lm-book" x="300" y="88" width="160" height="36" rx="7"/><text class="lm-tb" x="380" y="110">The Measurement Trap</text>
+<svg viewBox="0 0 760 232" role="img" aria-label="Map of the field: The Measurement Trap at the centre, connected to four strands — quantification and authority, measure as target, counting India, and measuring development.">
+  <line class="lm-link" x1="380" y1="118" x2="141" y2="40"/>
+  <line class="lm-link" x1="380" y1="118" x2="619" y2="40"/>
+  <line class="lm-link" x1="380" y1="118" x2="141" y2="192"/>
+  <line class="lm-link" x1="380" y1="118" x2="619" y2="192"/>
+  <rect class="lm-node" x="36"  y="22"  width="210" height="36" rx="7"/><text class="lm-ts" x="141" y="44">Quantification &amp; authority</text>
+  <rect class="lm-node" x="514" y="22"  width="210" height="36" rx="7"/><text class="lm-ts" x="619" y="44">Measure as target</text>
+  <rect class="lm-node" x="36"  y="174" width="210" height="36" rx="7"/><text class="lm-ts" x="141" y="196">Counting India</text>
+  <rect class="lm-node" x="514" y="174" width="210" height="36" rx="7"/><text class="lm-ts" x="619" y="196">Measuring development</text>
+  <rect class="lm-book" x="288" y="98" width="184" height="40" rx="8"/><text class="lm-tb" x="380" y="123">The Measurement Trap</text>
 </svg>
 <figcaption><b>Figure 6.</b> The book at the centre of four strands: the theory of quantification, the corruption of measures used as targets, the history of counting in India, and the measurement of Indian development.</figcaption>
 </figure>
@@ -912,7 +937,23 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 
 <!-- ================= ADVANCE PRAISE ================= -->
 <h2 class="sec" id="praise"><span class="no">&middot;</span>Advance praise</h2>
-<p class="praise-todo">Endorsements for the book will be added here as they are confirmed.</p>
+<blockquote class="endorse">
+  <p>&ldquo;Original, timely, analytically rich, and potentially significant for development studies, political economy, governance studies, and the sociology of statistics.&rdquo;</p>
+  <cite>&mdash; Reviewer 1</cite>
+</blockquote>
+<blockquote class="endorse">
+  <p>&ldquo;This is a unique proposal, and work of this kind in such comprehensive manner is absent in contemporary comparable literature.&rdquo;</p>
+  <cite>&mdash; Reviewer 2</cite>
+</blockquote>
+<blockquote class="endorse">
+  <p>&ldquo;The language is sophisticated, fluent, and highly readable. The prose demonstrates intellectual maturity and strong command over academic and policy discourse.&rdquo;</p>
+  <cite>&mdash; Reviewer 1</cite>
+</blockquote>
+<blockquote class="endorse">
+  <p>&ldquo;The book &hellip; would be a very important contribution to a literature that is rare in terms of its importance of documenting the process from a critical and technical lens.&rdquo;</p>
+  <cite>&mdash; Reviewer 2</cite>
+</blockquote>
+<p class="praise-note">Excerpts from the anonymous peer reviews of the book proposal for Routledge.</p>
 
 
 <!-- ================= RESOURCES ================= -->
@@ -937,7 +978,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 
 <footer class="sitefooter">
   <p class="legal">&copy; 2026 Varna Sri Raman. All rights reserved.</p>
-  <p class="privacy" id="privacy"><b>Privacy.</b> This site sets no cookies and uses no analytics, advertising or third-party trackers. It makes no third-party network requests and collects no personal data; the web font is served from this site itself. Your light or dark theme choice is stored only in your own browser and never leaves your device. Should any contact or enquiry handling be added, it will be described here first. This notice is given in good faith and is not legal advice.</p>
+  <p class="privacy" id="privacy"><b>Privacy.</b> This site sets no cookies and uses no analytics, advertising or third-party trackers. Your light or dark theme choice is stored only in your own browser. The one piece of personal data the site handles is an email address you choose to submit through the &lsquo;notify me&rsquo; form: it is processed by Netlify, the site&rsquo;s host, and used solely to tell you when the book is published &mdash; it is not shared or used for anything else, and you may ask for it to be deleted at any time. This notice is given in good faith and is not legal advice.</p>
 </footer>
 
 </div>
@@ -1013,6 +1054,21 @@ dl.pub dt{font-style:italic;color:var(--grey)}
       var txt=(el.innerText||el.textContent).trim();
       if(navigator.clipboard){navigator.clipboard.writeText(txt).then(function(){ var old=btn.textContent; btn.textContent='Copied'; setTimeout(function(){btn.textContent=old;},1400); });}
     });
+  });
+})();
+</script>
+<script>
+// notify form — AJAX submit to Netlify, inline confirmation
+(function(){
+  var f=document.querySelector('form.notify-form'); if(!f)return;
+  var msg=f.querySelector('.nf-msg');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var body=new URLSearchParams(new FormData(f)).toString();
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
+      .then(function(r){ if(!r.ok) throw 0;
+        msg.textContent='Thank you \u2014 I\u2019ll email you when the book is published.'; msg.className='nf-msg ok'; msg.hidden=false; f.reset(); })
+      .catch(function(){ msg.textContent='Sorry, something went wrong \u2014 please try again.'; msg.className='nf-msg err'; msg.hidden=false; });
   });
 })();
 </script>
