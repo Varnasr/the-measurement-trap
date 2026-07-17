@@ -279,6 +279,32 @@ figcaption b{font-weight:700}
 .tl-num{fill:var(--ink);font-size:9px;font-weight:700}
 .tl-bname{fill:var(--grey);font-size:9px}
 
+/* On phones the horizontal timeline's labels shrink below legibility, so it
+   is replaced by a vertical timeline carrying the same events and parts. */
+.tl-vert{display:none}
+@media (max-width:600px){
+  .tlfig svg{display:none}
+  .tl-vert{display:block;position:relative;margin:12px 0 2px;padding:2px 0 2px 26px}
+  .tl-vert::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;width:1.5px;background:var(--hair)}
+  .tl-vert .tlv-part{
+    font-variant:small-caps;letter-spacing:.05em;font-weight:600;
+    font-size:.88rem;color:var(--ink);margin:16px 0 5px;text-align:left;text-indent:0;
+  }
+  .tl-vert .tlv-part:first-child{margin-top:0}
+  .tl-vert .tlv-ev{
+    position:relative;display:grid;grid-template-columns:3.1em 1fr;
+    column-gap:.6em;align-items:baseline;padding:4px 0;font-size:.93rem;text-indent:0;
+  }
+  .tl-vert .tlv-ev::before{
+    content:"";position:absolute;left:-22.75px;top:.5em;
+    width:7px;height:7px;border-radius:50%;background:var(--link);
+    box-shadow:0 0 0 2px var(--sheet);
+  }
+  .tl-vert .tlv-yr{font-weight:700;color:var(--link)}
+  .tl-vert .tlv-lb{color:var(--grey)}
+  .tl-vert .tlv-lb em{font-style:italic}
+}
+
 /* ---------- data charts (Figures 3-5) ---------- */
 .chartfig{margin:26px 0}
 .chartfig svg{width:100%;height:auto;display:block;font-family:inherit;overflow:visible}
@@ -680,6 +706,21 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <text class="tl-num" x="751.5" y="220.5">V</text>
 <text class="tl-bname" text-anchor="end" x="742.5" y="220.5">The Contested Present</text>
 </svg>
+<div class="tl-vert">
+  <p class="tlv-part">Part I · Foundations</p>
+  <div class="tlv-ev"><span class="tlv-yr">1931</span><span class="tlv-lb">Indian Statistical Institute founded</span></div>
+  <div class="tlv-ev"><span class="tlv-yr">1950</span><span class="tlv-lb">First National Sample Survey round</span></div>
+  <div class="tlv-ev"><span class="tlv-yr">1974</span><span class="tlv-lb"><em>Towards Equality</em></span></div>
+  <p class="tlv-part">Part II · The Market Turn</p>
+  <div class="tlv-ev"><span class="tlv-yr">1991</span><span class="tlv-lb">The reforms of 1991</span></div>
+  <p class="tlv-part">Part III · Rights &amp; Audit</p>
+  <div class="tlv-ev"><span class="tlv-yr">2005</span><span class="tlv-lb">RTI &amp; NREGA</span></div>
+  <p class="tlv-part">Part IV · The Digital State</p>
+  <div class="tlv-ev"><span class="tlv-yr">2010</span><span class="tlv-lb">First Aadhaar number</span></div>
+  <p class="tlv-part">Part V · The Contested Present</p>
+  <div class="tlv-ev"><span class="tlv-yr">2019</span><span class="tlv-lb">NSC resignations</span></div>
+  <div class="tlv-ev"><span class="tlv-yr">2027</span><span class="tlv-lb">Census</span></div>
+</div>
 <figcaption><b>Figure 2.</b> The book&rsquo;s five parts, set against the years each spans&mdash;<b>I</b>&nbsp;Foundations, <b>II</b>&nbsp;The&nbsp;Market&nbsp;Turn, <b>III</b>&nbsp;Rights&nbsp;and&nbsp;Audit, <b>IV</b>&nbsp;The&nbsp;Digital&nbsp;State, <b>V</b>&nbsp;The&nbsp;Contested&nbsp;Present&mdash;the last three overlapping, as the introduction notes. The marked events are drawn from Table&nbsp;2.</figcaption>
 </figure>
 
