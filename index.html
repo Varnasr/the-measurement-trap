@@ -363,6 +363,41 @@ td.cdate{width:9.5em;white-space:nowrap}
 td.ctitle{width:15em;font-weight:500}
 .tabnote{font-size:.84rem;color:var(--grey);margin-top:6px;text-align:justify}
 
+/* ---------- tables: stacked layout on phones ---------- */
+/* Below this width the fixed columns crush the prose column, so each row
+   is stacked: the label (chapter no.+title, or date) sits above its text. */
+@media (max-width:600px){
+  table.chapters,table.chapters tbody,table.chapters tr,table.chapters td,
+  table.chrono,table.chrono tbody,table.chrono tr,table.chrono td{
+    display:block;width:auto;
+  }
+  table.chapters thead,table.chrono thead{display:none}
+  table.chapters caption,table.chrono caption{display:block;width:100%;text-align:left}
+  /* part-divider rows keep their small-caps rule, full width */
+  table.chapters tr.grp,table.chrono tr.grp{
+    padding:16px 0 4px;border-bottom:.5px solid var(--hair);
+  }
+  table.chapters tr.grp td,table.chrono tr.grp td{padding:0}
+  /* Table 1 — chapters: number in a slim gutter, title beside it, summary below */
+  table.chapters tr:not(.grp){
+    display:grid;grid-template-columns:1.7em 1fr;column-gap:.35em;
+    padding:11px 0;border-bottom:.5px solid var(--hair-faint);
+  }
+  table.chapters tr:not(.grp) td.cnum{grid-column:1;grid-row:1;color:var(--grey);padding:0}
+  table.chapters tr:not(.grp) td.ctitle{grid-column:2;grid-row:1;font-weight:600;padding:0}
+  table.chapters tr:not(.grp) td:last-child{
+    grid-column:2;grid-row:2;padding:3px 0 0;font-size:.9rem;color:var(--grey);
+  }
+  /* Table 2 — chronology: date as a bold label, event below, full width */
+  table.chrono tr:not(.grp){padding:10px 0;border-bottom:.5px solid var(--hair-faint)}
+  table.chrono td.cdate{
+    white-space:normal;font-weight:600;color:var(--ink);font-size:.86rem;padding:0 0 2px;
+  }
+  table.chrono tr:not(.grp) td:last-child{padding:0;color:var(--grey)}
+  /* drop the base full-width bottom rule; the per-row hairline handles it */
+  table.chapters tbody tr:last-child td,table.chrono tbody tr:last-child td{border-bottom:0}
+}
+
 /* ---------- publication list ---------- */
 dl.pub{margin:18px 0}
 dl.pub div{display:grid;grid-template-columns:11em 1fr;gap:14px;padding:5px 0}
@@ -525,7 +560,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 <p class="noindent">The book is arranged in thirteen chapters across five parts, with a conclusion, and runs from 1947 to 2027, ending with the census now scheduled for that year. Each chapter makes one argument. The five periods overlap at their edges, and the introduction defends the breaks rather than forcing clean ones. Table 1 gives the plan; the summaries orient the reader and do not stand in for the text.</p>
 
 <div class="tabwrap">
-<table>
+<table class="chapters">
   <caption><b>Table 1.</b> Chapters and parts.</caption>
   <thead>
     <tr><th scope="col">No.</th><th scope="col">Chapter</th><th scope="col">Subject</th></tr>
@@ -649,7 +684,7 @@ dl.pub dt{font-style:italic;color:var(--grey)}
 </figure>
 
 <div class="tabwrap">
-<table>
+<table class="chrono">
   <caption><b>Table 2.</b> Selected events in the history of Indian official measurement.</caption>
   <thead>
     <tr><th scope="col">Date</th><th scope="col">Event</th></tr>
