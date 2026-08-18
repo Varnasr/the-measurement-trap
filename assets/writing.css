@@ -130,6 +130,8 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 .ch-bar-a{fill:var(--accent)}
 /* in-chart annotations */
 .ch-note{fill:var(--faint);font-size:10px;font-style:italic}
+/* grouped-bar sub-labels */
+.ch-sub{fill:var(--faint);font-size:8px}
 
 /* footnotes */
 .art-body sup a{text-decoration:none;font-size:.7em;color:var(--link);padding:0 .1em}
