@@ -117,6 +117,19 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 .ch-dot{fill:var(--accent)}
 .ch-val{fill:var(--ink);font-size:10px;font-weight:600}
 .ch-c{text-anchor:middle}.ch-e{text-anchor:end}
+/* second series (grey), third series (dotted, faint) */
+.ch-line2{fill:none;stroke:var(--grey);stroke-width:1.8}
+.ch-dot2{fill:var(--grey)}
+.ch-line3{fill:none;stroke:var(--hair);stroke-width:1.6;stroke-dasharray:4 3}
+.ch-dot3{fill:var(--hair)}
+.ch-key3{fill:var(--hair)}
+/* unmeasured / broken stretches, drawn dotted */
+.ch-gap{fill:none;stroke:var(--hair);stroke-width:1.6;stroke-dasharray:2 4}
+/* bars */
+.ch-bar{fill:var(--hair)}
+.ch-bar-a{fill:var(--accent)}
+/* in-chart annotations */
+.ch-note{fill:var(--faint);font-size:10px;font-style:italic}
 
 /* footnotes */
 .art-body sup a{text-decoration:none;font-size:.7em;color:var(--link);padding:0 .1em}
