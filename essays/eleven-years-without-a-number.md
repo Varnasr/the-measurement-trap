@@ -7,7 +7,7 @@ date: 2026-03-24
 readtime: 12 min read
 ---
 
-On 14 November 2019, Business Standard published the findings of a report that the government had decided not to publish. Somesh Jha had obtained the draft of <em>Key Indicators: Household Consumer Expenditure in India</em>, the National Statistical Office's report on the seventy-fifth round of the consumer expenditure survey, fielded between July 2017 and June 2018. Adjusted for inflation and expressed at 2009-10 prices, average monthly per capita consumption expenditure had fallen from Rs 1,501 in 2011-12 to Rs 1,446 in 2017-18, a decline of 3.7 per cent. Rural spending had fallen 8.8 per cent. Urban spending had risen 2 per cent.<sup><a href="#fn1" id="ref1">1</a></sup>
+On 14 November 2019, Business Standard published the findings of a report that the government had decided not to publish. Somesh Jha had obtained the draft of <em>Key Indicators: Household Consumer Expenditure in India</em>, the National Statistical Office's report on the seventy-fifth round of the consumer expenditure survey, fielded between July 2017 and June 2018. Adjusted for inflation and expressed at 2009-10 prices, average monthly per capita consumption expenditure had fallen from ₹1,501 in 2011-12 to ₹1,446 in 2017-18, a decline of 3.7 per cent. Rural spending had fallen 8.8 per cent. Urban spending had risen 2 per cent.<sup><a href="#fn1" id="ref1">1</a></sup>
 
 Indian consumption had last been recorded falling in 1972-73.
 
@@ -119,13 +119,13 @@ Fieldwork for the Household Consumption Expenditure Survey ran from August 2022 
 <figcaption><b>Real monthly per capita consumption expenditure, at 2011-12 prices.</b> Rural (red) and urban (grey). Solid segments join observations; the dotted stretch marks eleven years in which no consumption survey was published, so the path between the endpoints is unknown rather than flat. <span class="src">Source: HCES 2023-24 press note, Table 1; NSS 68th round.</span></figcaption>
 </figure>
 
-At 2011-12 prices, rural monthly per capita expenditure was Rs 1,430 in 2011-12, Rs 2,008 in 2022-23 and Rs 2,079 in 2023-24. The urban figures were Rs 2,630, Rs 3,510 and Rs 3,632.<sup><a href="#fn5" id="ref5-2">5</a></sup> Rural real consumption therefore grew by about 45 per cent over twelve years, which is a compound rate near 3.1 per cent a year, and urban by about 38 per cent, or 2.7 per cent a year. Measured consumption inequality fell, with the rural Gini coefficient going from 0.283 in 2011-12 to 0.237 in 2023-24 and the urban from 0.363 to 0.284.
+At 2011-12 prices, rural monthly per capita expenditure was ₹1,430 in 2011-12, ₹2,008 in 2022-23 and ₹2,079 in 2023-24. The urban figures were ₹2,630, ₹3,510 and ₹3,632.<sup><a href="#fn5" id="ref5-2">5</a></sup> Rural real consumption therefore grew by about 45 per cent over twelve years, which is a compound rate near 3.1 per cent a year, and urban by about 38 per cent, or 2.7 per cent a year. Measured consumption inequality fell, with the rural Gini coefficient going from 0.283 in 2011-12 to 0.237 in 2023-24 and the urban from 0.363 to 0.284.
 
 Three cautions belong with those numbers, and the ministry states the first two itself.
 
 The survey was redesigned. The 2022-23 round used three separate questionnaires administered over three visits to each household, against a single schedule previously, and a revised item list. Splitting the recall task across visits is known to raise reported expenditure, which means some part of the increase is a property of the instrument.
 
-Items received free through welfare programmes were valued and added, producing a second set of estimates. Rural expenditure with imputation was Rs 4,247 in 2023-24 at current prices against Rs 4,122 without it.
+Items received free through welfare programmes were valued and added, producing a second set of estimates. Rural expenditure with imputation was ₹4,247 in 2023-24 at current prices against ₹4,122 without it.
 
 And the middle observation is missing. The chart above draws the eleven-year stretch as a dotted line for a reason: there is no measurement in it. If the 2017-18 estimate was broadly right, rural consumption fell and then rose steeply, and the recovery from 2017-18 to 2023-24 was faster than 3.1 per cent a year. If it was wrong, growth was steady throughout. The 2022-23 survey cannot distinguish between these, because distinguishing between them requires an observation in 2017-18, and that observation was collected from 100,000-odd households, tabulated, approved, and then set aside.
 
