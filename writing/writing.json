@@ -1,4 +1,0 @@
-{
-  "layout": "article.njk",
-  "permalink": "/writing/{{ page.fileSlug }}/"
-}

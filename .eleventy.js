@@ -9,8 +9,8 @@ module.exports = function (eleventyConfig) {
   ].forEach((f) => eleventyConfig.addPassthroughCopy(f));
 
   // Writing collection: newest first
-  eleventyConfig.addCollection("writing", (c) =>
-    c.getFilteredByGlob("writing/*.md").sort((a, b) => b.date - a.date)
+  eleventyConfig.addCollection("essays", (c) =>
+    c.getFilteredByGlob("essays/*.md").sort((a, b) => b.date - a.date)
   );
 
   // Date helpers

@@ -5,6 +5,8 @@ kicker: Measurement
 author: Varna Sri Raman
 date: 2026-02-10
 readtime: 6 min read
+permalink: false
+eleventyExcludeFromCollections: true
 ---
 
 Every ten years, for over a century, India has counted itself. And every ten years the count has come back with the same quiet asymmetry: fewer women than men. In 1901 the census recorded 972 women for every 1,000 men. By 1991 it recorded 927. The number has never once, in that stretch, returned to where it began.

@@ -156,3 +156,5 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
   body{background:#fff;color:#000}
   .article{max-width:none}
 }
+
+.wlist-soon{margin-top:34px;font-size:1.08rem;font-style:italic;color:var(--faint)}

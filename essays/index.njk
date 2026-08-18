@@ -1,18 +1,18 @@
 ---
 layout: base.njk
-permalink: /writing/
-title: Writing
+permalink: /essays/
 eleventyExcludeFromCollections: true
 ---
 <main class="wlist">
   <a class="masthead" href="/">&larr; The Measurement Trap</a>
   <header class="wlist-head">
-    <h1>Writing</h1>
+    <h1>Essays</h1>
     <p class="dek">Long-form, data-based essays on measurement, statistics and social progress&mdash;by Varna Sri Raman.</p>
   </header>
 
+  {% if collections.essays.length %}
   <ul class="wlist-items">
-  {% for post in collections.writing %}
+  {% for post in collections.essays %}
     <li class="wlist-item">
       {% if post.data.kicker %}<span class="kicker">{{ post.data.kicker }}</span>{% endif %}
       <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
@@ -21,4 +21,7 @@ eleventyExcludeFromCollections: true
     </li>
   {% endfor %}
   </ul>
+  {% else %}
+  <p class="wlist-soon">The first essays are on their way.</p>
+  {% endif %}
 </main>
