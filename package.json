@@ -1,0 +1,13 @@
+{
+  "name": "measurement-trap-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The Measurement Trap — companion site and writing",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

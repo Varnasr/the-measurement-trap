@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+<article class="article">
+  <header class="art-head">
+    <a class="masthead" href="/essays/">Essays</a>
+    {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if dek %}<p class="dek">{{ dek }}</p>{% endif %}
+    <p class="byline">By {{ author if author else 'Varna Sri Raman' }}{% if page.date %} &middot; <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>{% endif %}{% if readtime %} &middot; {{ readtime }}{% endif %}</p>
+  </header>
+
+  <div class="art-body">
+    {{ content | safe }}
+  </div>
+
+  <footer class="art-foot">
+    <p class="art-bio"><b>{{ author if author else 'Varna Sri Raman' }}</b> is a development economist and the author of <a href="/"><em>The Measurement Trap: India&rsquo;s Quest for Social Progress Through Eight Decades</em></a> (Routledge, forthcoming).</p>
+    <p class="art-nav"><a href="/essays/">&larr; More essays</a> &middot; <a href="/">The Measurement Trap</a></p>
+  </footer>
+</article>

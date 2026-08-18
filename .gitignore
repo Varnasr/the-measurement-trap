@@ -10,3 +10,7 @@ Thumbs.db
 .env
 .netlify/
 node_modules/
+
+# Eleventy
+node_modules/
+_site/
