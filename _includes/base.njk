@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem('mt-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();</script>
+<title>{% if title %}{{ title }} · {% endif %}Writing · The Measurement Trap</title>
+<meta name="description" content="{{ dek if dek else 'Long-form, data-based essays by Varna Sri Raman.' }}">
+<meta name="author" content="Varna Sri Raman">
+{% if page.url %}<link rel="canonical" href="https://whatcounts.in{{ page.url }}">{% endif %}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f3f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141416" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title if title else 'Writing' }}">
+<meta property="og:description" content="{{ dek if dek else 'Long-form, data-based essays by Varna Sri Raman.' }}">
+<meta property="og:site_name" content="The Measurement Trap">
+<link rel="stylesheet" href="/assets/writing.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+{{ content | safe }}
+<script>
+(function(){var b=document.getElementById('progress');if(!b)return;function u(){var d=document.documentElement,s=d.scrollTop||document.body.scrollTop,h=(d.scrollHeight||document.body.scrollHeight)-d.clientHeight;b.style.width=(h>0?Math.min(100,s/h*100):0)+'%';}window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();})();
+</script>
+</body>
+</html>

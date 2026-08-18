@@ -1,0 +1,24 @@
+---
+layout: base.njk
+permalink: /writing/
+title: Writing
+eleventyExcludeFromCollections: true
+---
+<main class="wlist">
+  <a class="masthead" href="/">&larr; The Measurement Trap</a>
+  <header class="wlist-head">
+    <h1>Writing</h1>
+    <p class="dek">Long-form, data-based essays on measurement, statistics and social progress&mdash;by Varna Sri Raman.</p>
+  </header>
+
+  <ul class="wlist-items">
+  {% for post in collections.writing %}
+    <li class="wlist-item">
+      {% if post.data.kicker %}<span class="kicker">{{ post.data.kicker }}</span>{% endif %}
+      <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      {% if post.data.dek %}<p class="dek">{{ post.data.dek }}</p>{% endif %}
+      <p class="byline">{{ post.data.author if post.data.author else 'Varna Sri Raman' }} &middot; {{ post.date | readableDate }}{% if post.data.readtime %} &middot; {{ post.data.readtime }}{% endif %}</p>
+    </li>
+  {% endfor %}
+  </ul>
+</main>
