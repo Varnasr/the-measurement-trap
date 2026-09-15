@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     "index.html", "works.html", "thanks.html",
     "favicon.svg", "author.jpg", "og-image.png", "routledge-logo.png",
     "chronology.csv", "robots.txt", "sitemap.xml", "CNAME",
-    "fonts", "assets"
+    "fonts", "assets", "js"
   ].forEach((f) => eleventyConfig.addPassthroughCopy(f));
 
   // Writing collection: newest first
