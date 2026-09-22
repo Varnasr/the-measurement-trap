@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+
+      - run: npm ci
+
+      # Nothing checked that the site still builds. It is the cheapest test this
+      # repository has: a broken template or a malformed frontmatter block fails
+      # here rather than on the deployed page.
+      - name: Build
+        run: npx eleventy
+
+      - name: Checks
+        run: node scripts/check.mjs
