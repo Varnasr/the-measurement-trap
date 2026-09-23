@@ -64,9 +64,9 @@
 :root{
   --ink:#111111;
   --grey:#444444;
-  --faint:#767676;
+  --faint:#6B6B6B;
   --rule:#111111;
-  --link:#1A3E6E;
+  --link:#1A3E6E;--on-link:#ffffff;
   --desk:#E4E4E1;
   --sheet:#FFFFFF;
   --hair:#999999;
@@ -80,7 +80,7 @@
     --grey:#adaca7;
     --faint:#8b8a85;
     --rule:#c8c7c1;
-    --link:#8fb3e6;
+    --link:#8fb3e6;--on-link:#14140f;
     --desk:#16161a;
     --sheet:#211f1d;
     --hair:#6a6862;
@@ -93,7 +93,7 @@
   --grey:#adaca7;
   --faint:#8b8a85;
   --rule:#c8c7c1;
-  --link:#8fb3e6;
+  --link:#8fb3e6;--on-link:#14140f;
   --desk:#16161a;
   --sheet:#211f1d;
   --hair:#6a6862;
@@ -141,7 +141,7 @@ body{
 .themebar button + button{border-left:1px solid var(--hair-faint)}
 .themebar button:hover{color:var(--ink)}
 .themebar button[aria-pressed="true"]{
-  background:var(--link);color:#fff;font-weight:600;
+  background:var(--link);color:var(--on-link);font-weight:600;
 }
 .themebar button:focus-visible{outline:2px solid var(--link);outline-offset:-2px}
 @media (max-width:520px){
@@ -449,7 +449,7 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
 .sitefooter .foot-links{color:var(--hair)}
 .sitefooter .foot-links a{margin:0 .35em}
 .share{margin:16px auto 2px;text-align:center}
-.share .wa{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:#128C4A;border:1px solid #128C4A;border-radius:999px;padding:5px 15px;text-decoration:none}
+.share .wa{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:#0C6F3A;border:1px solid #0C6F3A;border-radius:999px;padding:5px 15px;text-decoration:none}
 .share .wa:hover{background:rgba(18,140,74,.09);text-decoration:none}
 .share .waicon{width:15px;height:15px;flex:none}
 
@@ -542,7 +542,7 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
       <input id="nf-email" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
       <button type="submit" class="cta-btn">Notify me</button>
     </div>
-    <p class="nf-consent">Your email is used only to tell you when the book is out &mdash; no spam, no sharing. See <a href="#privacy">privacy</a>.</p>
+    <p class="nf-consent">Your email is used only to tell you when the book is out &mdash; no spam, no sharing. See <a href="#privacy" style="text-decoration:underline">privacy</a>.</p>
     <p class="nf-msg" role="status" aria-live="polite" hidden></p>
   </form>
 </section>
@@ -1012,7 +1012,7 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
 <div class="citebox" aria-label="How to cite this book">
   <h3>Cite this book</h3>
   <p class="formatted" id="cite-text">Sri Raman, Varna. <em>The Measurement Trap: India&rsquo;s Quest for Social Progress Through Eight Decades</em>. London: Routledge, forthcoming.</p>
-  <pre id="cite-bibtex">@book{SriRaman_MeasurementTrap,
+  <pre id="cite-bibtex" tabindex="0" role="region" aria-label="BibTeX citation, scrolls horizontally">@book{SriRaman_MeasurementTrap,
   author    = {Sri Raman, Varna},
   title     = {The Measurement Trap: India's Quest for Social Progress Through Eight Decades},
   publisher = {Routledge},
