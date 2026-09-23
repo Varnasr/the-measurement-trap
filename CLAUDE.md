@@ -53,6 +53,28 @@ has to get its own right:
 If an essay's central figure changes, change the title with it. The titles are
 the claims.
 
+## The colours were checked against white, and the page is not white
+
+Audited with axe over the built site in both colour schemes at 390x844 and
+1280x900: 48 serious or critical nodes before, 0 after.
+
+- **`--faint` #767676** is 4.54:1 on white and **4.01:1 on `--desk` #F3F1EA**,
+  which is the background it is actually painted on. It is the masthead,
+  the dateline and the source line on every essay. `#6B6B6B` clears both.
+  The token is declared three times — `assets/writing.css`, `works.html` and
+  `index.html` — so a value fixed in one is fixed in one.
+- **`--link` is dark on a light page and light on a dark one**, so the ink on
+  the selected theme button could not be a literal `#fff`: 2.15:1 in dark mode,
+  on the control the reader had just pressed. `--on-link` now flips with it.
+- **`CLAUDE.md` was being published.** Eleventy rendered it to `/CLAUDE/` — a
+  public page with no `<title>`, no `lang` attribute and 119px of horizontal
+  overflow on a phone. It is in `.eleventyignore` now. Anything you add at the
+  repository root that is not meant for readers needs the same.
+- The WhatsApp share pill's `#128C4A` was 4.3:1 on white; the privacy link sat
+  inside a sentence distinguished by colour alone, at 2.36:1 against the text
+  around it; and the BibTeX block scrolls sideways on a phone with no keyboard
+  route into it.
+
 ## The js-yaml advisory
 
 `npm audit` reported one high: GHSA-2883-xcg3-v3hh, where `maxTotalMergeKeys`

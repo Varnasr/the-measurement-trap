@@ -3,3 +3,7 @@ README.md
 package.json
 package-lock.json
 .eleventy.js
+# Internal notes. Without this, Eleventy renders CLAUDE.md as /CLAUDE/, a
+# public page with no <title>, no lang attribute and 119px of horizontal
+# overflow on a phone.
+CLAUDE.md

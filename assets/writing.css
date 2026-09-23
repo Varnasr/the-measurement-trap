@@ -13,7 +13,7 @@
 @font-face{font-family:'STIX Two Text';font-style:italic;font-weight:600;font-display:swap;src:url('/fonts/stix-two-text-latin-600-italic.woff2') format('woff2')}
 
 :root{
-  --ink:#14140f;--grey:#43423c;--faint:#767676;--rule:#14140f;--link:#1A3E6E;
+  --ink:#14140f;--grey:#43423c;--faint:#6B6B6B;--rule:#14140f;--link:#1A3E6E;
   --desk:#F3F1EA;--sheet:#FFFFFF;--hair:#9a988f;--hair-faint:#e2e0d7;--accent:#8a2b1f;
 }
 @media (prefers-color-scheme: dark){
