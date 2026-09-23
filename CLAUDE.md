@@ -53,6 +53,21 @@ has to get its own right:
 If an essay's central figure changes, change the title with it. The titles are
 the claims.
 
+## The js-yaml advisory
+
+`npm audit` reported one high: GHSA-2883-xcg3-v3hh, where `maxTotalMergeKeys`
+does not bound CPU use on an empty merge source. It reaches this build through
+Eleventy's own `js-yaml` and through `gray-matter`, which parses every essay's
+frontmatter.
+
+The exposure here is narrow — the only YAML this build parses is the seven
+essays' own frontmatter, written in this repository — but the fix was a patch
+release rather than a major, so there was no reason not to take it.
+`npm audit fix` took the direct dependency to 4.3.2 and `gray-matter`'s nested
+copy to 3.15.2, and the audit is at 0. Verified before and after: the build
+writes the same 12 pages, all seven essays reach `_site`, and
+`scripts/check.mjs` passes.
+
 ## Watch out for
 
 - **The charts are hand-written SVG inside the markdown**, with their numbers
