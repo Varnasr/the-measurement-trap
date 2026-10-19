@@ -100,3 +100,27 @@ writes the same 12 pages, all seven essays reach `_site`, and
   it. Check both when editing either.
 - **`chronology.csv` has quoted fields containing commas.** Parse it, do not
   split on commas.
+
+## The Eleventy dependency tree, and what Eleventy did about js-yaml
+
+`npm audit` reported 11 advisories on 19 October 2026, 6 of them high: three in
+`brace-expansion`, one in `braces` reached through `chokidar`, one in
+`markdown-it`'s linkify path and one in `sprintf-js`, with `@11ty/eleventy`,
+`@11ty/eleventy-dev-server` and `nunjucks` listed for depending on them. Every
+one is a denial of service that needs hostile input, and the only input this
+build parses is the seven essays in this repository, so the exposure was the
+same as the js-yaml advisory above: narrow.
+
+`npm audit fix` cleared all 11 without touching `package.json`. Eleventy went
+3.1.6 to 3.1.7, and the interesting part is what it did with gray-matter. The
+lockfile now reads `gray-matter: npm:@11ty/gray-matter@^1.0.0`, an alias to
+Eleventy's own fork, so `gray-matter 4.0.3` leaves and with it `js-yaml 3.15.2`,
+`argparse 1.0.10`, `esprima` and `sprintf-js`. **The 1.0.0 is the fork's own
+numbering, not a downgrade**: `npm view gray-matter time` dates the unforked
+1.0.0 to 2014, and the `resolved` URL in the lockfile is
+`registry.npmjs.org/@11ty/gray-matter/...`. Check the alias before reading that
+number as a regression. `chokidar` went 3.6.0 to 4.0.3, which drops `braces`,
+`anymatch`, `fill-range` and nine more, 16 packages removed in all.
+
+Verified by building before and after on the same machine: `_site` is
+byte-identical, 36 files, and `scripts/check.mjs` passes both times.
