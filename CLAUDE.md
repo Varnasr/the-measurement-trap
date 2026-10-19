@@ -1,5 +1,7 @@
 # the-measurement-trap
 
+Shared engineering standard: @.claude/engineering-standards.md. It applies to all work in this repository. This file adds what is specific to the project, and wins where the two disagree.
+
 Companion site for *The Measurement Trap*: seven essays on what Indian official
 statistics count, when, and what follows from the gaps. Eleventy, static output,
 deployed from `_site`.
