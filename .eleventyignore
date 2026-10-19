@@ -7,3 +7,5 @@ package-lock.json
 # public page with no <title>, no lang attribute and 119px of horizontal
 # overflow on a phone.
 CLAUDE.md
+# The shared engineering standard CLAUDE.md imports; same reason as above.
+.claude/
