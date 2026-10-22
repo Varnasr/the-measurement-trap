@@ -113,7 +113,7 @@ There is a further consequence for how women's economic position is described, a
 
 ## How the work disappeared from the count
 
-The disappearance was gradual and it happened through definitions rather than through any decision to disregard women's labour.
+The disappearance was gradual and it happened through definitions, with no decision to disregard women's labour.
 
 The Committee on the Status of Women in India, reporting in December 1974, drew attention to a figure from the census volumes that had attracted little notice. Women had been 34.44 per cent of the recorded workforce in 1911 and were 17.35 per cent in 1971.<sup><a href="#fn2" id="ref2">2</a></sup> Part of that halving reflected real displacement, as women were pushed out of household manufacture. Part of it was the product of successive changes in what the census counted as economic activity, changes that fell hardest on work that was unpaid, seasonal, home-based or performed alongside domestic duties, which is to say on the characteristic pattern of women's work.
 
@@ -143,7 +143,7 @@ What the two surveys do establish, beyond argument about definitions, is the siz
 
 Women aged fifteen to fifty-nine spent 305 minutes a day on unpaid domestic services in 2024 against 315 in 2019. Men's contribution fell rather than rose, from 97 minutes to 88 across all ages. Whatever else has changed in the Indian household in the last five years, the division of the work inside it has not, and the direction of the small movement that did occur was toward women doing slightly less of it because they were doing more paid work, not because anyone else was doing more of it.
 
-There is no proposal before the government to bring these hours into the national accounts, and there is a respectable case that they should not be. The change that measurement makes possible is different and more ordinary. Once the hours are in an official publication, a state that wants to reduce them can be asked whether piped water, cooking gas, creches or elder care are doing so, and the answer can be checked against the next survey rather than asserted.
+There is no proposal before the government to bring these hours into the national accounts, and there is a respectable case that they should not be. The change that measurement makes possible is different and more ordinary. Once the hours are in an official publication, a state that wants to reduce them can be asked whether piped water, cooking gas, creches or elder care are doing so, and the answer can be checked against the next survey.
 
 The next one is due around 2029, on the pattern so far. It will show whether ten minutes in five years was a floor or a beginning.
 

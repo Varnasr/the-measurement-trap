@@ -13,9 +13,29 @@ npm ci
 npx eleventy                 # build to _site
 npm run serve                # local preview
 node scripts/check.mjs       # checks, run by CI after the build
+node scripts/check-copy.mjs  # the writing rules, run by CI after the build
 ```
 
-`scripts/check.mjs` inspects `_site`, so build before running it.
+`scripts/check.mjs` and `scripts/check-copy.mjs` inspect `_site`, so build before running them.
+
+## Writing rules, and the check that holds them
+
+Everything the site says in its own voice follows the author's rules: plain full
+sentences, no em dashes, no banned stock words, and no "not X but Y" turn (state
+the claim). `scripts/check-copy.mjs` reads the built pages, including meta
+descriptions, alt text and aria labels, and fails on an em dash, a word from
+`BANNED`, or a "not X but Y" or "not only" turn. Fix a failure by rewriting the
+sentence. Swapping the character leaves the sentence as it was.
+
+Every `<blockquote>` is exempt, because on this site a blockquote is always
+someone else's words: an endorsement or a reviewer's excerpt. Those are printed
+as given, double hyphens and all, and are never edited to pass the check. Other
+quoted matter can carry `data-verbatim`.
+
+The check cannot see a plain `rather than` contrast, so `--report` lists them
+without failing. Most are ordinary comparisons ("households rather than
+schools"); read each before changing it. It also cannot see text that is only in
+an image, such as `og-image.png` and the share card.
 
 ## A site about measurement should be measured
 

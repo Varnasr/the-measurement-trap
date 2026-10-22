@@ -2,7 +2,7 @@
   "name": "measurement-trap-site",
   "version": "1.0.0",
   "private": true,
-  "description": "The Measurement Trap — companion site and writing",
+  "description": "The Measurement Trap, companion site and writing",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve"
