@@ -2,7 +2,8 @@ module.exports = function (eleventyConfig) {
   // Only .njk and .md are processed as templates; every existing static
   // file is copied through untouched so the book site is unchanged.
   [
-    "index.html", "works.html", "thanks.html",
+    "index.html", "works.html", "thanks.html", "excerpts.html",
+    "mainstream-2026-10-22.jpg",
     "favicon.svg", "author.jpg", "og-image.png", "routledge-logo.png",
     "chronology.csv", "robots.txt", "sitemap.xml", "CNAME",
     "fonts", "assets", "js"
