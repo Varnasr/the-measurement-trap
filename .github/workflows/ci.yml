@@ -29,3 +29,8 @@ jobs:
 
       - name: Checks
         run: node scripts/check.mjs
+
+      # The author's writing rules (no em dashes, no banned words, no "not X but
+      # Y" turns) are checked on the built pages. Quotations are exempt.
+      - name: Copy standards
+        run: node scripts/check-copy.mjs

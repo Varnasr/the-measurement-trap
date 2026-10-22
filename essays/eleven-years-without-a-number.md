@@ -81,9 +81,9 @@ A number that stops being measured does not stop being needed. It gets modelled 
 
 Working from the aggregates that had leaked, S. Subramanian estimated that the rural poverty ratio had risen sharply over the six years to 2017-18 and that the number of poor people in India had increased by tens of millions. Others reworked the same fragments to similar effect. In the opposite direction, a 2022 working paper by Surjit Bhalla, Karan Bhasin and Arvind Virmani, using national accounts consumption growth and the labour force survey rather than a consumption survey, concluded that extreme poverty in India had fallen below one per cent. Estimates from the World Bank and from bank research departments landed in between.
 
-The dispersion is the point. These were competent people applying defensible methods and arriving at answers that could not both be roughly right. What separated them was not skill but the assumption each had to make to replace the missing observation. When the measurement exists, the argument is about interpretation. When it does not, the argument is about whose model to believe, and that argument has no resolution procedure.
+The dispersion is the point. These were competent people applying defensible methods and arriving at answers that could not both be roughly right. What separated them was the assumption each had to make to replace the missing observation. When the measurement exists, the argument is about interpretation. When it does not, the argument is about whose model to believe, and that argument has no resolution procedure.
 
-It also matters who is missing from a modelled estimate. National accounts consumption grows with the formal economy, which is measured through corporate filings and tax returns; the households that a consumption survey reaches and the accounts do not are disproportionately rural, informal and poor. An estimate that replaces the survey with the accounts will therefore tend to find that the people the survey was designed to count are doing better than the survey would have said, and it will find this by construction rather than by evidence.
+It also matters who is missing from a modelled estimate. National accounts consumption grows with the formal economy, which is measured through corporate filings and tax returns; the households that a consumption survey reaches and the accounts do not are disproportionately rural, informal and poor. An estimate that replaces the survey with the accounts will therefore tend to find that the people the survey was designed to count are doing better than the survey would have said, and it will find this by construction, whatever the evidence would have shown.
 
 ## The survey that came back
 
@@ -116,7 +116,7 @@ Fieldwork for the Household Consumption Expenditure Survey ran from August 2022 
 <text class="ch-val" text-anchor="end" x="690.0" y="156.5">2,079</text>
 <text class="ch-note" text-anchor="middle" x="368.2" y="70">eleven years, no published survey</text>
 </svg>
-<figcaption><b>Real monthly per capita consumption expenditure, at 2011-12 prices.</b> Rural (red) and urban (grey). Solid segments join observations; the dotted stretch marks eleven years in which no consumption survey was published, so the path between the endpoints is unknown rather than flat. <span class="src">Source: HCES 2023-24 press note, Table 1; NSS 68th round.</span></figcaption>
+<figcaption><b>Real monthly per capita consumption expenditure, at 2011-12 prices.</b> Rural (red) and urban (grey). Solid segments join observations; the dotted stretch marks eleven years in which no consumption survey was published, so the path between the endpoints is unknown. <span class="src">Source: HCES 2023-24 press note, Table 1; NSS 68th round.</span></figcaption>
 </figure>
 
 At 2011-12 prices, rural monthly per capita expenditure was ₹1,430 in 2011-12, ₹2,008 in 2022-23 and ₹2,079 in 2023-24. The urban figures were ₹2,630, ₹3,510 and ₹3,632.<sup><a href="#fn5" id="ref5-2">5</a></sup> Rural real consumption therefore grew by about 45 per cent over twelve years, which is a compound rate near 3.1 per cent a year, and urban by about 38 per cent, or 2.7 per cent a year. Measured consumption inequality fell, with the rural Gini coefficient going from 0.283 in 2011-12 to 0.237 in 2023-24 and the urban from 0.363 to 0.284.
@@ -139,7 +139,7 @@ Against that, the multidimensional poverty index, which counts deprivations in h
 
 ## The cost of the gap
 
-Set out plainly, the eleven years produced this. Consumer price inflation was measured throughout on a basket of goods established from spending patterns in 2011-12. The national accounts ran without an independent consumption benchmark. Poverty was contested by parties using models rather than measurements, and the contest ended in no agreed number. The unit records that would settle whether the 2017-18 survey was sound remain unreleased.
+Set out plainly, the eleven years produced this. Consumer price inflation was measured throughout on a basket of goods established from spending patterns in 2011-12. The national accounts ran without an independent consumption benchmark. Poverty was contested by parties using models, since no published measurement existed, and the contest ended in no agreed number. The unit records that would settle whether the 2017-18 survey was sound remain unreleased.
 
 The ministry's decision of 15 November 2019 was defended as a matter of data quality, and it may even have been one. What it cost was the ability of anyone else to find out.
 

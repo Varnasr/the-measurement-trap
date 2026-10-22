@@ -11,7 +11,7 @@ On Monday 28 January 2019, the two non-official members of the National Statisti
 
 Three days later, Business Standard published the thing they had resigned over. The first annual report of the Periodic Labour Force Survey, covering July 2017 to June 2018, put the unemployment rate at 6.1 per cent, the highest since 1972-73, when the employment and unemployment survey series began. The comparable figure from the last quinquennial round, in 2011-12, had been 2.2 per cent. The labour force participation rate had fallen from 39.5 per cent to 36.9 per cent over the same period. The Commission had approved the report in December 2018. It had not been released.<sup><a href="#fn2" id="ref2">2</a></sup>
 
-That is the whole of the episode in its bare form, and it is worth stating what did not happen. No number was altered. No statistician was instructed to recalculate. The report that finally appeared on 31 May 2019 carried the same estimate as the report that had been withheld in December. What was exercised over those five months was custody rather than authorship, and custody turned out to be enough.
+That is the whole of the episode in its bare form, and it is worth stating what did not happen. No number was altered. No statistician was instructed to recalculate. The report that finally appeared on 31 May 2019 carried the same estimate as the report that had been withheld in December. What was exercised over those five months was custody of the number, and custody turned out to be enough.
 
 ## Four positions at once
 
@@ -125,13 +125,13 @@ Female labour force participation for ages fifteen and above rose from 23.3 per 
 
 The arithmetic of that divergence is not mysterious. A woman enters the labour force under usual status if she performed some economic activity for thirty days out of three hundred and sixty-five. She enters under current weekly status only if she was working in the week the enumerator arrived. A rise concentrated in the usual status series therefore describes women whose recorded economic activity is subsidiary, intermittent, and in a large share of cases unpaid work in a household enterprise. The share of workers classified as self-employed, which includes unpaid family labour, rose from 52 per cent in 2017-18 to 58.4 per cent in 2023-24.
 
-None of this makes the increase false. Those days of work happened, and a survey that failed to record them would be worse than one that does. What it means is that the eighteen-point rise and the eighteen-point rise reported in the newspapers are not quite the same object, and that the distance between them is a property of the definition rather than of the labour market.
+None of this makes the increase false. Those days of work happened, and a survey that failed to record them would be worse than one that does. What it means is that the eighteen-point rise and the eighteen-point rise reported in the newspapers are not quite the same object, and that the distance between them is a property of the definition, and the labour market has no part in it.
 
 ## What was lost
 
 The Commission that lost two members in January 2019 was the body whose approval had made the report final. Mohanan's account of why he left names the sequence plainly: recommendations not acted on, the Commission bypassed on the GDP back series in November 2018, and then a report cleared and not published.<sup><a href="#fn3" id="ref3-2">3</a></sup> He described the last as the first known instance of an NSSO report being held because its findings did not match the government's account of itself.
 
-That is a strong claim and it should be treated as a claim rather than an established fact, since the counterexample would by its nature be unpublished. What can be established is narrower. A survey was completed, approved by the body empowered to approve it, withheld for five months across a general election, and then released without a single figure changed.
+That is a strong claim and it should be treated as unestablished, since the counterexample would by its nature be unpublished. What can be established is narrower. A survey was completed, approved by the body empowered to approve it, withheld for five months across a general election, and then released without a single figure changed.
 
 The apparatus worked. The report exists, the estimate was correct, and the methodological challenge to it failed on examination. What did not work was the timing, and timing is the part of a statistical system that no committee is charged with defending.
 
