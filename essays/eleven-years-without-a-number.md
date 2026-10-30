@@ -33,7 +33,7 @@ The following day the Ministry of Statistics and Programme Implementation issued
 <text class="ch-lbl" text-anchor="middle" x="206.7" y="214">83</text>
 <rect class="ch-bar" x="251.8" y="140.0" width="38.7" height="60.0"/>
 <text class="ch-lbl" text-anchor="middle" x="271.1" y="214">87&#8211;88</text>
-<rect class="ch-bar" x="316.2" y="126.7" width="38.7" height="73.3"/>
+<rect class="ch-bar" x="316.2" y="120.0" width="38.7" height="80.0"/>
 <text class="ch-lbl" text-anchor="middle" x="335.6" y="214">93&#8211;94</text>
 <rect class="ch-bar" x="380.7" y="120.0" width="38.7" height="80.0"/>
 <text class="ch-lbl" text-anchor="middle" x="400.0" y="214">99&#8211;00</text>
