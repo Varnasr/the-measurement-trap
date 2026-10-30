@@ -1,5 +1,5 @@
 ---
-title: "Work That Was Never Work"
+title: "Work that was never work"
 dek: "India now measures, to the minute, how long women spend cooking, cleaning and caring. It has measured this twice. The boundary that keeps those minutes out of the national accounts has not moved, and the measurement was never intended to move it."
 kicker: Women and the economy
 author: Varna Sri Raman
@@ -62,7 +62,7 @@ Caregiving moved the other way. Women aged six and above spent 137 minutes a day
 
 These minutes are counted and they are not counted, and the distinction between the two senses is the whole subject.
 
-National accounts are built on a production boundary set by the System of National Accounts, the international standard India follows. Goods produced within a household for its own consumption fall inside it: if a family grows grain and eats it, that is production, and it enters gross domestic product at an imputed value. Services produced within a household for its own consumption fall outside it. Cooking the grain does not enter. Nor does cleaning, childcare, fetching water, collecting fuel, or nursing an elderly parent.
+National accounts are built on a production boundary set by the System of National Accounts, the international standard India follows. Goods produced within a household for its own consumption fall inside it. If a family grows grain and eats it, that is production, and it enters gross domestic product at an imputed value. Services produced within a household for its own consumption fall outside it. Cooking the grain does not enter. Nor does cleaning, childcare, fetching water, collecting fuel, or nursing an elderly parent.
 
 The Time Use Survey classifies activities by exactly this line, and reports participation on both sides of it.
 
@@ -103,7 +103,7 @@ The Time Use Survey classifies activities by exactly this line, and reports part
 
 In 2024, among persons aged fifteen to fifty-nine, 79.2 per cent of men and 43.4 per cent of women took part in production that counts toward the national accounts. In production that does not count, the figures were 45 per cent of men and 93.9 per cent of women.<sup><a href="#fn1" id="ref1-3">1</a></sup> Nine women in ten spend part of their day producing something the accounts are constructed to exclude.
 
-The asymmetry inside that boundary is worth dwelling on, because it is not intuitive and it does real work. A woman who walks to a handpump and carries water home is producing a good for own use, and her labour is inside the accounts. The same woman heating that water and washing with it is producing a service for own use, and her labour is outside them. Nothing about the effort, the skill or the necessity distinguishes the two. What distinguishes them is that a good can in principle be bought and sold in a form the accounts already price, and a service performed for one's own household cannot be observed in any market transaction. The boundary tracks the reach of the price system, not the reach of work.
+The asymmetry inside that boundary is worth dwelling on, because it is not intuitive and it does real work. A woman who walks to a handpump and carries water home is producing a good for own use, and her labour is inside the accounts. The same woman heating that water and washing with it is producing a service for own use, and her labour is outside them. Nothing about the effort, the skill or the necessity distinguishes the two. What distinguishes them is that a good can in principle be bought and sold in a form the accounts already price, and a service performed for one's own household cannot be observed in any market transaction. The boundary tracks the reach of the price system, and work reaches further.
 
 The exclusion is not an oversight and the arguments for it are real. Imputing a value to household services requires a wage to impute at, and the candidates give very different answers: the wage a domestic worker would command, the wage the person could earn in their best alternative employment, or something else again. The choice would move measured output by a large margin and would make international comparison harder. Adding a large imputed component to GDP also degrades its usefulness as a measure of monetised activity, which is what most macroeconomic policy operates on.
 
@@ -131,7 +131,7 @@ Three limits are worth stating plainly, because the numbers are quoted without t
 
 The first is simultaneity. A woman minding a child while cooking while supervising homework is performing three activities in one hour, and a diary that assigns each minute to a primary activity records one of them. Time use surveys generally record a secondary activity as well, but the headline totals are built on the primary, so the more activities are stacked, the more the method understates.
 
-The second is that a minute is not a unit of effort or of value. Two hundred and eighty-nine minutes of domestic work tells you duration, not intensity, not whether the work was done under a working fan or over a smoky chulha, not whether water had to be carried. In 2024, 24.6 per cent of the rural population aged fifteen to fifty-nine spent an average of 121 minutes a day producing goods for their own use, an activity that includes fetching water and collecting firewood, and which sits inside the production boundary while cooking sits outside it.<sup><a href="#fn1" id="ref1-4">1</a></sup>
+The second is that a minute is not a unit of effort or of value. Two hundred and eighty-nine minutes of domestic work tells you duration. It says nothing of intensity, of whether the work was done under a working fan or over a smoky chulha, or of whether water had to be carried. In 2024, 24.6 per cent of the rural population aged fifteen to fifty-nine spent an average of 121 minutes a day producing goods for their own use, an activity that includes fetching water and collecting firewood, and which sits inside the production boundary while cooking sits outside it.<sup><a href="#fn1" id="ref1-4">1</a></sup>
 
 The third is that a five-year interval is too coarse to attribute change. Women's participation in employment and related activities among those aged fifteen to fifty-nine rose from 21.8 per cent in 2019 to about 25 per cent in 2024, and unpaid domestic time fell by ten minutes. The ministry read the two together as a shift from unpaid to paid activity. That reading is plausible and the survey cannot establish it, since the same pair of movements is consistent with a partial substitution, with changes in household composition, or with appliance ownership.
 
@@ -141,7 +141,7 @@ A cost of this is that the household appears in the accounts as a place where in
 
 What the two surveys do establish, beyond argument about definitions, is the size of the gap and its persistence.
 
-Women aged fifteen to fifty-nine spent 305 minutes a day on unpaid domestic services in 2024 against 315 in 2019. Men's contribution fell rather than rose, from 97 minutes to 88 across all ages. Whatever else has changed in the Indian household in the last five years, the division of the work inside it has not, and the direction of the small movement that did occur was toward women doing slightly less of it because they were doing more paid work, not because anyone else was doing more of it.
+Women aged fifteen to fifty-nine spent 305 minutes a day on unpaid domestic services in 2024 against 315 in 2019. Men's contribution fell rather than rose, from 97 minutes to 88 across all ages. Whatever else has changed in the Indian household in the last five years, the division of the work inside it has not, and the direction of the small movement that did occur was toward women doing slightly less of it because they were doing more paid work. Nobody else was doing more of it.
 
 There is no proposal before the government to bring these hours into the national accounts, and there is a respectable case that they should not be. The change that measurement makes possible is different and more ordinary. Once the hours are in an official publication, a state that wants to reduce them can be asked whether piped water, cooking gas, creches or elder care are doing so, and the answer can be checked against the next survey.
 

@@ -1,5 +1,5 @@
 ---
-title: "Enrolled and Unable to Read"
+title: "Enrolled and unable to read"
 dek: "India has kept school enrolment above 95 per cent for close to twenty years. The survey that establishes this is the same one that finds fewer than half of Std V children in government schools able to read a text written for Std II. Both numbers are collected at the same doorstep, ten minutes apart."
 kicker: Education
 author: Varna Sri Raman
@@ -75,7 +75,7 @@ The Act's Schedule sets out what a school must have. Pupil-teacher ratios by enr
 
 There is no provision that says a child leaving Std V shall be able to read.
 
-This is not an oversight, and it is defensible on ordinary legal grounds. An enforceable standard needs a duty that is observable, attributable to a duty-bearer, and capable of being remedied by an order of a court. A pupil-teacher ratio of thirty to one satisfies all three. A reading level does not: it is jointly produced by the school, the household, the language of instruction, the child's health and nutrition, and the years that came before, and a writ court cannot order any of these into existence. The drafters chose the duties that could be litigated.
+This is not an oversight, and it is defensible on ordinary legal grounds. An enforceable standard needs a duty that is observable, attributable to a duty-bearer, and capable of being remedied by an order of a court. A pupil-teacher ratio of thirty to one satisfies all three. A reading level does not, because it is jointly produced by the school, the household, the language of instruction, the child's health and nutrition, and the years that came before, and a writ court cannot order any of these into existence. The drafters chose the duties that could be litigated.
 
 The consequence is that India's education system has a legal obligation to seat children and no legal obligation to teach them anything in particular. It also has a financing system keyed to the same variables. Grants flow against enrolment, infrastructure and teacher posts, all of which are counted every year with reasonable accuracy. What is measured well is what is owed, and what is owed is what is funded.
 
@@ -127,7 +127,7 @@ The gap between government and private schools narrowed over the same period, an
 
 Arithmetic follows the same shape and is worse. Nationally in 2024, 33.7 per cent of Std III children could do a two-digit subtraction with borrowing, 30.7 per cent of Std V children could do a three-digit-by-one-digit division, and 45.8 per cent of Std VIII children could do that division.<sup><a href="#fn1" id="ref1-8">1</a></sup> The Std VIII arithmetic figure has moved by less than two percentage points across three surveys spanning six years and a pandemic.
 
-The 2022 round measured what the school closures did. Std III reading in government schools fell to 16.3 per cent, taking national reading levels back below where they had been in 2012. Std V fell to 38.5 per cent. The 2024 round found most of that recovered and, in Std III, more than recovered. Attributing the recovery is harder than measuring it: the foundational literacy mission announced in 2021 was running through this period, and so was a large expansion of pre-primary enrolment, with the proportion of five-year-olds in some pre-primary institution rising from 62.1 per cent in 2022 to 71.4 per cent in 2024.<sup><a href="#fn1" id="ref1-9">1</a></sup>
+The 2022 round measured what the school closures did. Std III reading in government schools fell to 16.3 per cent, taking national reading levels back below where they had been in 2012. Std V fell to 38.5 per cent. The 2024 round found most of that recovered and, in Std III, more than recovered. Attributing the recovery is harder than measuring it, because the foundational literacy mission announced in 2021 was running through this period, and so was a large expansion of pre-primary enrolment, with the proportion of five-year-olds in some pre-primary institution rising from 62.1 per cent in 2022 to 71.4 per cent in 2024.<sup><a href="#fn1" id="ref1-9">1</a></sup>
 
 ## What the no-detention debate was actually about
 

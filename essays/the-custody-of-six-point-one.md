@@ -1,5 +1,5 @@
 ---
-title: "The Custody of 6.1 Per Cent"
+title: "The custody of 6.1 per cent"
 dek: "In January 2019 a completed, approved survey of India's labour force was not published. Four months later it was published unchanged. What happened in between is the clearest account we have of how a statistical system bends."
 kicker: Statistics and the state
 author: Varna Sri Raman
@@ -19,7 +19,7 @@ The government's response to the leak is instructive because it was not one resp
 
 NITI Aayog and Arun Jaitley, the finance minister, described the report as a draft. Rajiv Kumar, vice-chairman of NITI Aayog, said the four-decade high was unverified. Amitabh Kant, who sat on the Commission itself, said comparing the older employment surveys with the new one was erroneous and that the report did not have his approval. Dharmendra Pradhan, then petroleum minister, said the report did not exist.<sup><a href="#fn3" id="ref3">3</a></sup>
 
-Mohanan's answer to the first of these went to the question of who owns an official statistic. Once the Commission approves an NSSO report, he told NDTV in February 2019, it is the final report; the government may accept it or reject it, but the government does not approve the statistics.<sup><a href="#fn4" id="ref4">4</a></sup> Whether that is strictly correct as a matter of administrative law is arguable, since the Commission was set up by executive resolution in 2005 rather than by statute and its recommendations bind nobody. But the convention it describes was real, and it had held for decades: the Commission clears a report, and the ministry publishes it within days.
+Mohanan's answer to the first of these went to the question of who owns an official statistic. Once the Commission approves an NSSO report, he told NDTV in February 2019, it is the final report; the government may accept it or reject it, but the government does not approve the statistics.<sup><a href="#fn4" id="ref4">4</a></sup> Whether that is strictly correct as a matter of administrative law is arguable, since the Commission was set up by executive resolution in 2005 rather than by statute and its recommendations bind nobody. But the convention it describes was real, and it had held for decades. The Commission clears a report, and the ministry publishes it within days.
 
 Kant's objection is the more interesting one, because it is not obviously wrong. The Periodic Labour Force Survey did change the sampling design. Where the old quinquennial rounds stratified households at the second stage by per capita consumption expenditure, the new survey stratified by the number of household members who had completed matriculation. If educated households are more likely to report open unemployment, and they are, then a design that oversamples them could raise the measured rate without anything having changed on the ground. That is a serious methodological question, and it was put by a person with the standing to ask it.
 

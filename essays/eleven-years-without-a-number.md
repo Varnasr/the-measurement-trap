@@ -1,5 +1,5 @@
 ---
-title: "Eleven Years Without a Number"
+title: "Eleven years without a number"
 dek: "A consumption survey was conducted in 2017-18, approved for release, and then scrapped on grounds the ministry never specified. The next one came eleven years after the last. In between, India argued about poverty with no measurement of it at all."
 kicker: Poverty and prices
 author: Varna Sri Raman
@@ -69,11 +69,11 @@ The consequence is visible in the interval chart above. From 1972-73 to 2011-12 
 
 There were real objections to the 2017-18 round, and an argument that ignores them is not worth making.
 
-The gap between consumption measured by the survey and consumption implied by the national accounts had been widening for decades, and by 2011-12 the survey captured only about half of what the accounts implied. A round showing an absolute fall would widen that gap further. Survey non-response had been rising, particularly among richer households, which biases measured consumption downward, and the 2017-18 findings showed the sharpest cuts among the top decile in rural areas, which is precisely the pattern that differential non-response produces.<sup><a href="#fn3" id="ref3-3">3</a></sup> The fieldwork also ran through an unusual period: the year began eight months after the demonetisation of November 2016 and included the introduction of the goods and services tax in July 2017.
+The gap between consumption measured by the survey and consumption implied by the national accounts had been widening for decades, and by 2011-12 the survey captured only about half of what the accounts implied. A round showing an absolute fall would widen that gap further. Survey non-response had been rising, particularly among richer households, which biases measured consumption downward, and the 2017-18 findings showed the sharpest cuts among the top decile in rural areas, which is precisely the pattern that differential non-response produces.<sup><a href="#fn3" id="ref3-3">3</a></sup> The fieldwork also ran through an unusual period. The year began eight months after the demonetisation of November 2016 and included the introduction of the goods and services tax in July 2017.
 
 Any of these could support a decision to publish with heavy caveats. None of them supports the decision that was actually taken, which was to withhold the report and the unit-level data together.
 
-That is the specific failure, and it is worth separating from the politics. If the quality problem was real, the remedy available to the ministry was to release the microdata with a note setting out the concerns and let the profession establish whether the estimates were sound. That is what the profession is for. Withholding the data made the quality claim unfalsifiable: nobody outside the ministry could check whether the survey was bad, and nobody could check whether it was fine. Seven years later the unit-level data have still not been released.
+That is the specific failure, and it is worth separating from the politics. If the quality problem was real, the remedy available to the ministry was to release the microdata with a note setting out the concerns and let the profession establish whether the estimates were sound. That is what the profession is for. Withholding the data made the quality claim unfalsifiable, since nobody outside the ministry could check whether the survey was bad, and nobody could check whether it was fine. Seven years later the unit-level data have still not been released.
 
 ## What filled the gap
 
@@ -127,7 +127,7 @@ The survey was redesigned. The 2022-23 round used three separate questionnaires 
 
 Items received free through welfare programmes were valued and added, producing a second set of estimates. Rural expenditure with imputation was ₹4,247 in 2023-24 at current prices against ₹4,122 without it.
 
-And the middle observation is missing. The chart above draws the eleven-year stretch as a dotted line for a reason: there is no measurement in it. If the 2017-18 estimate was broadly right, rural consumption fell and then rose steeply, and the recovery from 2017-18 to 2023-24 was faster than 3.1 per cent a year. If it was wrong, growth was steady throughout. The 2022-23 survey cannot distinguish between these, because distinguishing between them requires an observation in 2017-18, and that observation was collected from 100,000-odd households, tabulated, approved, and then set aside.
+And the middle observation is missing. The chart above draws the eleven-year stretch as a dotted line because there is no measurement in it. If the 2017-18 estimate was broadly right, rural consumption fell and then rose steeply, and the recovery from 2017-18 to 2023-24 was faster than 3.1 per cent a year. If it was wrong, growth was steady throughout. The 2022-23 survey cannot distinguish between these, because distinguishing between them requires an observation in 2017-18, and that observation was collected from 100,000-odd households, tabulated, approved, and then set aside.
 
 ## No line to apply
 
