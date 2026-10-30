@@ -1,5 +1,5 @@
 ---
-title: "Ninety-Six Years Between Counts"
+title: "Ninety-six years between counts"
 dek: "India stopped counting caste in 1931 and starts again in 2027. In the ninety-six years between, reservation policy for a quarter of the population rested on a number extrapolated from a colonial census, and a caste enumeration that was actually carried out in 2011 was never published."
 kicker: Caste and representation
 author: Varna Sri Raman
@@ -7,7 +7,7 @@ date: 2026-04-21
 readtime: 12 min read
 ---
 
-House listing for India's sixteenth census began in April 2026. Population enumeration is due in February 2027, with the reference moment fixed at midnight on the first of March. Question ten on the schedule asks the respondent's caste, and it is open-ended: people state it in their own words rather than choosing from a list.<sup><a href="#fn1" id="ref1">1</a></sup>
+House listing for India's sixteenth census began in April 2026. Population enumeration is due in February 2027, with the reference moment fixed at midnight on the first of March. Question ten on the schedule asks the respondent's caste, and it is open-ended, so people state it in their own words rather than choosing from a list.<sup><a href="#fn1" id="ref1">1</a></sup>
 
 The last time an Indian census published a full caste tabulation, J.H. Hutton was Census Commissioner and the year was 1931.
 
@@ -35,11 +35,11 @@ India did conduct a caste enumeration, and recently. It is the part of this stor
 
 The Socio-Economic and Caste Census of 2011 was run outside the Census Act, by the Ministry of Rural Development and the Ministry of Housing and Urban Poverty Alleviation, with the caste component under the Ministry of Social Justice and Empowerment. It cost ₹4,893.60 crore. It reached the great majority of Indian households. Its socio-economic and deprivation data were released in 2015 and have been used for beneficiary identification ever since, including under the food security and rural housing programmes.
 
-The caste tables were never published. The stated reason was that the returns were unusable: the enumeration produced something on the order of 46 lakh distinct caste and sub-caste entries, a figure that includes spelling variants, sub-caste fragments, surnames, gotra names, occupational titles and outright duplicates. An expert group under Arvind Panagariya was constituted in 2015 to classify and validate them. No usable caste count emerged.<sup><a href="#fn2" id="ref2">2</a></sup>
+The caste tables were never published. The stated reason was that the returns were unusable. The enumeration produced something on the order of 46 lakh distinct caste and sub-caste entries, a figure that includes spelling variants, sub-caste fragments, surnames, gotra names, occupational titles and outright duplicates. An expert group under Arvind Panagariya was constituted in 2015 to classify and validate them. No usable caste count emerged.<sup><a href="#fn2" id="ref2">2</a></sup>
 
 The failure lay in design, and it is worth being precise about the mechanism, because it bears directly on 2027. An open-ended question about caste does not have a closed answer set. A respondent may give a jati name, a sub-caste, a regional variant, a surname associated with a caste, or the name of a community that is a caste in one state and a sub-group in another. Enumerators recording free text without a code frame produce a list that cannot be aggregated, and no amount of subsequent cleaning fully recovers what was meant. The 2027 census asks the same question in the same open-ended form.
 
-The legal setting matters too. A census under the Census Act, 1948 comes with compulsion and with protection: answering is a statutory duty, and the individual records are confidential, not open to inspection and not admissible in evidence. That combination is what makes people willing to answer questions about themselves. The Socio-Economic and Caste Census had neither, because it was not conducted under the Act. It was an administrative exercise whose caste component sat outside the statutory frame that gives census answers their standing, which is one reason its results could be shelved without anyone having a right to them.
+The legal setting matters too. A census under the Census Act, 1948 comes with compulsion and with protection. Answering is a statutory duty, and the individual records are confidential, not open to inspection and not admissible in evidence. That combination is what makes people willing to answer questions about themselves. The Socio-Economic and Caste Census had neither, because it was not conducted under the Act. It was an administrative exercise whose caste component sat outside the statutory frame that gives census answers their standing, which is one reason its results could be shelved without anyone having a right to them.
 
 ## Bihar, and what a code frame does
 
@@ -121,7 +121,7 @@ The second is delimitation. The allocation of Lok Sabha seats between states has
 <figcaption><b>Population per Lok Sabha seat, 2011 census population against current seat allocation.</b> Seat shares have been frozen on the 1971 census since 1976. A seat in Rajasthan now holds about 1.6 times as many people as a seat in Kerala. <span class="src">Source: author's calculation from Census of India 2011 and current seat allocation.</span></figcaption>
 </figure>
 
-The chart above uses the 2011 populations against the seat counts still in force. Rajasthan has about 2.74 million people per Lok Sabha seat and Kerala about 1.67 million, which means a vote in Kerala carries something close to one and two-thirds the weight of a vote in Rajasthan. That gap is the price of the freeze, and it was a deliberate price: states that reduced their fertility fastest were not to be penalised with fewer seats. Unfreezing on 2027 population would move seats from the south and the smaller northern states toward Uttar Pradesh, Bihar, Rajasthan and Madhya Pradesh.
+The chart above uses the 2011 populations against the seat counts still in force. Rajasthan has about 2.74 million people per Lok Sabha seat and Kerala about 1.67 million, which means a vote in Kerala carries something close to one and two-thirds the weight of a vote in Rajasthan. That gap is the price of the freeze, and it was a deliberate price, paid so that states that reduced their fertility fastest would not be penalised with fewer seats. Unfreezing on 2027 population would move seats from the south and the smaller northern states toward Uttar Pradesh, Bihar, Rajasthan and Madhya Pradesh.
 
 The third is women's reservation. The Constitution (One Hundred and Sixth Amendment) Act, 2023 reserves a third of the seats in the Lok Sabha and the state assemblies for women, and makes commencement conditional on the publication of the relevant census figures and the delimitation exercise that follows. The reservation exists in law and cannot begin until the count is done.
 
@@ -129,7 +129,7 @@ The third is women's reservation. The Constitution (One Hundred and Sixth Amendm
 
 So a single enumeration will be asked to settle the share of the backward classes, redistribute parliamentary power between states, and trigger a reservation for women, each of which has parties who expect to lose by it.
 
-That is a great deal to hang on a question with an open answer field, asked by an enumerator with a tablet, of a respondent who may reasonably give a different answer to a different official on a different day. The 2011 exercise showed what happens when the design is wrong: the data are collected, the money is spent, and the tables never appear. Whether 2027 avoids that outcome depends on decisions about code frames and classification that are being taken now, quietly, by people whose names are not in the newspapers.
+That is a great deal to hang on a question with an open answer field, asked by an enumerator with a tablet, of a respondent who may reasonably give a different answer to a different official on a different day. The 2011 exercise showed what happens when the design is wrong. The data are collected, the money is spent, and the tables never appear. Whether 2027 avoids that outcome depends on decisions about code frames and classification that are being taken now, quietly, by people whose names are not in the newspapers.
 
 <section class="footnotes">
 <ol>

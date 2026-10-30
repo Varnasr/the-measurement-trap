@@ -1,5 +1,5 @@
 ---
-title: "Where the Line Is Drawn"
+title: "Where the line is drawn"
 dek: "Six expert groups in fifty years have drawn India's poverty line, and each has produced a different number of poor people out of the same survey. The disagreements are not technical accidents. They are choices about what a person is owed, made in the language of calories."
 kicker: Poverty and prices
 author: Varna Sri Raman
@@ -70,7 +70,7 @@ In 1979 a task force under Y.K. Alagh made the approach official, and official p
 <text class="ch-val ch-c" x="120.0" y="134.0">2,250</text>
 <text class="ch-note ch-c" x="525.0" y="110.4">no calorie norm</text>
 </svg>
-<figcaption><b>The nutritional standard behind the line, 1971 to 2014.</b> Calories per person per day. The rural norm (red) rose in 1979 and was retained through 1993; Tendulkar dropped the anchor altogether in 2009; Rangarajan restored it in 2014 at a lower level and added protein and fat norms. The dotted segments mark the absence of a norm, not a measured path. <span class="src">Source: Alagh task force (1979), Lakdawala (1993), Tendulkar (2009) and Rangarajan (2014) reports.</span></figcaption>
+<figcaption><b>The nutritional standard behind the line, 1971 to 2014.</b> Calories per person per day. The rural norm (red) rose in 1979 and was retained through 1993; Tendulkar dropped the anchor altogether in 2009; Rangarajan restored it in 2014 at a lower level and added protein and fat norms. The dotted segments mark the years with no norm and trace no measured path. <span class="src">Source: Alagh task force (1979), Lakdawala (1993), Tendulkar (2009) and Rangarajan (2014) reports.</span></figcaption>
 </figure>
 
 ## The line that stopped being recalculated
@@ -87,9 +87,9 @@ The 1993-94 estimate under this method put 36 per cent of the population below t
 
 The expert group chaired by Suresh Tendulkar reported in 2009 and did the thing that had been avoided for thirty years. It cut the line loose from calories.
 
-The reasoning was that the relationship between expenditure and calorie intake had broken down: households at the same real expenditure were consuming fewer calories than they had in the 1970s, and were spending on health, transport, schooling and fuel instead. Anchoring the line to a calorie count therefore meant anchoring it to a pattern of consumption that no longer existed.
+The reasoning was that the relationship between expenditure and calorie intake had broken down. Households at the same real expenditure were consuming fewer calories than they had in the 1970s, and were spending on health, transport, schooling and fuel instead. Anchoring the line to a calorie count therefore meant anchoring it to a pattern of consumption that no longer existed.
 
-The premise was well established by then. Angus Deaton and Jean Drèze, writing in the <em>Economic and Political Weekly</em> in 2009, documented the puzzle in detail: calorie intake had declined across most of the distribution over two decades in which real expenditure rose, and the decline was visible among the poor as well as the rich.<sup><a href="#fn7" id="ref7">7</a></sup> Whatever explains that, and the candidates include lighter physical work, better epidemiological conditions and shifting relative prices, it means a fixed calorie figure cannot be treated as a stable proxy for adequacy.
+The premise was well established by then. Angus Deaton and Jean Drèze, writing in the <em>Economic and Political Weekly</em> in 2009, documented the puzzle in detail. Calorie intake had declined across most of the distribution over two decades in which real expenditure rose, and the decline was visible among the poor as well as the rich.<sup><a href="#fn7" id="ref7">7</a></sup> Whatever explains that, and the candidates include lighter physical work, better epidemiological conditions and shifting relative prices, it means a fixed calorie figure cannot be treated as a stable proxy for adequacy.
 
 In its place, Tendulkar took the all-India urban poverty line basket implied by the Lakdawala method for 2004-05, treated that bundle as the reference standard, priced it for each state and for rural and urban areas separately, and included private spending on health and education in the basket for the first time.
 
@@ -98,7 +98,7 @@ The lines that emerged were ₹446.68 per capita per month in rural areas and �
 Nothing had changed for any household. Ten per cent of India's population, some 100 million people, moved from one side of the line to the other because an expert group changed the reference bundle.
 
 <figure class="figure wide">
-<svg viewBox="0 0 760 268" role="img" aria-label="Poverty headcount for the same year under two official methods. Each pair differs by eight to ten percentage points, roughly a hundred million people.">
+<svg viewBox="0 0 760 268" role="img" aria-label="Poverty headcount for the same year under two official methods. Each pair differs by 7.6 to 9.7 percentage points, roughly a hundred million people.">
 <line class="ch-grid" x1="110.0" y1="190.0" x2="690.0" y2="190.0"/>
 <text class="ch-lbl ch-e" x="104.0" y="193.0">0.0</text>
 <line class="ch-grid" x1="110.0" y1="160.0" x2="690.0" y2="160.0"/>
@@ -134,14 +134,14 @@ Nothing had changed for any household. Ten per cent of India's population, some 
 <text class="ch-sub ch-c" x="631.0" y="202.0">Rangarajan</text>
 <text class="ch-lbl ch-c" x="593.3" y="214.0">2011-12</text>
 </svg>
-<figcaption><b>The same year, counted twice.</b> Poverty headcount ratios produced by successive official methodologies from the same consumption surveys. Each pair differs by between eight and ten percentage points, which at these population sizes is roughly a hundred million people. <span class="src">Source: Planning Commission; Tendulkar (2009) and Rangarajan (2014) expert group reports.</span></figcaption>
+<figcaption><b>The same year, counted twice.</b> Poverty headcount ratios produced by successive official methodologies from the same consumption surveys. Each pair differs by between 7.6 and 9.7 percentage points, which at these population sizes is roughly a hundred million people. <span class="src">Source: Planning Commission; Tendulkar (2009) and Rangarajan (2014) expert group reports.</span></figcaption>
 </figure>
 
-Applied to the 2011-12 survey, the Tendulkar lines came to ₹816 rural and ₹1,000 urban per capita per month, and the headcount to 21.9 per cent. Converted to a daily figure for the newspapers, that was ₹27 and ₹33 a day, and the resulting argument was less about method than about dignity. The Planning Commission's own deputy chairman, Montek Singh Ahluwalia, said in 2013 that he was willing to agree the line was a bit low.
+Applied to the 2011-12 survey, the Tendulkar lines came to ₹816 rural and ₹1,000 urban per capita per month, and the headcount to 21.9 per cent. Converted to a daily figure for the newspapers, that was ₹27 and ₹33 a day, and the resulting argument turned on dignity more than on method. The Planning Commission's own deputy chairman, Montek Singh Ahluwalia, said in 2013 that he was willing to agree the line was a bit low.
 
 ## Rangarajan, and a lower standard producing a higher line
 
-An expert group under C. Rangarajan was appointed in June 2012 and reported in June 2014. It went back to separate rural and urban baskets, restored a nutritional anchor, and widened it: alongside calories it set norms for protein at 48 grams rural and 50 grams urban per person per day, and for fat at 28 and 26 grams.
+An expert group under C. Rangarajan was appointed in June 2012 and reported in June 2014. It went back to separate rural and urban baskets, restored a nutritional anchor, and widened it. Alongside calories it set norms for protein at 48 grams rural and 50 grams urban per person per day, and for fat at 28 and 26 grams.
 
 It also lowered the calorie norm. The rural requirement came down from 2,400 to 2,155 calories, and the urban from 2,100 to 2,090, on the reasoning that the age structure of the population and the physical demands of work had both changed since 1979. The gap between rural and urban norms, which had been 300 calories, became 65.
 
@@ -159,7 +159,7 @@ The Rangarajan report was submitted in June 2014, weeks after the government tha
 
 Two consumption surveys have been conducted since, for 2022-23 and 2023-24, and neither has had a poverty line applied to it. The instrument for measuring the distribution has been restored. The instrument for cutting it has not.
 
-Meanwhile the line's other job has quietly ended. A poverty line does double duty in India: it measures, and it also decides who is entitled to subsidised food, housing and insurance. That second function has largely detached from it. The National Food Security Act, 2013 covers up to 75 per cent of the rural population and 50 per cent of the urban, which is a political decision about coverage, not a headcount derived from any line. Beneficiary identification runs off the Socio-Economic and Caste Census of 2011 and its deprivation criteria. The poverty line survives mainly as a statement about how the country is doing.
+Meanwhile the line's other job has quietly ended. A poverty line does double duty in India. It measures, and it also decides who is entitled to subsidised food, housing and insurance. That second function has largely detached from it. The National Food Security Act, 2013 covers up to 75 per cent of the rural population and 50 per cent of the urban, which is a political decision about coverage and is derived from no line. Beneficiary identification runs off the Socio-Economic and Caste Census of 2011 and its deprivation criteria. The poverty line survives mainly as a statement about how the country is doing.
 
 ## The assumption of 1962
 
