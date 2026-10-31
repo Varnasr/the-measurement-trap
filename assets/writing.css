@@ -143,6 +143,8 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 .art-foot{margin-top:3em;padding-top:1.3em;border-top:1px solid var(--rule);font-size:.95rem;color:var(--grey)}
 .art-foot .art-bio{margin:0 0 12px;line-height:1.55}
 .art-foot .art-bio b{color:var(--ink)}
+.art-foot .art-contact{margin:0 0 12px;line-height:1.55}
+.art-foot .art-contact a{text-decoration:underline;text-underline-offset:2px}
 .art-foot .art-nav{font-size:.9rem}
 
 /* ---------------- INDEX ---------------- */
@@ -167,7 +169,7 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 
 /* print */
 @media print{
-  .progress,.masthead,.art-foot .art-nav{display:none}
+  .progress,.masthead,.art-foot .art-nav,.art-foot .art-contact{display:none}
   body{background:#fff;color:#000}
   .article{max-width:none}
 }
