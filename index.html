@@ -475,6 +475,14 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
 .endorse p{font-size:1rem;font-style:italic;margin:0 0 5px;text-align:left}
 .endorse cite{font-style:normal;font-size:.88rem;color:var(--grey);display:block}
 .praise-todo{font-size:.92rem;color:var(--faint);font-style:italic}
+.praise-filter{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.praise-filter button{appearance:none;cursor:pointer;font-family:inherit;font-size:.84rem;line-height:1.2;padding:6px 12px;border:1px solid var(--hair);border-radius:999px;background:var(--sheet);color:var(--grey)}
+.praise-filter button:hover{color:var(--ink)}
+.praise-filter button[aria-pressed="true"]{background:var(--link);border-color:var(--link);color:var(--on-link);font-weight:600}
+.praise-filter button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.praise-group{margin:0 0 8px}
+.praise-group[hidden]{display:none}
+h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;color:var(--grey)}
 .praise-note{font-size:.84rem;color:var(--faint);margin-top:12px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .share .wa{color:#39cc7d;border-color:#39cc7d}}
 :root[data-theme="dark"] .share .wa{color:#39cc7d;border-color:#39cc7d}
@@ -498,7 +506,7 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
   }
   body{background:#fff;font-size:11pt}
   .page{max-width:none;margin:0;padding:0;box-shadow:none}
-  .skip,.jumpline,.themebar,.dlrow,.progress,.citebox .cbtns,h2.sec .anchor{display:none}
+  .skip,.jumpline,.themebar,.praise-filter,.dlrow,.progress,.citebox .cbtns,h2.sec .anchor{display:none}
   a{color:#000;text-decoration:none}
   h2.sec{page-break-after:avoid}
   figure,table,tr,.srow{page-break-inside:avoid}
@@ -1061,9 +1069,19 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
 
 <!-- ================= ADVANCE PRAISE ================= -->
 <h2 class="sec" id="praise"><span class="no">&middot;</span>Advance praise</h2>
+<div class="praise-filter" id="praise-filter" role="group" aria-label="Show endorsements by type" hidden>
+  <button type="button" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-filter="politics" aria-pressed="false">Politics and public life</button>
+  <button type="button" data-filter="media" aria-pressed="false">Journalists and media</button>
+  <button type="button" data-filter="rights" aria-pressed="false">Transparency and rights movement</button>
+  <button type="button" data-filter="academia" aria-pressed="false">Academics and educators</button>
+  <button type="button" data-filter="reviewers" aria-pressed="false">Peer reviewers</button>
+</div>
+<section class="praise-group" data-group="politics" aria-labelledby="pg-politics">
+<h3 class="pgtitle" id="pg-politics">Politics and public life</h3>
 <blockquote class="endorse">
-  <p>&ldquo;Two major achievements of governments have been, first, successfully raising the Hindu-Muslim bogey and, second and even more significant, the fudging of data. Data is sacred for any nation and more so for a developing country where each count from the community and caste numbers to the wealth divide is meant to tell the story of the real progress the nation has made. And governments have achieved this feat successfully. It is creditable of Varna Sri Raman to have researched well to expose the myth of India&rsquo;s progress by sifting the real data.&rdquo;</p>
-  <cite>&mdash; Faraz Ahmad, Senior Journalist &amp; Author of <i>An Inside Job: Assassination of Rajiv Gandhi</i></cite>
+  <p>&ldquo;In <i>The Measurement Trap</i>, Varna Sri Raman offers a compelling and meticulously researched account of India&rsquo;s fraught relationship with the statistics by which it governs itself. Drawing on eight decades of India&rsquo;s experience, she reveals how an impressive statistical apparatus, conceived to illuminate the nation&rsquo;s progress, has increasingly become vulnerable to the political interests it was meant to hold accountable. The book raises questions that go to the very heart of democratic governance, reminding us that numbers are never merely numbers: they are instruments of power, whose credibility is indispensable to public accountability.&rdquo;</p>
+  <cite>&mdash; Shashi Tharoor, Member of Parliament (Lok Sabha) for Thiruvananthapuram &amp; Chairman, Parliamentary Standing Committee on External Affairs</cite>
 </blockquote>
 <blockquote class="endorse">
   <p>&ldquo;The great irony of the modern information era is that richer the information, poorer is our society. There seems to be just enough information for every small section of society to claim their view, causing friction with others.</p>
@@ -1072,21 +1090,28 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
   <cite>&mdash; Praveen Chakravarty, Member of Parliament (Rajya Sabha) for Tamil Nadu</cite>
 </blockquote>
 <blockquote class="endorse">
-  <p>&ldquo;Official numbers are given and cited as answers; this book teaches the reader to ask the questions that restore their context: what was counted, by whom, to what purpose, and who saw the result first. Varna Sri Raman&rsquo;s history of India&rsquo;s official numbers is, at its heart, a masterclass in asking them. It should be essential reading for students of public policy, and for anyone who forms a diagnosis or prescription from secondary data.&rdquo;</p>
-  <cite>&mdash; J. Mathew (Jojo) George, Director, St Mary&rsquo;s College, Hyderabad &amp; Group COO, Marian Educational Initiatives</cite>
+  <p>&ldquo;Having worked closely on electoral roll analysis in Bihar and Telangana, I have seen how decisions about data can directly affect citizens&#8217; rights and democratic representation. <i>The Measurement Trap</i> powerfully demonstrates that the question is not merely whether governments count accurately, but who controls the numbers, what remains uncounted, and whether citizens can challenge the results.</p>
+  <p>Varna Sri Raman makes a compelling case that independent, transparent and accountable public statistics are not merely good governance; they are essential safeguards of democracy.&rdquo;</p>
+  <cite>&mdash; Syed Khalid Saifullah, President, Hyderabad District Congress Committee; Vice Chairman, AICC Technology &amp; Data Cell</cite>
 </blockquote>
+</section>
+<section class="praise-group" data-group="media" aria-labelledby="pg-media">
+<h3 class="pgtitle" id="pg-media">Journalists and media</h3>
 <blockquote class="endorse">
-  <p>&ldquo;In <i>The Measurement Trap</i>, Varna Sri Raman offers a compelling and meticulously researched account of India&rsquo;s fraught relationship with the statistics by which it governs itself. Drawing on eight decades of India&rsquo;s experience, she reveals how an impressive statistical apparatus, conceived to illuminate the nation&rsquo;s progress, has increasingly become vulnerable to the political interests it was meant to hold accountable. The book raises questions that go to the very heart of democratic governance, reminding us that numbers are never merely numbers: they are instruments of power, whose credibility is indispensable to public accountability.&rdquo;</p>
-  <cite>&mdash; Shashi Tharoor, Member of Parliament (Lok Sabha) for Thiruvananthapuram &amp; Chairman, Parliamentary Standing Committee on External Affairs</cite>
-</blockquote>
-<blockquote class="endorse">
-  <p>&ldquo;In India, women&rsquo;s work, women&rsquo;s deaths and the air women breathe have been counted badly, late or not at all. <i>The Measurement Trap</i> shows that these gaps are a design problem. Varna Sri Raman writes with clarity and rigour on what the state misses and makes a compelling case for better statistics for better outcomes.&rdquo;</p>
-  <cite>&mdash; Bhanupriya Rao, Founder, BehanBox</cite>
+  <p>&ldquo;Two major achievements of governments have been, first, successfully raising the Hindu-Muslim bogey and, second and even more significant, the fudging of data. Data is sacred for any nation and more so for a developing country where each count from the community and caste numbers to the wealth divide is meant to tell the story of the real progress the nation has made. And governments have achieved this feat successfully. It is creditable of Varna Sri Raman to have researched well to expose the myth of India&rsquo;s progress by sifting the real data.&rdquo;</p>
+  <cite>&mdash; Faraz Ahmad, Senior Journalist &amp; Author of <i>An Inside Job: Assassination of Rajiv Gandhi</i></cite>
 </blockquote>
 <blockquote class="endorse">
   <p>&ldquo;<i>The Measurement Trap</i> makes for extraordinary reading: crisp, sharp, steady. Varna Sri Raman has a rare talent for threading tiny details into the big picture, in-out, in-out, her canvas engagingly telling the political story of India&rsquo;s mighty machinery to count and survey. Her neat labels, painstaking detail, intense categorising and easy recounting draw the reader in, and show her grasp of the day&rsquo;s politics as they shaped &lsquo;the measured, the unmeasured, and the unwelcome&rsquo;. It takes a &lsquo;millennial&rsquo; author to capture so acutely the gaps in measurement from the very beginning, women&rsquo;s unpaid work for one. The book&rsquo;s feminist spine brings measurement&rsquo;s many moving parts since independence together, closing with the soon-expected caste census. <i>The Measurement Trap</i> will count as a welcome addition to literature on India&rsquo;s political history.&rdquo;</p>
   <cite>&mdash; Nandita Sengupta, Senior Editor, The Times of India</cite>
 </blockquote>
+<blockquote class="endorse">
+  <p>&ldquo;In India, women&rsquo;s work, women&rsquo;s deaths and the air women breathe have been counted badly, late or not at all. <i>The Measurement Trap</i> shows that these gaps are a design problem. Varna Sri Raman writes with clarity and rigour on what the state misses and makes a compelling case for better statistics for better outcomes.&rdquo;</p>
+  <cite>&mdash; Bhanupriya Rao, Founder, BehanBox</cite>
+</blockquote>
+</section>
+<section class="praise-group" data-group="rights" aria-labelledby="pg-rights">
+<h3 class="pgtitle" id="pg-rights">Transparency and rights movement</h3>
 <blockquote class="endorse">
   <p>&ldquo;<i>The Measurement Trap</i> has enriched my understanding, and replaced my preoccupation with a book I read in my teens called, &#8220;How to lie with statistics&#8221;. The book demonstrates just how data can be used to destroy and build arguments. <i>The Measurement Trap</i> is a far more comprehensive treatise on data and statistics and the politics that affect the process. It is a fascinating contemporary analysis explaining how the mechanism of collection and storage of data has become one of the most critical means to control centres of power. Data and statistics allow the abuse of probity and power, and help it to don the false dignity of veracity. India has seen civic action questioning the hypotheses of such claims, and establishing that law and practice have to change. Varna Sri Raman documents and analyses the centres of people&#8217;s resistance as well.</p>
   <p>This book makes a strong argument of why and how the controls over data, in a democracy should lie with affected people. It meticulously explains how it is factored into a powerful tool in the power game of controls, and economic and political dominance. Technology and on-line data have become an apparatus to store information and its use and mis-use in the inaccessible clouds of our computers and our conscience, hiding lies and more dangerously half-truths. Data is often cloaked as objective scientific data, but like all that is technical, it engages with and obeys its master, and the ideology that informs its framework. The book brings popular movements also into its argument to claim that data, after all, should be most available to the people whom it describes; who will act as verifiers and users.</p>
@@ -1111,31 +1136,41 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
   <cite>&mdash; Nikhil Dey, Founding member, Mazdoor Kisan Shakti Sangathan (MKSS)</cite>
 </blockquote>
 <blockquote class="endorse">
-  <p>&ldquo;Having worked closely on electoral roll analysis in Bihar and Telangana, I have seen how decisions about data can directly affect citizens&#8217; rights and democratic representation. <i>The Measurement Trap</i> powerfully demonstrates that the question is not merely whether governments count accurately, but who controls the numbers, what remains uncounted, and whether citizens can challenge the results.</p>
-  <p>Varna Sri Raman makes a compelling case that independent, transparent and accountable public statistics are not merely good governance; they are essential safeguards of democracy.&rdquo;</p>
-  <cite>&mdash; Syed Khalid Saifullah, President, Hyderabad District Congress Committee; Vice Chairman, AICC Technology &amp; Data Cell</cite>
+  <p>&ldquo;<i>The Measurement Trap</i> shows that every census, survey and database is also a decision about who the state will see and those who get left out. Tracing India&rsquo;s counting from the colonial census to Aadhaar and algorithmic welfare, Varna Sri Raman keeps the ordinary person who is part of a statistic or a sheet as the primary subject. This includes families denied rations when a fingerprint fails to match, and workers whose job cards were deleted in bulk. A necessary book for anyone who assumes that more data makes for better government. We are more than what we measure.&rdquo;</p>
+  <cite>&mdash; Apar Gupta, Founder Director, Internet Freedom Foundation</cite>
 </blockquote>
+</section>
+<section class="praise-group" data-group="academia" aria-labelledby="pg-academia">
+<h3 class="pgtitle" id="pg-academia">Academics and educators</h3>
 <blockquote class="endorse">
   <p>&ldquo;As ordinary but concerned citizens, it is hard to appreciate how much data and the state&rsquo;s statistical machinery matter in our everyday lives, and therefore for our democracy&rsquo;s health. <i>The Measurement Trap</i> helps readers see that it is not a bookish issue, but a matter of public concern.&rdquo;</p>
   <cite>&mdash; Reetika Khera, Professor of Economics, IIT Delhi</cite>
 </blockquote>
 <blockquote class="endorse">
-  <p>&ldquo;Original, timely, analytically rich, and potentially significant for development studies, political economy, governance studies, and the sociology of statistics.&rdquo;</p>
-  <cite>&mdash; Reviewer 1</cite>
+  <p>&ldquo;Official numbers are given and cited as answers; this book teaches the reader to ask the questions that restore their context: what was counted, by whom, to what purpose, and who saw the result first. Varna Sri Raman&rsquo;s history of India&rsquo;s official numbers is, at its heart, a masterclass in asking them. It should be essential reading for students of public policy, and for anyone who forms a diagnosis or prescription from secondary data.&rdquo;</p>
+  <cite>&mdash; J. Mathew (Jojo) George, Director, St Mary&rsquo;s College, Hyderabad &amp; Group COO, Marian Educational Initiatives</cite>
 </blockquote>
+</section>
+<section class="praise-group" data-group="reviewers" aria-labelledby="pg-reviewers">
+<h3 class="pgtitle" id="pg-reviewers">Peer reviewers</h3>
 <blockquote class="endorse">
-  <p>&ldquo;This is a unique proposal, and work of this kind in such comprehensive manner is absent in contemporary comparable literature.&rdquo;</p>
-  <cite>&mdash; Reviewer 2</cite>
+  <p>&ldquo;Original, timely, analytically rich, and potentially significant for development studies, political economy, governance studies, and the sociology of statistics.&rdquo;</p>
+  <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
 </blockquote>
 <blockquote class="endorse">
   <p>&ldquo;The language is sophisticated, fluent, and highly readable. The prose demonstrates intellectual maturity and strong command over academic and policy discourse.&rdquo;</p>
-  <cite>&mdash; Reviewer 1</cite>
+  <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
+</blockquote>
+<blockquote class="endorse">
+  <p>&ldquo;This is a unique proposal, and work of this kind in such comprehensive manner is absent in contemporary comparable literature.&rdquo;</p>
+  <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
 </blockquote>
 <blockquote class="endorse">
   <p>&ldquo;The book &hellip; would be a very important contribution to a literature that is rare in terms of its importance of documenting the process from a critical and technical lens.&rdquo;</p>
-  <cite>&mdash; Reviewer 2</cite>
+  <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
 </blockquote>
-<p class="praise-note">The four endorsements credited to a reviewer are excerpts from the anonymous peer reviews of the book proposal for Routledge.</p>
+</section>
+<p class="praise-note">The four peer reviewer excerpts are taken from the anonymous reviews of the book proposal that Routledge commissioned.</p>
 
 
 <!-- ================= RESOURCES ================= -->
@@ -1253,6 +1288,19 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
         msg.textContent='Thank you \u2014 I\u2019ll email you when the book is published.'; msg.className='nf-msg ok'; msg.hidden=false; f.reset(); })
       .catch(function(){ msg.textContent='Sorry, something went wrong \u2014 please try again.'; msg.className='nf-msg err'; msg.hidden=false; });
   });
+})();
+</script>
+<script>
+// advance praise: filter by type of endorser (all groups show without JavaScript)
+(function(){
+  var bar=document.getElementById('praise-filter'); if(!bar)return;
+  var groups=document.querySelectorAll('.praise-group'), btns=bar.querySelectorAll('button[data-filter]');
+  bar.hidden=false;
+  function show(k){
+    groups.forEach(function(g){ g.hidden=(k!=='all'&&g.getAttribute('data-group')!==k); });
+    btns.forEach(function(b){ b.setAttribute('aria-pressed',b.getAttribute('data-filter')===k?'true':'false'); });
+  }
+  btns.forEach(function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-filter')); }); });
 })();
 </script>
 <script src="js/dyslexia-font.js" data-accent="var(--link)" data-radius="7px" defer></script>
