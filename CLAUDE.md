@@ -112,6 +112,36 @@ copy to 3.15.2, and the audit is at 0. Verified before and after: the build
 writes the same 12 pages, all seven essays reach `_site`, and
 `scripts/check.mjs` passes.
 
+## A merge builds the site and does not publish it
+
+whatcounts.in is served by Netlify (site `measurement-trap`), and auto-publishing
+is locked. Every merge to `main` builds a deploy and marks it `locked: true`.
+Nothing goes live until somebody publishes it. On 2 November 2026 two changes
+were merged, every GitHub check passed, and the live page stayed on the old copy
+for ten minutes until the publish workflow was run. The first change had only gone
+live because that workflow was run by hand from the owner's account; it was not
+automatic.
+
+To publish, run "Publish locked sites" (`publish-locked.yml`) in
+`Varnasr/Democracy-by-Design` by hand, with the input `site` set to
+`measurement-trap`. Leaving `site` blank publishes every locked site on the
+Netlify team, which is not wanted. The same workflow also runs by itself at
+20:00 IST, so an unpublished change goes out then at the latest. A publish costs
+Netlify credits, so batch changes into one merge and one publish.
+
+The owner said on 2 November 2026 that Claude may run that workflow itself. The
+permission has these limits: only after the owner has asked for a change to be
+merged and made live, only for `measurement-trap`, and followed by a check of the
+live page. It covers no other site and no other use of the workflow.
+
+To check that a change is live, fetch https://whatcounts.in/ with a throwaway
+query string and look for something the change added. Netlify's `get-project`
+reports the current production deploy, and a deploy that is built but not
+published shows `locked: true` with no `published_at`.
+
+The `deploy` job in `ci.yml` publishes a GitHub Pages copy. It succeeds whether or
+not Netlify has published, so a green `deploy` check says nothing about whatcounts.in.
+
 ## Watch out for
 
 - **The charts are hand-written SVG inside the markdown**, with their numbers
