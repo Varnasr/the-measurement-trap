@@ -1,6 +1,6 @@
 # The Measurement Trap — Companion Website
 
-Companion page for **_The Measurement Trap: India's Quest for Social Progress Through Eight Decades_** by [Varna Sri Raman](https://github.com/Varnasr) (Routledge, forthcoming).
+Companion page for **_The Measurement Trap: India's Quest for Social Progress Through Eight Decades_** by [Varna Sri Raman](https://github.com/Varnasr) (Routledge, March 2027; ISBN 9781041436744).
 
 The book tells the history of independent India through the machinery it built to count itself — the census, the sample surveys, the national accounts, and the people who designed them, ran them, defended them and, in recent years, fought over them. This site is a companion for readers, students, journalists and policy audiences: it offers orientation and a sourced chronology. It does **not** reproduce the manuscript.
 

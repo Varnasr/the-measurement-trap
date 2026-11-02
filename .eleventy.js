@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   [
     "index.html", "works.html", "thanks.html", "excerpts.html",
     "mainstream-2026-10-22.jpg",
-    "favicon.svg", "author.jpg", "og-image.png", "routledge-logo.png",
+    "favicon.svg", "author.jpg", "og-image.png", "routledge-logo.png", "cover.jpg",
     "chronology.csv", "robots.txt", "sitemap.xml", "CNAME",
     "fonts", "assets", "js"
   ].forEach((f) => eleventyConfig.addPassthroughCopy(f));
