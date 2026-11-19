@@ -89,21 +89,27 @@ check("the dyslexia-friendly font is actually shipped", () => {
   return `${faces.length} font files`;
 });
 
-check("the home page essay index lists every essay, by its own title", () => {
+check("the home page essay index lists every essay, by its own title and the first sentence of its dek", () => {
   // index.html is copied through as written, so its list of essays is typed by
   // hand. An essay added, renamed or retitled would leave the list wrong and
   // nothing would error.
   const home = read("index.html");
   const nav = home.match(/<nav class="essayindex"[\s\S]*?<\/nav>/);
   assert(nav, "index.html has no essay index");
-  const rows = [...nav[0].matchAll(/<li><a href="\/essays\/([a-z0-9-]+)\/">([^<]+)<\/a><span class="ei-chip">([^<]+)<\/span><\/li>/g)];
+  const rows = [...nav[0].matchAll(/<li><a href="\/essays\/([a-z0-9-]+)\/"><span class="ei-top"><span class="ei-t">([^<]+)<\/span><span class="ei-chip">([^<]+)<\/span><\/span><span class="ei-d">([^<]+)<\/span><\/a><\/li>/g)];
   const listed = new Map(rows.map((r) => [r[1], r[2]]));
+  const lines = new Map(rows.map((r) => [r[1], r[4].replace(/&rsquo;/g, "'")]));
   assert(listed.size === rows.length, "an essay is listed twice");
   for (const f of essays) {
     const slug = f.replace(/\.md$/, "");
     const title = src[f].match(/^title:\s*"?(.*?)"?\s*$/m)[1];
     assert(listed.has(slug), `${slug} is missing from the home page essay index`);
     assert(listed.get(slug) === title, `${slug} is listed as "${listed.get(slug)}", its title is "${title}"`);
+    // The line under each title is the first sentence of the essay's own dek.
+    const dek = src[f].match(/^dek:\s*"(.*)"\s*$/m)[1];
+    const line = lines.get(slug);
+    assert(line.endsWith(".") && (dek === line || dek.startsWith(line + " ")),
+      `${slug}: the line under its title is not the first sentence of its dek`);
   }
   assert(listed.size === essays.length, "the index lists an essay that does not exist");
   const n = nav[0].match(/class="ei-n">(\d+)</);

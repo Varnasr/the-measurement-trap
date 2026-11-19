@@ -184,17 +184,10 @@ p{hanging-punctuation:first}
 .titleblock .subtitle{font-size:1.18rem;font-style:italic;font-weight:400;margin-bottom:26px}
 .titleblock .author{font-size:1.08rem;margin-bottom:4px}
 .titleblock .author sup{font-size:.7em}
-.titleblock .affil{font-size:.94rem;color:var(--grey)}
 .titleblock .pub-logo{display:inline-block;margin:14px auto 0;padding:8px 13px;background:#fff;border-radius:6px;line-height:0}
 .titleblock .pub-logo img{width:150px;height:auto;display:block}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .titleblock .pub-logo{box-shadow:0 1px 3px rgba(0,0,0,.4)}}
 :root[data-theme="dark"] .titleblock .pub-logo{box-shadow:0 1px 3px rgba(0,0,0,.4)}
-.getbook{display:flex;gap:22px;align-items:center;justify-content:center;margin:22px auto 0;max-width:34rem;text-align:left}
-.getbook .cover{flex:none;line-height:0}
-.getbook .cover img{width:130px;height:auto;display:block;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
-.getbook .gb-text{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
-.getbook .gb-line{margin:0;text-indent:0;font-size:.94rem;color:var(--grey)}
-@media (max-width:480px){.getbook{flex-direction:column;text-align:center}.getbook .gb-text{align-items:center}}
 .titleblock .date{font-size:.94rem;color:var(--grey);margin-top:14px}
 
 /* ---------- abstract ---------- */
@@ -216,7 +209,6 @@ p{hanging-punctuation:first}
 .lede p{text-indent:0}
 .lede .hook{font-size:1.06rem;line-height:1.5;color:var(--ink);margin:0 0 16px}
 .lede .thesis{font-size:1.3rem;font-weight:600;line-height:1.3;color:var(--ink);margin:0 0 16px}
-.lede .whatitis{font-size:.98rem;font-style:italic;color:var(--grey);line-height:1.5;margin:0 0 20px}
 .lede .cta{margin:0}
 .cta-btn{display:inline-block;background:var(--link);color:#fff;font-size:.92rem;font-weight:500;padding:10px 22px;border-radius:7px;text-decoration:none;letter-spacing:.01em}
 .cta-btn:hover{text-decoration:none;opacity:.92}
@@ -376,10 +368,15 @@ h2.sec:hover .anchor,h2.sec .anchor:focus-visible{opacity:1}
 .dlrow .sep{margin:0 .55em;color:var(--hair)}
 
 /* ---------- complementary resources ---------- */
-.reslist{list-style:none;margin:16px 0 4px;padding:0}
-.reslist li{margin:0 0 13px}
-.reslist .rt{font-weight:600}
-.reslist .rd{display:block;font-size:.92rem;color:var(--grey);margin-top:1px}
+.explore{margin:18px 0 8px;padding:24px 22px 16px;background:var(--desk);text-align:center}
+.explore .ex-label{margin:0;padding:0 0 10px;border-bottom:1px solid var(--hair);font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);text-indent:0;line-height:1.4}
+.explore .ex-list + .ex-label{margin-top:14px}
+.ex-list{list-style:none;margin:6px 0 0;padding:0}
+.ex-list li{margin:0;padding:11px 0}
+.ex-list .rt{font-size:1.5rem;font-weight:400;line-height:1.2;color:var(--ink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;text-decoration-color:var(--hair)}
+.ex-list .rt:hover{color:var(--link);text-decoration-color:var(--link)}
+.ex-list .rd{display:block;max-width:46ch;margin:5px auto 0;font-size:.9rem;line-height:1.45;color:var(--grey)}
+@media (max-width:480px){.ex-list .rt{font-size:1.28rem}.explore{padding:20px 16px 12px}}
 .contact{margin-top:16px;font-size:.9rem;color:var(--grey);line-height:1.6}
 .contact a{font-weight:500}
 
@@ -477,13 +474,16 @@ ul.statuslog a{text-decoration:underline;text-underline-offset:2px}
 .essayindex .ei-h{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:0;padding:0 0 8px;border-bottom:1.5px solid var(--rule);text-indent:0}
 .essayindex .ei-n{font-weight:400;letter-spacing:0;color:var(--faint);margin-left:.35em}
 .essayindex ol{list-style:none;margin:0;padding:0}
-.essayindex li{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair-faint);margin:0;text-indent:0}
-.essayindex li a{color:var(--ink);font-size:1.02rem;font-weight:600;line-height:1.3}
-.essayindex li a:hover{color:var(--link)}
+.essayindex li{margin:0;text-indent:0;border-bottom:1px solid var(--hair-faint)}
+.essayindex li a{display:block;padding:11px 0;color:var(--ink);text-decoration:none}
+.essayindex .ei-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.essayindex .ei-t{font-size:1.02rem;font-weight:600;line-height:1.3}
+.essayindex li a:hover .ei-t{color:var(--link);text-decoration:underline}
 .essayindex .ei-chip{flex:none;font-size:.78rem;line-height:1.2;color:var(--grey);border:1px solid var(--hair);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.essayindex .ei-d{display:block;margin-top:4px;font-size:.9rem;line-height:1.42;color:var(--grey)}
 .essayindex .ei-all{font-size:.88rem;margin:10px 0 0;text-indent:0;text-align:left}
 .essayindex .ei-all a{text-decoration:underline;text-underline-offset:2px}
-@media (max-width:420px){.essayindex li{flex-wrap:wrap;gap:4px 12px}}
+@media (max-width:420px){.essayindex .ei-top{flex-wrap:wrap;gap:4px 12px}}
 
 /* ---------- folded sections: closed on a phone, opened by script on a wide screen ---------- */
 details.fold{margin:14px 0 6px}
@@ -513,16 +513,37 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .share .wa{color:#39cc7d;border-color:#39cc7d}}
 :root[data-theme="dark"] .share .wa{color:#39cc7d;border-color:#39cc7d}
 
-/* in-page nav, styled as a paper's contents strip */
-.jumpline{
-  display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;
-  gap:.4em 1.6em;
-  margin:28px auto 0;max-width:60ch;
-  padding:10px 4px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
-  font-size:.84rem;letter-spacing:.01em;
+/* ---------- title block, second pass: one sentence, one action bar, a ruled contents list, the book's facts ---------- */
+.titleblock .whatitis{max-width:34rem;margin:16px auto 0;font-size:1rem;line-height:1.5;color:var(--grey);text-indent:0}
+.cta-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:20px 0 0;padding:15px 18px;background:var(--link);color:#fff;font-size:1.06rem;font-weight:500;line-height:1.25;text-align:left;text-decoration:none;border-radius:4px}
+.cta-bar:hover{text-decoration:none;opacity:.92}
+.cta-bar:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.cta-bar .cta-arrow{flex:none;font-size:1.3rem;line-height:1}
+:root[data-theme="dark"] .cta-bar{color:#0f1a2c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-bar{color:#0f1a2c}}
+.tb-cols{margin-top:26px;text-align:left}
+.tb-label{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:0;padding:0 0 8px;text-indent:0;line-height:1.3}
+.contents ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:22px;border-top:1.5px solid var(--rule)}
+.contents li{margin:0;border-bottom:1px solid var(--hair-faint)}
+.contents a{display:block;padding:10px 0;font-size:.95rem;line-height:1.3;color:var(--ink)}
+.contents a:hover{color:var(--link)}
+.thebook{margin-top:28px;display:grid;grid-template-columns:1fr;gap:18px;justify-items:center}
+.thebook .cover{line-height:0}
+.thebook .cover img{width:124px;height:auto;display:block;border-radius:3px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tb-facts{width:100%}
+dl.facts{margin:0;border-top:1.5px solid var(--rule)}
+dl.facts div{display:grid;grid-template-columns:7rem 1fr;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--hair-faint)}
+dl.facts dt{font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+dl.facts dd{font-size:.95rem;line-height:1.35}
+.titleblock .tb-facts .pub-logo{margin:14px 0 0}
+@media (min-width:700px){
+  .tb-cols{display:grid;grid-template-columns:12.5rem 1fr;gap:44px;align-items:start}
+  .contents ul{grid-template-columns:1fr}
+  .contents a{padding:7px 0}
+  .thebook{margin-top:0;grid-template-columns:auto 1fr;gap:22px;justify-items:start;align-items:start}
+  .thebook .cover img{width:132px}
+  dl.facts div{grid-template-columns:6.2rem 1fr;gap:10px}
 }
-.jumpline a{color:var(--grey);white-space:nowrap}
-.jumpline a:hover{color:var(--link)}
 
 /* ---------- print ---------- */
 @media print{
@@ -532,7 +553,7 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   }
   body{background:#fff;font-size:11pt}
   .page{max-width:none;margin:0;padding:0;box-shadow:none}
-  .skip,.jumpline,.themebar,.praise-filter,.dlrow,.progress,.citebox .cbtns,h2.sec .anchor{display:none}
+  .skip,.contents,.cta-bar .cta-arrow,.themebar,.praise-filter,.dlrow,.progress,.citebox .cbtns,h2.sec .anchor{display:none}
   a{color:#000;text-decoration:none}
   h2.sec{page-break-after:avoid}
   figure,table,tr,.srow{page-break-inside:avoid}
@@ -557,35 +578,47 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   <h1>The Measurement Trap</h1>
   <p class="subtitle">India's Quest for Social Progress Through Eight Decades</p>
   <p class="author">Varna Sri Raman<sup>*</sup></p>
-  <p class="affil">Routledge, March 2027</p>
-  <a class="pub-logo" href="https://www.routledge.com/" target="_blank" rel="noopener" aria-label="Routledge, Taylor &amp; Francis Group">
-    <img src="routledge-logo.png" alt="Routledge, Taylor &amp; Francis Group" width="150" height="42">
-  </a>
-  <div class="getbook">
-    <a class="cover" href="https://www.routledge.com/The-Measurement-Trap-Indias-Quest-for-Social-Progress-Through-Eight-Decades/Raman/p/book/9781041436744" target="_blank" rel="noopener"><img src="cover.jpg" alt="Cover of The Measurement Trap: India's Quest for Social Progress Through Eight Decades, by Varna Sri Raman" width="180" height="275"></a>
-    <div class="gb-text">
-      <p class="gb-line">Hardback · 284 pages · ISBN 9781041436744</p>
-      <p class="gb-line">Publication: March 2027. Pre-orders open on 5 March 2027.</p>
-      <a class="cta-btn" href="https://www.routledge.com/The-Measurement-Trap-Indias-Quest-for-Social-Progress-Through-Eight-Decades/Raman/p/book/9781041436744" target="_blank" rel="noopener">See the book on Routledge</a>
+  <p class="whatitis">A history of independent India told through the machinery it built to count itself (the census, the sample surveys, the national accounts) and the battles now being fought over them.</p>
+  <a class="cta-bar" href="https://www.routledge.com/The-Measurement-Trap-Indias-Quest-for-Social-Progress-Through-Eight-Decades/Raman/p/book/9781041436744" target="_blank" rel="noopener"><span>See the book on Routledge</span><span class="cta-arrow" aria-hidden="true">&rarr;</span></a>
+  <div class="tb-cols">
+    <nav class="contents" aria-labelledby="ct-h">
+      <h2 class="tb-label" id="ct-h">Contents</h2>
+      <ul>
+        <li><a href="#opens">Opening</a></li>
+        <li><a href="#argument">The argument</a></li>
+        <li><a href="#plan">The plan</a></li>
+        <li><a href="#method">Method</a></li>
+        <li><a href="#chronology">Chronology</a></li>
+        <li><a href="#series">Figures</a></li>
+        <li><a href="#literature">Literature</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#praise">Praise</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="excerpts">Excerpts</a></li>
+        <li><a href="works">Related work</a></li>
+        <li><a href="/essays/">Essays</a></li>
+      </ul>
+    </nav>
+    <div class="thebook">
+      <a class="cover" href="https://www.routledge.com/The-Measurement-Trap-Indias-Quest-for-Social-Progress-Through-Eight-Decades/Raman/p/book/9781041436744" target="_blank" rel="noopener"><img src="cover.jpg" alt="Cover of The Measurement Trap: India's Quest for Social Progress Through Eight Decades, by Varna Sri Raman" width="180" height="275"></a>
+      <div class="tb-facts">
+        <h2 class="tb-label" id="bf-h">The book</h2>
+        <dl class="facts" aria-labelledby="bf-h">
+          <div><dt>Format</dt><dd>Hardback</dd></div>
+          <div><dt>Extent</dt><dd>284 pages</dd></div>
+          <div><dt>ISBN</dt><dd>9781041436744</dd></div>
+          <div><dt>Publisher</dt><dd>Routledge</dd></div>
+          <div><dt>Publication</dt><dd>March 2027</dd></div>
+          <div><dt>Pre-orders</dt><dd>Open on 5 March 2027</dd></div>
+        </dl>
+        <a class="pub-logo" href="https://www.routledge.com/" target="_blank" rel="noopener" aria-label="Routledge, Taylor &amp; Francis Group">
+          <img src="routledge-logo.png" alt="Routledge, Taylor &amp; Francis Group" width="150" height="42">
+        </a>
+      </div>
     </div>
   </div>
   <p class="date">Companion page · updated November 2026</p>
-  <nav class="jumpline" aria-label="Contents">
-    <a href="#opens">Opening</a>
-    <a href="#argument">The argument</a>
-    <a href="#plan">The plan</a>
-    <a href="#method">Method</a>
-    <a href="#chronology">Chronology</a>
-    <a href="#series">Figures</a>
-    <a href="#literature">Literature</a>
-    <a href="#author">Author</a>
-    <a href="#publication">Publication</a>
-    <a href="#praise">Praise</a>
-    <a href="#resources">Resources</a>
-    <a href="excerpts">Excerpts</a>
-    <a href="works">Related work</a>
-    <a href="/essays/">Essays</a>
-  </nav>
   <p class="share"><a class="wa" href="https://wa.me/?text=The%20Measurement%20Trap%2C%20companion%20page%3A%20https%3A//whatcounts.in/" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg class="waicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>Share on WhatsApp</a></p>
 </header>
 
@@ -593,13 +626,13 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 <nav class="essayindex" aria-labelledby="ei-h">
   <h2 class="ei-h" id="ei-h">Essays <span class="ei-n">7</span></h2>
   <ol>
-    <li><a href="/essays/work-that-was-never-work/">Work that was never work</a><span class="ei-chip">Women and the economy</span></li>
-    <li><a href="/essays/ninety-six-years-between-counts/">Ninety-six years between counts</a><span class="ei-chip">96 years</span></li>
-    <li><a href="/essays/where-the-line-is-drawn/">Where the line is drawn</a><span class="ei-chip">Poverty and prices</span></li>
-    <li><a href="/essays/eleven-years-without-a-number/">Eleven years without a number</a><span class="ei-chip">11 years</span></li>
-    <li><a href="/essays/enrolled-and-unable-to-read/">Enrolled and unable to read</a><span class="ei-chip">Education</span></li>
-    <li><a href="/essays/the-custody-of-six-point-one/">The custody of 6.1 per cent</a><span class="ei-chip">6.1 per cent</span></li>
-    <li><a href="/essays/a-century-of-missing-women/">A century of missing women</a><span class="ei-chip">A century</span></li>
+    <li><a href="/essays/work-that-was-never-work/"><span class="ei-top"><span class="ei-t">Work that was never work</span><span class="ei-chip">Women and the economy</span></span><span class="ei-d">India now measures, to the minute, how long women spend cooking, cleaning and caring.</span></a></li>
+    <li><a href="/essays/ninety-six-years-between-counts/"><span class="ei-top"><span class="ei-t">Ninety-six years between counts</span><span class="ei-chip">96 years</span></span><span class="ei-d">India stopped counting caste in 1931 and starts again in 2027.</span></a></li>
+    <li><a href="/essays/where-the-line-is-drawn/"><span class="ei-top"><span class="ei-t">Where the line is drawn</span><span class="ei-chip">Poverty and prices</span></span><span class="ei-d">Six expert groups in fifty years have drawn India&rsquo;s poverty line, and each has produced a different number of poor people out of the same survey.</span></a></li>
+    <li><a href="/essays/eleven-years-without-a-number/"><span class="ei-top"><span class="ei-t">Eleven years without a number</span><span class="ei-chip">11 years</span></span><span class="ei-d">A consumption survey was conducted in 2017-18, approved for release, and then scrapped on grounds the ministry never specified.</span></a></li>
+    <li><a href="/essays/enrolled-and-unable-to-read/"><span class="ei-top"><span class="ei-t">Enrolled and unable to read</span><span class="ei-chip">Education</span></span><span class="ei-d">India has kept school enrolment above 95 per cent for close to twenty years.</span></a></li>
+    <li><a href="/essays/the-custody-of-six-point-one/"><span class="ei-top"><span class="ei-t">The custody of 6.1 per cent</span><span class="ei-chip">6.1 per cent</span></span><span class="ei-d">In January 2019 a completed, approved survey of India&rsquo;s labour force was not published.</span></a></li>
+    <li><a href="/essays/a-century-of-missing-women/"><span class="ei-top"><span class="ei-t">A century of missing women</span><span class="ei-chip">A century</span></span><span class="ei-d">The Indian census has returned more men than women at every count since 1901.</span></a></li>
   </ol>
   <p class="ei-all"><a href="/essays/">All essays, with summaries</a></p>
 </nav>
@@ -608,7 +641,6 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 <section class="lede" aria-label="Introduction">
   <p class="hook">In January 2019, a government insisted its own unemployment report did not exist. The report did exist. Its figure was the highest joblessness the surveys had recorded in over four decades, and the fight was over who controls the number.</p>
   <p class="thesis">What a state measures, it governs. What it leaves uncounted, it leaves unattended.</p>
-  <p class="whatitis">A history of independent India told through the machinery it built to count itself (the census, the sample surveys, the national accounts) and the battles now being fought over them.</p>
   <form class="notify-form" name="notify" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
     <input type="hidden" name="form-name" value="notify">
     <p class="nf-hp"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
@@ -1230,17 +1262,25 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 
 <!-- ================= RESOURCES ================= -->
 <h2 class="sec" id="resources"><span class="no">&middot;</span>Complementary resources</h2>
-<p class="noindent">Interactive data tools by the author on related subjects.</p>
-<ul class="reslist">
-  <li><a class="rt" href="https://devindicators.impactmojo.in" target="_blank" rel="noopener">India Development Indicators</a>
-      <span class="rd">GDP, life expectancy, literacy, electricity, internet and CO&#8322; on live World Bank data, with a state-wise HDI ranking and policy timeline.</span></li>
-  <li><a class="rt" href="https://howindialives.impactmojo.in" target="_blank" rel="noopener">How India Lives</a>
-      <span class="rd">205 state-level maps across demography, health, gender, economy, education and environment. They show why India&rsquo;s states differ, and why it matters for policy.</span></li>
-  <li><a class="rt" href="https://sdgtracker.impactmojo.in" target="_blank" rel="noopener">SDG Progress Tracker</a>
-      <span class="rd">India&rsquo;s progress on all 17 Sustainable Development Goals, with year-on-year trends and a flow of on-track, stagnating and off-track outcomes.</span></li>
-  <li><a class="rt" href="https://someperspective.info" target="_blank" rel="noopener">Some Perspective</a>
-      <span class="rd">Data-driven analysis of India&rsquo;s political economy, covering policy impact, fiscal trends and governance indicators with interactive visualisations.</span></li>
-</ul>
+<div class="explore">
+  <p class="ex-label">Interactive data tools by the author on related subjects</p>
+  <ul class="ex-list">
+    <li><a class="rt" href="https://devindicators.impactmojo.in" target="_blank" rel="noopener">India Development Indicators</a>
+        <span class="rd">GDP, life expectancy, literacy, electricity, internet and CO&#8322; on live World Bank data, with a state-wise HDI ranking and policy timeline.</span></li>
+    <li><a class="rt" href="https://howindialives.impactmojo.in" target="_blank" rel="noopener">How India Lives</a>
+        <span class="rd">205 state-level maps across demography, health, gender, economy, education and environment. They show why India&rsquo;s states differ, and why it matters for policy.</span></li>
+    <li><a class="rt" href="https://sdgtracker.impactmojo.in" target="_blank" rel="noopener">SDG Progress Tracker</a>
+        <span class="rd">India&rsquo;s progress on all 17 Sustainable Development Goals, with year-on-year trends and a flow of on-track, stagnating and off-track outcomes.</span></li>
+    <li><a class="rt" href="https://someperspective.info" target="_blank" rel="noopener">Some Perspective</a>
+        <span class="rd">Data-driven analysis of India&rsquo;s political economy, covering policy impact, fiscal trends and governance indicators with interactive visualisations.</span></li>
+  </ul>
+  <p class="ex-label">Elsewhere on this site</p>
+  <ul class="ex-list">
+    <li><a class="rt" href="/essays/">Essays</a></li>
+    <li><a class="rt" href="excerpts">Excerpts</a></li>
+    <li><a class="rt" href="works">Related work</a></li>
+  </ul>
+</div>
 <p class="contact"><b>Contact.</b> <a href="https://idealog.works" target="_blank" rel="noopener">Varna Sri Raman</a> &middot; <a href="https://x.com/varna" target="_blank" rel="noopener">@varna</a>. Enquiries about rights, review copies and speaking will be listed here on publication.</p>
 
 </main>

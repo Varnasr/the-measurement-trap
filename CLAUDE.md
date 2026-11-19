@@ -136,6 +136,18 @@ copy to 3.15.2, and the audit is at 0. Verified before and after: the build
 writes the same 12 pages, all seven essays reach `_site`, and
 `scripts/check.mjs` passes.
 
+## The home page opens with one sentence, one bar and two ruled lists
+
+Since November 2026 the title block of `index.html` holds, in order: the title,
+the subtitle, the author, one sentence saying what the book is, a full-width bar
+to the book's page at Routledge, a ruled list of the page's sections, and the
+cover beside a labelled list of the book's facts (format, extent, ISBN,
+publisher, publication, pre-orders). The facts are typed by hand and repeat the
+Publication details section lower down, so change both together. Each row of the
+essay index carries the first sentence of that essay's own `dek`, and
+`scripts/check.mjs` fails if the line is not the start of the dek. The
+Complementary resources section is a band of large links (`.explore`).
+
 ## A merge builds the site and does not publish it
 
 whatcounts.in is served by Netlify (site `measurement-trap`), and auto-publishing
