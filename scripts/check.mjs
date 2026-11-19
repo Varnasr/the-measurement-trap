@@ -89,6 +89,41 @@ check("the dyslexia-friendly font is actually shipped", () => {
   return `${faces.length} font files`;
 });
 
+check("the home page essay index lists every essay, by its own title", () => {
+  // index.html is copied through as written, so its list of essays is typed by
+  // hand. An essay added, renamed or retitled would leave the list wrong and
+  // nothing would error.
+  const home = read("index.html");
+  const nav = home.match(/<nav class="essayindex"[\s\S]*?<\/nav>/);
+  assert(nav, "index.html has no essay index");
+  const rows = [...nav[0].matchAll(/<li><a href="\/essays\/([a-z0-9-]+)\/">([^<]+)<\/a><span class="ei-chip">([^<]+)<\/span><\/li>/g)];
+  const listed = new Map(rows.map((r) => [r[1], r[2]]));
+  assert(listed.size === rows.length, "an essay is listed twice");
+  for (const f of essays) {
+    const slug = f.replace(/\.md$/, "");
+    const title = src[f].match(/^title:\s*"?(.*?)"?\s*$/m)[1];
+    assert(listed.has(slug), `${slug} is missing from the home page essay index`);
+    assert(listed.get(slug) === title, `${slug} is listed as "${listed.get(slug)}", its title is "${title}"`);
+  }
+  assert(listed.size === essays.length, "the index lists an essay that does not exist");
+  const n = nav[0].match(/class="ei-n">(\d+)</);
+  assert(n && Number(n[1]) === essays.length, `the index says ${n && n[1]} essays, there are ${essays.length}`);
+  return `${rows.length} essays`;
+});
+
+check("every folded section states the number of items it holds", () => {
+  const home = read("index.html");
+  const folds = [...home.matchAll(/<details class="fold"[^>]*>\s*<summary>[\s\S]*?<span class="fold-n">(\d+) (\w+)<\/span><\/summary>([\s\S]*?)<\/details>/g)];
+  assert(folds.length === 6, `expected 6 folded sections, found ${folds.length}`);
+  const unit = { endorsement: /<blockquote class="endorse">/g, endorsements: /<blockquote class="endorse">/g, entries: /<td class="cdate">/g, works: /<li\b/g };
+  for (const [, n, word, body] of folds) {
+    assert(unit[word], `unknown unit "${word}"`);
+    const have = (body.match(unit[word]) || []).length;
+    assert(have === Number(n), `a folded section says ${n} ${word} and holds ${have}`);
+  }
+  return `${folds.length} sections`;
+});
+
 check("the built site exists and every essay reached it", () => {
   const site = join(ROOT, "_site");
   assert(existsSync(site), "_site is missing; run `npx eleventy` first");
