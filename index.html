@@ -444,6 +444,7 @@ td.ctitle{width:15em;font-weight:500}
 dl.pub{margin:18px 0}
 dl.pub div{display:grid;grid-template-columns:11em 1fr;gap:14px;padding:5px 0}
 dl.pub dt{font-style:italic;color:var(--grey)}
+dl.pub dd a{text-decoration:underline;text-underline-offset:2px}
 @media (max-width:560px){dl.pub div{grid-template-columns:1fr;gap:0}}
 
 /* ---------- status log ---------- */
@@ -451,6 +452,7 @@ h3.statushead{margin:26px 0 10px;font-size:1rem;font-weight:600}
 ul.statuslog{list-style:none;margin:0 0 18px;padding:0}
 ul.statuslog li{display:grid;grid-template-columns:11em 1fr;gap:14px;padding:5px 0}
 ul.statuslog .sdate{font-style:italic;color:var(--grey)}
+ul.statuslog a{text-decoration:underline;text-underline-offset:2px}
 @media (max-width:560px){ul.statuslog li{grid-template-columns:1fr;gap:2px}}
 
 /* ---------- end matter ---------- */
@@ -469,6 +471,30 @@ ul.statuslog .sdate{font-style:italic;color:var(--grey)}
 .share .wa{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:#0C6F3A;border:1px solid #0C6F3A;border-radius:999px;padding:5px 15px;text-decoration:none}
 .share .wa:hover{background:rgba(18,140,74,.09);text-decoration:none}
 .share .waicon{width:15px;height:15px;flex:none}
+
+/* ---------- essays index: one ruled line per essay, its figure or subject as a chip ---------- */
+.essayindex{max-width:60ch;margin:30px auto 0;text-align:left}
+.essayindex .ei-h{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:0;padding:0 0 8px;border-bottom:1.5px solid var(--rule);text-indent:0}
+.essayindex .ei-n{font-weight:400;letter-spacing:0;color:var(--faint);margin-left:.35em}
+.essayindex ol{list-style:none;margin:0;padding:0}
+.essayindex li{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair-faint);margin:0;text-indent:0}
+.essayindex li a{color:var(--ink);font-size:1.02rem;font-weight:600;line-height:1.3}
+.essayindex li a:hover{color:var(--link)}
+.essayindex .ei-chip{flex:none;font-size:.78rem;line-height:1.2;color:var(--grey);border:1px solid var(--hair);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.essayindex .ei-all{font-size:.88rem;margin:10px 0 0;text-indent:0;text-align:left}
+.essayindex .ei-all a{text-decoration:underline;text-underline-offset:2px}
+@media (max-width:420px){.essayindex li{flex-wrap:wrap;gap:4px 12px}}
+
+/* ---------- folded sections: closed on a phone, opened by script on a wide screen ---------- */
+details.fold{margin:14px 0 6px}
+details.fold > summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 0;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);font-size:.95rem;font-weight:600;color:var(--ink);text-indent:0}
+details.fold > summary::-webkit-details-marker{display:none}
+details.fold > summary::before{content:"+";flex:none;width:1.1em;text-align:center;font-weight:400;color:var(--link)}
+details.fold[open] > summary::before{content:"\2212"}
+details.fold > summary:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+details.fold > summary h3{display:inline;margin:0;font-size:inherit;font-weight:inherit;font-style:normal;color:inherit}
+details.fold > summary .fold-n{font-weight:400;color:var(--grey);margin-left:auto;font-size:.86rem}
+details.fold[open] > summary{border-bottom-color:transparent}
 
 /* ---------- advance praise ---------- */
 .endorse{margin:16px 0;padding:2px 0 2px 16px;border-left:2px solid var(--hair)}
@@ -562,6 +588,21 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   </nav>
   <p class="share"><a class="wa" href="https://wa.me/?text=The%20Measurement%20Trap%2C%20companion%20page%3A%20https%3A//whatcounts.in/" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><svg class="waicon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.3-1.18l-.31-.18-3.19.84.85-3.11-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>Share on WhatsApp</a></p>
 </header>
+
+<!-- ================= ESSAYS INDEX ================= -->
+<nav class="essayindex" aria-labelledby="ei-h">
+  <h2 class="ei-h" id="ei-h">Essays <span class="ei-n">7</span></h2>
+  <ol>
+    <li><a href="/essays/work-that-was-never-work/">Work that was never work</a><span class="ei-chip">Women and the economy</span></li>
+    <li><a href="/essays/ninety-six-years-between-counts/">Ninety-six years between counts</a><span class="ei-chip">96 years</span></li>
+    <li><a href="/essays/where-the-line-is-drawn/">Where the line is drawn</a><span class="ei-chip">Poverty and prices</span></li>
+    <li><a href="/essays/eleven-years-without-a-number/">Eleven years without a number</a><span class="ei-chip">11 years</span></li>
+    <li><a href="/essays/enrolled-and-unable-to-read/">Enrolled and unable to read</a><span class="ei-chip">Education</span></li>
+    <li><a href="/essays/the-custody-of-six-point-one/">The custody of 6.1 per cent</a><span class="ei-chip">6.1 per cent</span></li>
+    <li><a href="/essays/a-century-of-missing-women/">A century of missing women</a><span class="ei-chip">A century</span></li>
+  </ol>
+  <p class="ei-all"><a href="/essays/">All essays, with summaries</a></p>
+</nav>
 
 <!-- ================= LEDE ================= -->
 <section class="lede" aria-label="Introduction">
@@ -767,6 +808,8 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 <figcaption><b>Figure 2.</b> The book&rsquo;s five parts, set against the years each spans (<b>I</b>&nbsp;Foundations, <b>II</b>&nbsp;The&nbsp;Market&nbsp;Turn, <b>III</b>&nbsp;Rights&nbsp;and&nbsp;Audit, <b>IV</b>&nbsp;The&nbsp;Digital&nbsp;State, <b>V</b>&nbsp;The&nbsp;Contested&nbsp;Present), the last three overlapping, as the introduction notes. The marked events are drawn from Table&nbsp;2.</figcaption>
 </figure>
 
+<details class="fold" id="chrono-table">
+<summary>Table 2: the dated events<span class="fold-n">26 entries</span></summary>
 <div class="tabwrap">
 <table class="chrono">
   <caption><b>Table 2.</b> Selected events in the history of Indian official measurement.</caption>
@@ -808,6 +851,7 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   </tbody>
 </table>
 </div>
+</details>
 <p class="dlrow">&darr; Download the chronology as <a href="chronology.csv" download>CSV</a><span class="sep">&middot;</span>use your browser&rsquo;s <a href="#" data-print>Print &rarr; Save as PDF</a> for the full page.</p>
 <p class="tabnote"><em>Note:</em> Dates and particulars follow the book's introduction and opening chapters, where each carries its source.</p>
 
@@ -967,6 +1011,8 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 <figcaption><b>Figure 6.</b> The book at the centre of four strands: the theory of quantification, the corruption of measures used as targets, the history of counting in India, and the measurement of Indian development.</figcaption>
 </figure>
 
+<details class="fold" id="reading-list">
+<summary>The reading list, by strand<span class="fold-n">20 works</span></summary>
 <div class="strand">
   <h3 class="stitle">1 &middot; Quantification &amp; authority</h3>
   <p class="sdesc">How number became the language of objective, governable knowledge, the tradition the book writes within.</p>
@@ -1014,6 +1060,7 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
     <li><span class="eng">&#9656;</span>Banerjee, Duflo &amp; Kremer, the experimental turn (2019 Nobel)</li>
   </ul>
 </div>
+</details>
 
 <!-- ================= AUTHOR ================= -->
 <h2 class="sec" id="author"><span class="no">&middot;</span>About the author</h2>
@@ -1096,7 +1143,8 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 </blockquote>
 </section>
 <section class="praise-group" data-group="media" aria-labelledby="pg-media">
-<h3 class="pgtitle" id="pg-media">Journalists and media</h3>
+<details class="fold">
+<summary><h3 class="pgtitle" id="pg-media">Journalists and media</h3><span class="fold-n">3 endorsements</span></summary>
 <blockquote class="endorse">
   <p>&ldquo;Two major achievements of governments have been, first, successfully raising the Hindu-Muslim bogey and, second and even more significant, the fudging of data. Data is sacred for any nation and more so for a developing country where each count from the community and caste numbers to the wealth divide is meant to tell the story of the real progress the nation has made. And governments have achieved this feat successfully. It is creditable of Varna Sri Raman to have researched well to expose the myth of India&rsquo;s progress by sifting the real data.&rdquo;</p>
   <cite>&mdash; Faraz Ahmad, Senior Journalist &amp; Author of <i>An Inside Job: Assassination of Rajiv Gandhi</i></cite>
@@ -1109,9 +1157,11 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   <p>&ldquo;In India, women&rsquo;s work, women&rsquo;s deaths and the air women breathe have been counted badly, late or not at all. <i>The Measurement Trap</i> shows that these gaps are a design problem. Varna Sri Raman writes with clarity and rigour on what the state misses and makes a compelling case for better statistics for better outcomes.&rdquo;</p>
   <cite>&mdash; Bhanupriya Rao, Founder, BehanBox</cite>
 </blockquote>
+</details>
 </section>
 <section class="praise-group" data-group="rights" aria-labelledby="pg-rights">
-<h3 class="pgtitle" id="pg-rights">Transparency and rights movement</h3>
+<details class="fold">
+<summary><h3 class="pgtitle" id="pg-rights">Transparency and rights movement</h3><span class="fold-n">3 endorsements</span></summary>
 <blockquote class="endorse">
   <p>&ldquo;<i>The Measurement Trap</i> has enriched my understanding, and replaced my preoccupation with a book I read in my teens called, &#8220;How to lie with statistics&#8221;. The book demonstrates just how data can be used to destroy and build arguments. <i>The Measurement Trap</i> is a far more comprehensive treatise on data and statistics and the politics that affect the process. It is a fascinating contemporary analysis explaining how the mechanism of collection and storage of data has become one of the most critical means to control centres of power. Data and statistics allow the abuse of probity and power, and help it to don the false dignity of veracity. India has seen civic action questioning the hypotheses of such claims, and establishing that law and practice have to change. Varna Sri Raman documents and analyses the centres of people&#8217;s resistance as well.</p>
   <p>This book makes a strong argument of why and how the controls over data, in a democracy should lie with affected people. It meticulously explains how it is factored into a powerful tool in the power game of controls, and economic and political dominance. Technology and on-line data have become an apparatus to store information and its use and mis-use in the inaccessible clouds of our computers and our conscience, hiding lies and more dangerously half-truths. Data is often cloaked as objective scientific data, but like all that is technical, it engages with and obeys its master, and the ideology that informs its framework. The book brings popular movements also into its argument to claim that data, after all, should be most available to the people whom it describes; who will act as verifiers and users.</p>
@@ -1139,9 +1189,11 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   <p>&ldquo;<i>The Measurement Trap</i> shows that every census, survey and database is also a decision about who the state will see and those who get left out. Tracing India&rsquo;s counting from the colonial census to Aadhaar and algorithmic welfare, Varna Sri Raman keeps the ordinary person who is part of a statistic or a sheet as the primary subject. This includes families denied rations when a fingerprint fails to match, and workers whose job cards were deleted in bulk. A necessary book for anyone who assumes that more data makes for better government. We are more than what we measure.&rdquo;</p>
   <cite>&mdash; Apar Gupta, Founder Director, Internet Freedom Foundation</cite>
 </blockquote>
+</details>
 </section>
 <section class="praise-group" data-group="academia" aria-labelledby="pg-academia">
-<h3 class="pgtitle" id="pg-academia">Academics and educators</h3>
+<details class="fold">
+<summary><h3 class="pgtitle" id="pg-academia">Academics and educators</h3><span class="fold-n">2 endorsements</span></summary>
 <blockquote class="endorse">
   <p>&ldquo;As ordinary but concerned citizens, it is hard to appreciate how much data and the state&rsquo;s statistical machinery matter in our everyday lives, and therefore for our democracy&rsquo;s health. <i>The Measurement Trap</i> helps readers see that it is not a bookish issue, but a matter of public concern.&rdquo;</p>
   <cite>&mdash; Reetika Khera, Professor of Economics, IIT Delhi</cite>
@@ -1150,9 +1202,11 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   <p>&ldquo;Official numbers are given and cited as answers; this book teaches the reader to ask the questions that restore their context: what was counted, by whom, to what purpose, and who saw the result first. Varna Sri Raman&rsquo;s history of India&rsquo;s official numbers is, at its heart, a masterclass in asking them. It should be essential reading for students of public policy, and for anyone who forms a diagnosis or prescription from secondary data.&rdquo;</p>
   <cite>&mdash; J. Mathew (Jojo) George, Director, St Mary&rsquo;s College, Hyderabad &amp; Group COO, Marian Educational Initiatives</cite>
 </blockquote>
+</details>
 </section>
 <section class="praise-group" data-group="reviewers" aria-labelledby="pg-reviewers">
-<h3 class="pgtitle" id="pg-reviewers">Peer reviewers</h3>
+<details class="fold">
+<summary><h3 class="pgtitle" id="pg-reviewers">Peer reviewers</h3><span class="fold-n">4 endorsements</span></summary>
 <blockquote class="endorse">
   <p>&ldquo;Original, timely, analytically rich, and potentially significant for development studies, political economy, governance studies, and the sociology of statistics.&rdquo;</p>
   <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
@@ -1169,6 +1223,7 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   <p>&ldquo;The book &hellip; would be a very important contribution to a literature that is rare in terms of its importance of documenting the process from a critical and technical lens.&rdquo;</p>
   <cite>&mdash; Anonymous peer reviewer of the book proposal, for Routledge</cite>
 </blockquote>
+</details>
 </section>
 <p class="praise-note">The four peer reviewer excerpts are taken from the anonymous reviews of the book proposal that Routledge commissioned.</p>
 
@@ -1291,6 +1346,15 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
 })();
 </script>
 <script>
+// folded sections are closed in the markup, so a phone gets a short page with or without script;
+// a wide screen opens them, and printing opens them at any width
+(function(){
+  var folds=document.querySelectorAll('details.fold'); if(!folds.length)return;
+  if(window.matchMedia&&window.matchMedia('(min-width:700px)').matches){ folds.forEach(function(d){ d.open=true; }); }
+  window.addEventListener('beforeprint',function(){ folds.forEach(function(d){ d.open=true; }); });
+})();
+</script>
+<script>
 // advance praise: filter by type of endorser (all groups show without JavaScript)
 (function(){
   var bar=document.getElementById('praise-filter'); if(!bar)return;
@@ -1298,6 +1362,7 @@ h3.pgtitle{margin:22px 0 4px;font-size:.98rem;font-weight:600;font-style:italic;
   bar.hidden=false;
   function show(k){
     groups.forEach(function(g){ g.hidden=(k!=='all'&&g.getAttribute('data-group')!==k); });
+    if(k!=='all'){ groups.forEach(function(g){ var d=g.querySelector('details.fold'); if(d&&!g.hidden)d.open=true; }); }
     btns.forEach(function(b){ b.setAttribute('aria-pressed',b.getAttribute('data-filter')===k?'true':'false'); });
   }
   btns.forEach(function(b){ b.addEventListener('click',function(){ show(b.getAttribute('data-filter')); }); });

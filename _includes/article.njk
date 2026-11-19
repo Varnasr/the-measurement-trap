@@ -7,7 +7,8 @@ layout: base.njk
     {% if kicker %}<p class="kicker">{{ kicker }}</p>{% endif %}
     <h1>{{ title }}</h1>
     {% if dek %}<p class="dek">{{ dek }}</p>{% endif %}
-    <p class="byline">By {{ author if author else 'Varna Sri Raman' }}{% if page.date %} &middot; <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>{% endif %}{% if readtime %} &middot; {{ readtime }}{% endif %}</p>
+    {% set notes = (content.split('<li id="fn') | length) - 1 %}
+    <p class="byline"><span class="by-item">By {{ author if author else 'Varna Sri Raman' }}</span>{% if page.date %}<span class="by-sep"> &middot; </span><span class="by-item"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></span>{% endif %}{% if readtime %}<span class="by-sep"> &middot; </span><span class="by-item">{{ readtime }}</span>{% endif %}{% if notes > 0 %}<span class="by-item by-notes"><a href="#fn1">{{ notes }} notes and sources</a></span>{% endif %}</p>
   </header>
 
   <div class="art-body">

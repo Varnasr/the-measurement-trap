@@ -75,6 +75,30 @@ has to get its own right:
 If an essay's central figure changes, change the title with it. The titles are
 the claims.
 
+## The home page is typed by hand, so two of its lists are checked
+
+`index.html` is copied through by Eleventy as written. It is no template, so
+the essay index under the contents strip (`nav.essayindex`) is a hand-typed
+list. When an essay is added, renamed or retitled, edit that list and its
+count; `scripts/check.mjs` fails until the list names every essay by its own
+frontmatter title. A chip carries the figure in the essay's title, or its
+kicker where the title has no figure.
+
+Six long blocks on the home page are `<details class="fold">`: the chronology
+table, the reading list and four of the five groups of advance praise. They
+are closed in the markup, which is what keeps the page short on a phone when
+script is off (28,202px before 19 November 2026, 17,759px after, at 390px
+wide). A script opens them at 700px and wider and before printing, and the
+praise filter opens the group it selects. Each summary states how many items
+it holds, and the check compares that number with the contents. A new long
+block should fold the same way; a new endorsement needs its group's count
+raised.
+
+On essay pages the byline moves into the left margin at 1200px and wider
+(`assets/writing.css`). It is positioned outside the 44rem column, so the text
+and the wide figures stay where they were. The notes link there counts the
+essay's footnotes at build time.
+
 ## The colours were checked against white, and the page is not white
 
 Audited with axe over the built site in both colour schemes at 390x844 and

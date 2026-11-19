@@ -70,6 +70,22 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
   padding-bottom:22px;border-bottom:1px solid var(--hair-faint);
 }
 .art-head .byline time{white-space:nowrap}
+.art-head .by-notes{display:none}
+
+/* wide screens: the byline moves into the left margin, beside the title */
+@media (min-width:1200px){
+  .art-head{position:relative;padding-bottom:22px;border-bottom:1px solid var(--hair-faint)}
+  .art-head .dek{margin-bottom:0}
+  .art-head .byline{
+    position:absolute;right:100%;top:3.1rem;width:11rem;margin-right:2.5rem;
+    padding:10px 0 0;border-bottom:0;border-top:1.5px solid var(--rule);
+    font-size:.84rem;line-height:1.45;
+  }
+  .art-head .by-sep{display:none}
+  .art-head .by-item{display:block;padding:0 0 7px}
+  .art-head .by-notes{display:block;margin-top:3px;padding-top:9px;border-top:1px solid var(--hair-faint)}
+  .art-head .by-notes a{text-decoration:underline;text-underline-offset:2px}
+}
 
 /* body */
 .art-body{font-size:1.19rem;line-height:1.68}
@@ -170,6 +186,8 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
 /* print */
 @media print{
   .progress,.masthead,.art-foot .art-nav,.art-foot .art-contact{display:none}
+  .art-head .byline{position:static;width:auto;margin:0;border-top:0;padding:12px 0 0}
+  .art-head .by-item{display:inline}.art-head .by-sep{display:inline}.art-head .by-notes{display:none}
   body{background:#fff;color:#000}
   .article{max-width:none}
 }
