@@ -544,6 +544,20 @@ dl.facts dd{font-size:.95rem;line-height:1.35}
   .thebook .cover img{width:132px}
   dl.facts div{grid-template-columns:6.2rem 1fr;gap:10px}
 }
+/* phone: the cover sits beside the contents list, so both are on the first screen */
+@media (max-width:699px){
+  .tb-cols{display:grid;grid-template-columns:104px 1fr;column-gap:18px;row-gap:26px;align-items:start;margin-top:22px}
+  .thebook{display:contents}
+  .thebook .cover{grid-column:1;grid-row:1;margin-top:1.72rem}
+  .thebook .cover img{width:104px}
+  .contents{grid-column:2;grid-row:1;min-width:0}
+  .contents ul{column-gap:14px}
+  .contents a{padding:8px 0;font-size:.88rem}
+  .tb-facts{grid-column:1 / -1;grid-row:2}
+}
+@media (max-width:520px){
+  .page{padding-top:72px}
+}
 
 /* ---------- print ---------- */
 @media print{

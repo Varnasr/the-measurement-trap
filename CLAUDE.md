@@ -148,6 +148,13 @@ essay index carries the first sentence of that essay's own `dek`, and
 `scripts/check.mjs` fails if the line is not the start of the dek. The
 Complementary resources section is a band of large links (`.explore`).
 
+Below 700px the cover sits beside the contents list (`.thebook` is
+`display:contents` there, so the cover and the facts are grid items of
+`.tb-cols`). Measured at 390x844 on 20 November 2026: the whole cover and all
+fourteen contents links are on the first screen, and the theme control ends
+18px above the title. A longer sentence or a taller bar pushes the cover down:
+measure after changing either.
+
 ## A merge builds the site and does not publish it
 
 whatcounts.in is served by Netlify (site `measurement-trap`), and auto-publishing
